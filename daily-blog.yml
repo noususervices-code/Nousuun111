@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jaakko Kalke — Startup-rahoituksen asiantuntija ja valmentaja. Autetaan toinen toisiamme nousuun." />
+  <title>Nousuun.fi — Jaakko Kalke</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 14 L10 5 L17 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="10" cy="5" r="2" fill="white"/>
+      </svg>
+    </div>
+    <span class="logo-text">nousuun<span>.fi</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Minusta</a></li>
+    <li><a href="#services">Palvelut</a></li>
+    <li><a href="blog/">Blogi</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn">Ota yhteyttä</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Starttiraha · Aloittavan yrittäjän valmennus · Kasvuyrittäjyys</div>
+    <h1>Menestys rakennetaan<br/><em>yhdessä.</em></h1>
+    <p class="hero-sub">
+      Hei, olen <strong>Jaakko Kalke</strong>. Toimin yrittäjänä ja virkamiehenä starttiraha-asiantuntijana.<br/><br/>
+      Haluan olla mukana viemässä Suomea positiivisesti eteenpäin. Minua innostavat erityisesti startup-skene, ihmisten hyvinvointi sekä valmentaminen.
+    </p>
+    <div class="hero-actions">
+      <a href="#about" class="btn-blue">Lue lisää →</a>
+      <a href="blog/" class="btn-outline">Blogi</a>
+    </div>
+  </div>
+  <div class="hero-cards">
+    <div class="hcard accent-card">
+      <div class="hcard-label">Erikoisalue</div>
+      <h4>Startup-rahoitus (starttiraha)</h4>
+      <p>Business Helsinki / Helsingin kaupunki</p>
+    </div>
+    <div class="hcard">
+      <div class="hcard-label">Lähestymistapa</div>
+      <h4>Fasilitaattori, ei asiantuntija</h4>
+      <p>Autetaan toinen toisiamme — ei ylhäältä alas, vaan rinnakkain.</p>
+    </div>
+    <div class="hcard">
+      <div class="hcard-label">Missio</div>
+      <h4>Vahvempi yrittäjyyskulttuuri Suomeen</h4>
+      <p>Yrittäjyys on elämäntapa, ei työ.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <blockquote class="reveal">
+    "Menestys ei synny yksin.<br/>
+    Se syntyy siellä, missä <strong>ihmiset auttavat toinen toisiaan</strong><br/>
+    — ja uskaltavat ottaa sen ensimmäisen askeleen."
+  </blockquote>
+  <cite>— Jaakko Kalke</cite>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="reveal">
+    <span class="about-label">Jaakko Kalke</span>
+    <h2>Startup-rahoituksen<br/><em>asiantuntija</em><br/>& valmentaja</h2>
+    <p>Toimin yrittäjänä ja virkamiehenä starttiraha-asiantuntijana. Olen rakentanut omaa yritystoimintaa yli 15 vuotta ja tiedän, miltä tuntuu sekä nousu että lasku.</p>
+    <p>Haluan olla mukana viemässä Suomea positiivisesti eteenpäin. Minua innostavat erityisesti startup-skene, ihmisten hyvinvointi sekä valmentaminen.</p>
+    <p>En tarjoa valmiita vastauksia — autan sinua löytämään omat.</p>
+    <div class="about-facts">
+      <div class="fact">
+        <span class="fact-num">15+</span>
+        <span class="fact-label">Vuotta yrittäjyyden parissa</span>
+      </div>
+      <div class="fact">
+        <span class="fact-num">∞</span>
+        <span class="fact-label">Nousuja yhdessä</span>
+      </div>
+      <div class="fact">
+        <span class="fact-num">3</span>
+        <span class="fact-label">Lasta — perhe edellä</span>
+      </div>
+      <div class="fact">
+        <span class="fact-num">1</span>
+        <span class="fact-label">Missio: Suomi yrittäjien paratiisi</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-card reveal">
+    <div class="profile-avatar">JK</div>
+    <div class="profile-name">Jaakko Kalke</div>
+    <div class="profile-title">Startup Grant Specialist & Valmentaja</div>
+    <ul class="profile-items">
+      <li>Startup-rahoituksen asiantuntija, Business Helsinki / Helsingin kaupungin työllisyyspalvelut</li>
+      <li>Valmentaja & puhuja — yrittäjyys, AI, hyvinvointi</li>
+      <li>Nuorten yrittäjyysvalmentaja hanke 2025</li>
+      <li>Nuorisoyrittäjyysprojekti → pysyvä palvelu 2026</li>
+      <li>Kolmen lapsen isä</li>
+    </ul>
+    <!-- Clickable tags linking to blog tag pages -->
+    <div class="profile-tags">
+      <a href="blog/tags/yrittajyyskasvatus.html" class="ptag">Yrittäjyyskasvatus</a>
+      <a href="blog/tags/tekoaly-pk-yrityksille.html" class="ptag">Tekoäly pk-yrityksille</a>
+      <a href="blog/tags/startup-rahoitus.html" class="ptag">Startup-rahoitus</a>
+      <a href="blog/tags/henkilobrandays.html" class="ptag">Henkilöbrändäys</a>
+      <a href="blog/tags/nuorisoyrittajyys.html" class="ptag">Nuorisoyrittäjyys</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-inner">
+    <div class="section-top reveal">
+      <h2>Miten voin<br/><em>auttaa sinua?</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="scard reveal">
+        <div class="scard-icon">🚀</div>
+        <h3>Startup-rahoitusneuvonta</h3>
+        <p>Starttiraha, Business Finland, ja muut käynnistysvaiheen rahoitusmahdollisuudet. Autetaan löytämään oikea polku juuri sinun tilanteessasi.</p>
+      </div>
+      <div class="scard reveal">
+        <div class="scard-icon">🎯</div>
+        <h3>Yrittäjyysvalmennus</h3>
+        <p>Yksilövalmennus yrittäjyyden alkutaipaleella. En anna vastauksia — autan sinua löytämään ne itse. Fasilitaattorina, ei asiantuntijana.</p>
+      </div>
+      <div class="scard reveal">
+        <div class="scard-icon">🤖</div>
+        <h3>AI pk-yrityksille</h3>
+        <p>Käytännönläheinen opas tekoälyn hyödyntämiseen suomalaisessa pk-yrityksessä. Ei hypeä — konkreettisia työkaluja ja prosesseja.</p>
+      </div>
+      <div class="scard reveal">
+        <div class="scard-icon">🎤</div>
+        <h3>Puhujaroolit</h3>
+        <p>Yrittäjyys, AI-työkalut arjessa, nuorisoyrittäjyys, startup-rahoitus. Puhujan rooli tapahtumiin, oppilaitoksiin ja yrityksiin.</p>
+      </div>
+      <div class="scard reveal">
+        <div class="scard-icon">📚</div>
+        <h3>Koulutukset & workshopit</h3>
+        <p>Nuorisoyrittäjyyskoulutus oppilaitoksiin. Startup-rahoituksen perusteet. AI-automatisointi. Räätälöidyt kokonaisuudet.</p>
+      </div>
+      <div class="scard reveal">
+        <div class="scard-icon">🌱</div>
+        <h3>Yhteisöllinen kasvu</h3>
+        <p>Uskon yhteisöön, en yksilösankareihin. Sparrausryhmät, verkostot ja yhteiset nousut — Nousuun.fi on alusta tälle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="blog-section" id="blog">
+  <div class="blog-inner">
+    <div class="section-top reveal">
+      <h2>Blogi<br/><em>Ajatuksia matkalta</em></h2>
+      <a href="blog/" class="see-all">Kaikki kirjoitukset →</a>
+    </div>
+    <!-- Tag filter bar -->
+    <div class="tag-filter reveal">
+      <a href="blog/" class="tfilter active">Kaikki</a>
+      <a href="blog/tags/yrittajyyskasvatus.html" class="tfilter">Yrittäjyyskasvatus</a>
+      <a href="blog/tags/tekoaly-pk-yrityksille.html" class="tfilter">Tekoäly pk-yrityksille</a>
+      <a href="blog/tags/startup-rahoitus.html" class="tfilter">Startup-rahoitus</a>
+      <a href="blog/tags/henkilobrandays.html" class="tfilter">Henkilöbrändäys</a>
+      <a href="blog/tags/nuorisoyrittajyys.html" class="tfilter">Nuorisoyrittäjyys</a>
+    </div>
+    <div class="blog-grid" id="blog-preview"></div>
+  </div>
+</section>
+
+<!-- RSS TEASER -->
+<section class="rss-teaser">
+  <div class="rss-inner">
+    <div class="reveal">
+      <h2>Parhaat lähteet<br/><em>yhdessä paikassa</em></h2>
+      <p>Olen koonnut 67 tarkistettua RSS-syötettä, YouTube-kanavaa ja tapahtumalistaa suomalaisille yrittäjille — suomalaisesta mediasta globaaleihin AI-kanaviin.</p>
+      <a href="blog/" class="btn-blue" style="margin-top:0.5rem;display:inline-flex;">Lue blogi →</a>
+    </div>
+    <div class="reveal">
+      <div class="feed-pills">
+        <span class="pill">Kauppalehti RSS</span><span class="pill">Sifted.eu</span>
+        <span class="pill">TechCrunch AI</span><span class="pill">Slush Events</span>
+        <span class="pill">Arctic15</span><span class="pill">Maria 01</span>
+        <span class="pill">Y Combinator</span><span class="pill">Dan Koe</span>
+        <span class="pill">Matt Wolfe AI</span><span class="pill">Lex Fridman</span>
+        <span class="pill">Aaltoes</span><span class="pill">Business Helsinki</span>
+        <span class="pill">Cole Medin</span><span class="pill">Justin Welsh</span>
+        <span class="pill">+53 muuta</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner reveal">
+    <h2>Noustaan yhdessä.</h2>
+    <p>Haluatko sparrata startup-rahoituksesta, yrittäjyysvalmennuksesta tai AI:n hyödyntämisestä? Kirjoita minulle — vastataan aina.</p>
+    <a href="mailto:jaakko@nousuun.fi" class="btn-white">jaakko@nousuun.fi →</a>
+  </div>
+</section>
+
+<footer>
+  <a href="/" class="footer-logo">nousuun<span>.fi</span></a>
+  <ul class="footer-links">
+    <li><a href="#about">Minusta</a></li>
+    <li><a href="#services">Palvelut</a></li>
+    <li><a href="blog/">Blogi</a></li>
+    <li><a href="https://linkedin.com/in/jaakkokalke" target="_blank">LinkedIn</a></li>
+  </ul>
+  <span>© 2026 Jaakko Kalke</span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Load blog preview from posts.json
+  async function loadPreview() {
+    const el = document.getElementById('blog-preview');
+    try {
+      const res = await fetch('blog/posts.json');
+      const posts = await res.json();
+      const top = posts.slice(0, 3);
+      el.innerHTML = top.map((p, i) => `
+        <a href="blog/${p.slug}.html" class="bcard ${i===0?'lead':''} reveal">
+          <span class="bcat">${p.category}</span>
+          <h3>${p.title}</h3>
+          <p>${p.excerpt}</p>
+          <span class="bdate">${p.dateLabel} · ${p.readTime}</span>
+        </a>`).join('');
+      el.querySelectorAll('.reveal').forEach(e => obs.observe(e));
+    } catch(e) {
+      el.innerHTML = '<p style="color:var(--muted);padding:2rem;">Blogeja ladataan...</p>';
+    }
+  }
+  loadPreview();
+</script>
+</body>
+</html>
