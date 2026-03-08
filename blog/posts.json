@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "frontier-work",
+    "title": "Ihminen–AI-rajapinnalla: uusi taito, jota kukaan ei opeta",
+    "category": "Frontier Work",
+    "date": "Maaliskuu 2026",
+    "excerpt": "Tehokkain taito 2020-luvulla ei ole koodaaminen eikä prompting — se on kyky toimia juuri siinä pisteessä, missä ihminen ja tekoäly kohtaavat."
+  },
+  {
+    "slug": "pandemia",
+    "title": "Mitä pandemia opetti minulle yrittäjyydestä",
+    "category": "Yrittäjyys",
+    "date": "Helmikuu 2026",
+    "excerpt": "Menin alas. Nousin uudelleen. Tässä on mitä opin — ja mitä en oppinut mistään kurssista."
+  },
+  {
+    "slug": "nuoret",
+    "title": "Miksi nuoret eivät ryhdy yrittäjiksi — ja mitä sille voi tehdä",
+    "category": "Nuorisoyrittäjyys",
+    "date": "Tammikuu 2026",
+    "excerpt": "Kolme vuotta työtä nuorten kanssa paljasti yhden ison syyn. Se ei ole raha."
+  }
+]

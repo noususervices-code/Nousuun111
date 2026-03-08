@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jaakko Kalken blogi — ajatuksia yrittäjyydestä, tekoälystä ja kasvusta." />
+  <title>Blogi — Nousuun.fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Nousuun<span>.fi</span></a>
+    <ul class="nav-links">
+      <li><a href="/#about">Minusta</a></li>
+      <li><a href="/blog/">Blogi</a></li>
+      <li><a href="/#contact" class="nav-cta">Ota yhteyttä</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Valikko">☰</button>
+  </nav>
+
+  <main class="blog-index">
+    <h1>Blogi</h1>
+    <p class="subtitle">Ajatuksia yrittäjyydestä, tekoälystä ja kasvusta.</p>
+
+    <div class="post-list" id="post-list">
+      <!-- Posts loaded from posts.json -->
+    </div>
+  </main>
+
+  <footer>
+    <a href="/" class="footer-logo">Nousuun<span>.fi</span></a>
+    <ul class="footer-links">
+      <li><a href="/#about">Minusta</a></li>
+      <li><a href="/blog/">Blogi</a></li>
+      <li><a href="https://linkedin.com/in/jaakkokalke" target="_blank">LinkedIn</a></li>
+      <li><a href="mailto:jaakko@nousuun.fi">Sähköposti</a></li>
+    </ul>
+    <span>© 2026 Jaakko Kalke</span>
+  </footer>
+
+  <script>
+    async function loadPosts() {
+      const list = document.getElementById('post-list');
+      try {
+        const res = await fetch('posts.json');
+        const posts = await res.json();
+        list.innerHTML = posts.map(post => `
+          <a href="${post.slug}.html" class="post-item">
+            <span class="post-date">${post.date}</span>
+            <div>
+              <span class="post-cat">${post.category}</span>
+              <h2>${post.title}</h2>
+              <p>${post.excerpt}</p>
+            </div>
+          </a>
+        `).join('');
+      } catch(e) {
+        // Fallback
+        list.innerHTML = `
+          <a href="frontier-work.html" class="post-item">
+            <span class="post-date">Maaliskuu 2026</span>
+            <div>
+              <span class="post-cat">Frontier Work</span>
+              <h2>Ihminen–AI-rajapinnalla: uusi taito, jota kukaan ei opeta</h2>
+              <p>Tehokkain taito 2020-luvulla ei ole koodaaminen eikä prompting.</p>
+            </div>
+          </a>
+          <a href="pandemia.html" class="post-item">
+            <span class="post-date">Helmikuu 2026</span>
+            <div>
+              <span class="post-cat">Yrittäjyys</span>
+              <h2>Mitä pandemia opetti minulle yrittäjyydestä</h2>
+              <p>Menin alas. Nousin uudelleen. Tässä on mitä opin.</p>
+            </div>
+          </a>
+          <a href="nuoret.html" class="post-item">
+            <span class="post-date">Tammikuu 2026</span>
+            <div>
+              <span class="post-cat">Nuorisoyrittäjyys</span>
+              <h2>Miksi nuoret eivät ryhdy yrittäjiksi — ja mitä sille voi tehdä</h2>
+              <p>Kolme vuotta työtä nuorten kanssa paljasti yhden ison syyn.</p>
+            </div>
+          </a>
+        `;
+      }
+    }
+    loadPosts();
+  </script>
+</body>
+</html>
