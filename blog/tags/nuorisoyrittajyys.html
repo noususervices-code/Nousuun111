@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuorisoyrittäjyys — Nousuun.fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo"><div class="logo-mark"><svg viewBox="0 0 20 20"><path d="M3 14 L10 5 L17 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="5" r="2" fill="white"/></svg></div><span class="logo-text">nousuun<span>.fi</span></span></a>
+  <ul class="nav-links"><li><a href="/#about">Minusta</a></li><li><a href="/#services">Palvelut</a></li><li><a href="/blog/">Blogi</a></li></ul>
+  <a href="/#contact" class="nav-btn">Ota yhteyttä</a>
+</nav>
+
+<main class="tag-page">
+  <a href="/blog/" class="back-link">← Kaikki kirjoitukset</a>
+  <div class="tag-hero">
+    <h1>#Nuorisoyrittäjyys</h1>
+    <p>Nuorten yrittäjyyden esteet, mahdollisuudet ja ratkaisut. Näkökulma kentältä — olen itse valmentanut satoja nuoria yrittäjyyden polulle.</p>
+  </div>
+
+  <!-- Other tags -->
+  <div class="tag-filter" style="margin-bottom:2.5rem;">
+    <a href="/blog/" class="tfilter">Kaikki</a>
+    <a href="yrittajyyskasvatus.html" class="tfilter ">Yrittäjyyskasvatus</a>
+    <a href="tekoaly-pk-yrityksille.html" class="tfilter ">Tekoäly pk-yrityksille</a>
+    <a href="startup-rahoitus.html" class="tfilter ">Startup-rahoitus</a>
+    <a href="henkilobrandays.html" class="tfilter ">Henkilöbrändäys</a>
+    <a href="nuorisoyrittajyys.html" class="tfilter active">Nuorisoyrittäjyys</a>
+  </div>
+
+  <div class="post-list" id="post-list"></div>
+</main>
+
+<footer>
+  <a href="/" class="footer-logo">nousuun<span>.fi</span></a>
+  <ul class="footer-links"><li><a href="/blog/">Blogi</a></li><li><a href="https://linkedin.com/in/jaakkokalke" target="_blank">LinkedIn</a></li></ul>
+  <span>© 2026 Jaakko Kalke</span>
+</footer>
+
+<script src="../../js/main.js"></script>
+<script>
+const TAG = "Nuorisoyrittäjyys";
+async function loadTagPosts() {
+  const list = document.getElementById('post-list');
+  const res = await fetch('/blog/posts.json');
+  const posts = await res.json();
+  const filtered = posts.filter(p => p.tags && p.tags.includes(TAG));
+  if (filtered.length === 0) {
+    list.innerHTML = '<p style="color:var(--muted);padding:2rem 0;">Kirjoituksia tulossa pian...</p>';
+    return;
+  }
+  list.innerHTML = filtered.map(p => `
+    <a href="/blog/${p.slug}.html" class="post-item">
+      <span class="post-date">${p.dateLabel}</span>
+      <div>
+        <span class="post-cat-badge">${p.category}</span>
+        <h2>${p.title}</h2>
+        <p>${p.excerpt}</p>
+        ${p.source !== 'Alkuperäinen' ? `<span class="ai-badge">🤖 AI-generoitu</span>` : ''}
+      </div>
+    </a>`).join('');
+}
+loadTagPosts();
+</script>
+</body>
+</html>
