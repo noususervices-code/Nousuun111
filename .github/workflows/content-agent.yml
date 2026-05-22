@@ -1,0 +1,26 @@
+name: Content Agent
+
+on:
+  schedule:
+    - cron: "0 6 * * 2"
+    - cron: "0 6 * * 5"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/generate_content.py
+      - name: Commit updates
+        run: |
+          git config user.email "bot@nousuun.fi"
+          git config user.name "Nousuun Bot"
+          git add data/news.json blog/
+          git diff --staged --quiet || git commit -m "Content update $(date +%Y-%m-%d)"
+          git push

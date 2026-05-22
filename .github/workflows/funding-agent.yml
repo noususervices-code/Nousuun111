@@ -1,0 +1,25 @@
+name: Funding Agent
+
+on:
+  schedule:
+    - cron: "30 7 * * 1"
+  workflow_dispatch:
+
+jobs:
+  funding:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/fetch_funding.py
+      - name: Commit updates
+        run: |
+          git config user.email "bot@nousuun.fi"
+          git config user.name "Nousuun Bot"
+          git add data/funding.json data/meta.json
+          git diff --staged --quiet || git commit -m "Funding update $(date +%Y-%m-%d)"
+          git push

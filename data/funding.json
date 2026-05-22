@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-05-17T13:52:04.128001+00:00",
+  "funding": [
+    {
+      "name": "Starttiraha",
+      "type": "Alkuvaiheen tuki",
+      "deadline": "Jatkuva haku",
+      "region": "Suomi",
+      "summary": "Aloittavan paatoimisen yrittajan henkilokohtainen tuki ensivaiheeseen.",
+      "url": "https://www.suomi.fi/palvelut/starttiraha-tyollisyyspalvelut/55b76e7f-e4f6-4b9f-b2f1-b0ce7791e214",
+      "source": "manual seed"
+    },
+    {
+      "name": "Business Finland Tempo",
+      "type": "Kansainvalinen kasvu",
+      "deadline": "Jatkuva haku",
+      "region": "Suomi",
+      "summary": "Rahoitus innovatiivisille yrityksille, jotka tavoittelevat kansainvalista kasvua.",
+      "url": "https://www.businessfinland.fi/",
+      "source": "manual seed"
+    }
+  ]
+}

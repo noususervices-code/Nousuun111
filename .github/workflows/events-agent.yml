@@ -1,0 +1,28 @@
+name: Agentti A - Tapahtumat fallback
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_fallback:
+        description: "Type RUN_FALLBACK to overwrite data/events.json with Linked Events fallback data"
+        required: true
+
+jobs:
+  fallback-fetch-events:
+    if: ${{ github.event.inputs.confirm_fallback == 'RUN_FALLBACK' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/fetch_events.py
+      - name: Commit Agentti A fallback updates
+        run: |
+          git config user.email "bot@nousuun.fi"
+          git config user.name "Nousuun Bot"
+          git add data/events.json data/meta.json
+          git diff --staged --quiet || git commit -m "Agentti A fallback tapahtumat $(date +%Y-%m-%d)"
+          git push

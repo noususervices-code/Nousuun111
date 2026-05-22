@@ -1,0 +1,25 @@
+name: Agentti B - Viikon yritykset
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/scout_companies.py
+      - name: Commit Agentti B updates
+        run: |
+          git config user.email "bot@nousuun.fi"
+          git config user.name "Nousuun Bot"
+          git add data/companies.json data/meta.json
+          git diff --staged --quiet || git commit -m "Agentti B yritykset $(date +%Y-%m-%d)"
+          git push

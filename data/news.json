@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-05-17T13:52:04.250011+00:00",
+  "articles": [
+    {
+      "title": "AI ei ole osasto. Se on tyotapa.",
+      "source": "Nousuun.fi",
+      "relevance_score": 9,
+      "summary": "Aloita yhdesta arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
+      "url": "blog/"
+    },
+    {
+      "title": "Eurooppa etsii uusia kasvuyrittajia",
+      "source": "Nousuun.fi",
+      "relevance_score": 8,
+      "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksia, EU-rahoitusta ja pienia testejja rajojen yli.",
+      "url": "blog/"
+    }
+  ]
+}

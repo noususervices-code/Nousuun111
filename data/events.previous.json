@@ -1,0 +1,221 @@
+{
+  "agent": "Agentti A - Tapahtumat",
+  "quality": "curated_weekly_report",
+  "updated_at": "2026-05-18T07:58:13.745733+00:00",
+  "week": "2026-W21",
+  "events": [
+    {
+      "name": "Agentic AI and its product management!",
+      "date": "2026-05-19",
+      "time": "17:00-21:00",
+      "location": "Haaga-Helia Pasila Campus, Ratapihantie 13, Helsinki",
+      "description": "Agentic AI -teema yhdistettynä tuotteistamiseen on juuri se, missä yrittäjät ja foundit voivat saada käytännön hyötyä nopeasti. Erinomainen verkostoitumispaikka AI-tekijöille.",
+      "url": "https://www.meetup.com/producttank-helsinki/events/314503589/",
+      "image": "",
+      "source": "ProductTank Helsinki & Helsinki MLOps Community",
+      "tags": [
+        "AI",
+        "agentit",
+        "tuotehallinta",
+        "startup",
+        "MLOps",
+        "verkostoituminen"
+      ],
+      "score": 9.0,
+      "featured": false
+    },
+    {
+      "name": "Nordic Fintech Summit 2026",
+      "date": "2026-05-20",
+      "time": "20.-22.5.2026 (pääpäivä 21.5.)",
+      "location": "Wanha Satama, Helsinki",
+      "description": "Laaja verkostoitumispaikka rahoitus- ja kasvuekosysteemissä. Hyödyllinen yrittäjille, jotka hakevat rahoitusta, kumppaneita tai seuraavat fintech-trendejä.",
+      "url": "https://nordicfintechsummit.com/",
+      "image": "",
+      "source": "Nordic Fintech Summit / Helsinki Fintech Farm",
+      "tags": [
+        "fintech",
+        "startup",
+        "B2B",
+        "verkostoituminen",
+        "rahoitus",
+        "SME"
+      ],
+      "score": 8.5,
+      "featured": false
+    },
+    {
+      "name": "Epicenter AI Campfire — How to Mess Up with AI: Ten Kinds of Disasters",
+      "date": "2026-05-22",
+      "time": "09:00-11:00 (kahvi/tee 08:30 alkaen)",
+      "location": "Epicenter Helsinki, Mikonkatu 9, Helsinki",
+      "description": "Käytännönläheinen AI-sovellustyöpaja, joka sopii erityisesti yrittäjille ja pienyrityksille. Epicenterin campfire-yhteisö on laadukas ja osallistujapohja relevantti.",
+      "url": "https://www.weareepicenter.com/fi/happenings/ai-campfire",
+      "image": "",
+      "source": "Epicenter Helsinki / Reidar Wasenius",
+      "tags": [
+        "AI",
+        "yrittäjyys",
+        "solopreneur",
+        "automaatio",
+        "workshop",
+        "käytännön oppi"
+      ],
+      "score": 8.7,
+      "featured": false
+    },
+    {
+      "name": "CITCON:AI Europe 2026 Helsinki",
+      "date": "2026-05-22",
+      "time": "22.-23.5.2026, alkaa 18:00",
+      "location": "Kuntatalo, Helsinki",
+      "description": "Open Space -formaatti tuottaa aitoja keskusteluja. Sopii teknisemmille foundereille ja AI-rakentajille, jotka haluavat oppia ja verkostoitua.",
+      "url": "https://www.eventbrite.com/e/citconai-europe-2026-helsinki-tickets-1982737371853",
+      "image": "",
+      "source": "Open Information Foundation / Jeffrey Fredrick & Paul Julius",
+      "tags": [
+        "AI",
+        "teknologia",
+        "open space",
+        "ohjelmistokehitys",
+        "oppiminen"
+      ],
+      "score": 7.5,
+      "featured": false
+    },
+    {
+      "name": "Founders Running Club :: Helsinki",
+      "date": "2026-05-23",
+      "time": "Lauantai (tarkka kellonaika: tarkista Luma-sivulta)",
+      "location": "Helsinki Central Library Oodi, Töölönlahdenkatu 4, Helsinki",
+      "description": "Matalan kynnyksen verkostoituminen ilman agendaa: hyvä tapa tavata foundereita ja startup-ihmisiä rennossa ympäristössä. Viikoittainen rytmi tekee tästä luotettavan kohtaamispaikan.",
+      "url": "https://luma.com/6hyoqm94",
+      "image": "",
+      "source": "Founders Running Club",
+      "tags": [
+        "verkostoituminen",
+        "founder",
+        "juoksu",
+        "yhteisö",
+        "hyvinvointi"
+      ],
+      "score": 7.2,
+      "featured": false
+    },
+    {
+      "name": "Bridge Summit 2026",
+      "date": "2026-05-26",
+      "time": "26.5.2026",
+      "location": "Helsinki",
+      "description": "Laaja startup-ekosysteemin tapahtuma sijoittajineen ja kansainvälisineen kontakteineen. Erittäin relevantti kasvua hakeville foundereille.",
+      "url": "https://event.bridgesummit.fi/p/bridge-summit-2026",
+      "image": "",
+      "source": "Helsinki Innovation Services Ltd & Business Finland",
+      "tags": [
+        "startup",
+        "kansainvälisyys",
+        "verkostoituminen",
+        "innovaatio"
+      ],
+      "score": 8.8,
+      "featured": true
+    },
+    {
+      "name": "GenAI Forum III & RAIDE Innovation Cluster Launch",
+      "date": "2026-05-26",
+      "time": "26.5.2026",
+      "location": "Helsinki",
+      "description": "Suomalainen AI-kaupallistamisen huipputapahtuma: relevantti kaikille jotka rakentavat AI-natiiveja tuotteita tai integroivat AI:ta liiketoimintaansa.",
+      "url": "https://www.businessfinland.fi/en/whats-new/Events/2026/genai-forum-iii--raide-innovation-cluster-launch/",
+      "image": "",
+      "source": "Business Finland & RAIDE Innovation Ecosystem",
+      "tags": [
+        "GenAI",
+        "AI",
+        "innovaatio",
+        "Business Finland",
+        "kaupallistaminen"
+      ],
+      "score": 8.8,
+      "featured": true
+    },
+    {
+      "name": "Science Startup Day 2026",
+      "date": "2026-05-27",
+      "time": "10:00-16:00 (rekisteröinti 09:30)",
+      "location": "Team Finland House, Porkkalankatu 1, Helsinki",
+      "description": "Harvinainen tilaisuus tavata useita suomalaisia VC:itä samassa paikassa. Sopii erityisesti kasvuhakuisille foundereille ja tutkijataustaisille yrittäjille.",
+      "url": "https://www.businessfinland.fi/en/whats-new/Events/2026/science-startup-day-2026/",
+      "image": "",
+      "source": "Business Finland + kumppani-VC:t",
+      "tags": [
+        "deep tech",
+        "startup",
+        "rahoitus",
+        "VC",
+        "tutkimus"
+      ],
+      "score": 8.3,
+      "featured": true
+    },
+    {
+      "name": "Female Founders & Investors Afterwork",
+      "date": "2026-05-28",
+      "time": "Afterwork",
+      "location": "Helsinki",
+      "description": "Laadukas VC/angel-verkosto + founder-kontaktit. Sopii erityisesti naisyrittäjille ja rahoitusta hakeville.",
+      "url": "https://luma.com/femafterwork",
+      "image": "",
+      "source": "FiBAN & Business Helsinki",
+      "tags": [
+        "founder",
+        "sijoittaja",
+        "verkostoituminen",
+        "rahoitus",
+        "naisyrittäjät"
+      ],
+      "score": 8.0,
+      "featured": true
+    },
+    {
+      "name": "Maria 01 NOW 2026",
+      "date": "2026-06-02",
+      "time": "2.-4.6.2026",
+      "location": "Maria 01, Helsinki",
+      "description": "Yksi Suomen kiinnostavimmista startup-tapahtumista: korkealaatuinen ohjelma, relevantti yleisö ja erinomainen verkostoitumispaikka kaikille ekosysteemissä toimiville.",
+      "url": "https://maria.io/events/apply-to-pitch-at-maria-01-now-2026/",
+      "image": "",
+      "source": "Maria 01",
+      "tags": [
+        "startup",
+        "pitching",
+        "sijoittaja",
+        "ekosysteemi",
+        "verkostoituminen"
+      ],
+      "score": 9.1,
+      "featured": true
+    },
+    {
+      "name": "Arctic15 Helsinki 2026",
+      "date": "2026-06-11",
+      "time": "11.-12.6.2026",
+      "location": "Kaapelitehdas, Helsinki",
+      "description": "Koko vuoden tärkein yksittäinen startup-konferenssi Helsingissä. Jos rakennat yritystä ja haluat sijoittajia, kumppaneita tai näkyvyyttä — tämä on se.",
+      "url": "https://arctic15.com/",
+      "image": "",
+      "source": "Arctic15",
+      "tags": [
+        "startup",
+        "VC",
+        "founder",
+        "rahoitus",
+        "verkostoituminen",
+        "kasvu"
+      ],
+      "score": 9.4,
+      "featured": true
+    }
+  ],
+  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\Agent_Outputs\\Agentti_A_Tapahtumat\\weekly_reports\\2026-W21_events.json"
+}
