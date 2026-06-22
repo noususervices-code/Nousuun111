@@ -1,18 +1,8 @@
 {
   "agent": "Agentti B - Viikon yritykset",
-  "updated_at": "2026-06-15T13:10:25.915428+00:00",
-  "week": "2026-W25",
+  "updated_at": "2026-06-22T12:46:36.562116+00:00",
+  "week": "2026-W26",
   "companies": [
-    {
-      "name": "Vakaa ja kannattava teollisuustarvikkeiden vähittäis- ja yritysmyynnin erikoisliike",
-      "industry": "Konepaja, Metallituotteiden valmistus, Muu valmistava teollisuus, Muut tukkukaupat, Rakennusmateriaalien ja -komponenttien valmistus, Rautakauppa, Tekninen kauppa, Verkkokauppa",
-      "price": "Erinomaisella sijainnilla oleva teollisuuskiinteistö.",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/konepaja/suomi/myydaan-teollisuusalan-yritys-joka-toimii-rauta-ja-rakennustarvikkeiden-valmistajana-ja-myyjana/125371/",
-      "source": "Suomen Yrityskaupat",
-      "score": 7.3,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 7.3/10:n taustalla oikea operatiivinen mahdollisuus."
-    },
     {
       "name": "Voimakkaasti skaalautuva yritys myytävänä – valmis, testattu ja kasvupotentiaalinen sovellus",
       "industry": "Muu palvelualan yritys, Muu toimiala, Palveluyritykset, Ravintolat, kahvilat, Verkkokauppa, Ympäristönhuolto",
@@ -22,16 +12,6 @@
       "source": "Suomen Yrityskaupat",
       "score": 7.2,
       "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 7.2/10:n taustalla oikea operatiivinen mahdollisuus."
-    },
-    {
-      "name": "Menestyvä kahvila, jossa on vilkas kävijämäärä ja jatkuva asiakasvirta, erinomaisella sijainnilla liikenteen solmukohdassa",
-      "industry": "Ravintolat, kahvilat",
-      "price": "65 000 EUR",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ravintolat-kahvilat/viro/menestyva-kahvila-jossa-on-vilkas-kavijamaara-ja-jatkuva-asiakasvirta-erinomaisella-sijainnilla-liikenteen-solmukohdassa/126683/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
       "name": "Traktorien ja muiden raskaan koneiden huolto ja korjaamopalveluita tuottava yritys",
@@ -74,14 +54,24 @@
       "insight": "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Pitkän historian omaava hyvämaineinen ja tunnettu paperikauppa Harjun Paperi etsii jatkajaa. Myymälän tukena Hyvän Tuulen verkkokauppa, josta löytyy Suomen kattavin valikoima kortteja kaikkiin elämän juhliin ja yllätyksiin.",
-      "industry": "Vähittäis- ja tukkukaupat, tuonti, edustus",
-      "price": "235 000 EUR",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/vahittais-ja-tukkukaupat-tuonti-edustus/keski-suomi/pitkan-historian-omaava-hyvamaineinen-ja-tunnettu-kirjakauppa-harjun-paperi-etsii-jatkajaa-myymalan-tukena-hyvan-tuulen-korttikauppa-josta-loytyy-suomen-kattavin-valikoima-kortteja-kaikkiin-elaman-juh/125706/",
+      "name": "Menestyvä kahvila-ravintola valtatien varrella keskeisellä paikalla, jonka suosio tasaisessa kasvussa",
+      "industry": "Ravintolat, kahvilat",
+      "price": "280 000 EUR",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ravintolat-kahvilat/suomi/menestyva-kahvila-ravintola-valtatien-varrella-keskeisella-paikalla-jonka-suosio-tasaisessa-kasvussa/127080/",
       "source": "Suomen Yrityskaupat",
-      "score": 6.2,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
+      "score": 6.3,
+      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+    },
+    {
+      "name": "Pitkäaikainen, kannattava amerikkalais-meksikolainen ravintola vanhassakaupungissa, suosittu turistien ja paikallisten keskuudessa.",
+      "industry": "Ravintolat, kahvilat",
+      "price": "320 000 EUR",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ravintolat-kahvilat/viro/erittain-suosittu-ravintola-paikallisten-ja-turistien-keskuudessa-tallinnan-vanhassakaupungissa/121237/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.3,
+      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
       "name": "Design- ja vintage-esineiden myyntiin erikoistunut yritys pääkaupunkiseudulla",
@@ -94,11 +84,21 @@
       "insight": "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Myydään Pohjolan Rakennusvalvonta Oy:n liiketoiminta",
-      "industry": "Rakentaminen",
-      "price": "200 000 euroa",
-      "location": "Pohjois-Pohjanmaa",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/pohjois-pohjanmaa/myydaan-pohjolan-rakennusvalvonta-oyn-liiketoiminta/125766/",
+      "name": "Viihdekeskus Tallinnassa, joka tarjoaa drifting-moottoripyörillä ajamista ja erilaisia juhlapaketteja",
+      "industry": "Muu palvelualan yritys",
+      "price": "220 000 EUR",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/viro/viihdekeskus-tallinnassa-joka-tarjoaa-drifting-moottoripyorilla-ajamista-ja-erilaisia-juhlapaketteja/123062/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.2,
+      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
+    },
+    {
+      "name": "uusien puutuotteiden tuoteoikeudet",
+      "industry": "Puutavaran ja puutuotteiden valmistus",
+      "price": "6 000 EUR Lisäkauppahinta tuotemyyntiin perustuen",
+      "location": "Ei määritelty",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/puutavaran-ja-puutuotteiden-valmistus/ei-maaritelty/puutuote/85501/",
       "source": "Suomen Yrityskaupat",
       "score": 5.6,
       "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.6/10:n taustalla oikea operatiivinen mahdollisuus."
