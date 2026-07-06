@@ -1,14 +1,14 @@
 {
   "agent": "Agentti B - Viikon yritykset",
-  "updated_at": "2026-06-29T11:56:10.742916+00:00",
-  "week": "2026-W27",
+  "updated_at": "2026-07-06T11:25:18.214740+00:00",
+  "week": "2026-W28",
   "companies": [
     {
-      "name": "Hyvän kasvupotentiaalin omaava ja kannattava Varkauden LVI-Palvelu Oy on myynnissä",
-      "industry": "LVI-asennus, huolto, suunnittelu",
-      "price": "170 000 EUR Myydään osakekauppana",
-      "location": "Pohjois-Savo",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/lvi-asennus-huolto-suunnittelu/pohjois-savo/hyvan-kasvupotentiaalin-omaava-ja-kannattava-varkauden-lvi-palvelu-oy-on-myynnissa/121702/",
+      "name": "Myydään erittäin hyvin menestyvä talouskonsultointiyritys",
+      "industry": "Konsultointi, koulutus, Tili-, laki-, konsultointitoimistot",
+      "price": "tarjousten mukaan",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/konsultointi-koulutus/suomi/myydaan-erittain-hyvin-menestyva-talouskonsultointiyritys/122903/",
       "source": "Suomen Yrityskaupat",
       "score": 7.6,
       "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 7.6/10:n taustalla oikea operatiivinen mahdollisuus."
@@ -24,16 +24,6 @@
       "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.9/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Menestyvä liikuntakeskus Turun lähellä myynnissä",
-      "industry": "Kuntosalit ja muut liikunta-alan yritykset, Terveydenhoito, sosiaaliala",
-      "price": "160 000 EUR Liiketoimintakauppa",
-      "location": "Turun talousalue",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kuntosalit-ja-muut-liikunta-alan-yritykset/turun-talousalue/menestyva-liikuntakeskus-turun-lahella-myynnissa/124347/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
-    },
-    {
       "name": "Myydään lämminhenkinen, tunnettu ja kannattava anniskeluravintola Sherwood!",
       "industry": "Ravintolat, kahvilat",
       "price": "193 000 EUR",
@@ -44,14 +34,24 @@
       "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Myytävänä monien palveluiden matkailualue Wanhat Wehkeet Karstulasta",
-      "industry": "Majoitusyritys, hotellit, Matkailu- ja ohjelmapalvelu, Ravintolat, kahvilat",
-      "price": "880 000 EUR liiketoimintakauppana",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/majoitusyritys-hotellit/suomi/myytavana-monien-palveluiden-matkailualue/119748/",
+      "name": "Menestyvä yritys, jonka päätoimiala on kevytmetallirakenteiden projektikohtainen tuotanto ja asennus",
+      "industry": "Metallituotteiden valmistus, Muut vähittäiskaupat",
+      "price": "650 000 EUR Yhtiön myyntihinta sisältää myös kiinteistön, jossa sijaitsee yhtiön tuotantorakennus",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/metallituotteiden-valmistus/viro/menestyva-yritys-jonka-paatoimiala-on-kevytmetallirakenteiden-projektikohtainen-tuotanto-ja-asennus/115823/",
       "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+      "score": 6.6,
+      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
+    },
+    {
+      "name": "Traktorien ja muiden raskaan koneiden huolto ja korjaamopalveluita tuottava yritys",
+      "industry": "Koneiden ja laitteiden huolto, Maa-, metsä- ja riistatalous, Raskaan ajoneuvokaluston korjaus- ja huolto",
+      "price": "180 000 EUR",
+      "location": "Keski-Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/koneiden-ja-laitteiden-huolto/keski-suomi/traktorien-ja-muiden-raskaan-koneiden-huolto-ja-korjaamopalveluita-tuottava-yritys/123625/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.6,
+      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
       "name": "Menestyvä kuljetusliike eteläisessä Suomessa",
@@ -64,14 +64,24 @@
       "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Menestyvä ammattipuutarhatarvikkeiden maahantuonti- ja myyntiyritys etsii uutta omistajaa",
-      "industry": "Maahantuonti, Puutarha, Vähittäis- ja tukkukaupat, tuonti, edustus",
-      "price": "1 180 000 EUR Liiketoimintakauppa",
+      "name": "Mikroskooppien maahantuontiin, järjestelmien suunnitteluun ja huoltoon erikoistunut yritys!",
+      "industry": "Sähköisten ja optisten laitteiden valmistus",
+      "price": "297 000 EUR",
       "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/maahantuonti/suomi/menestyva-ammattipuutarhatarvikkeiden-maahantuonti-ja-myyntiyritys-etsii-uutta-omistajaa/120882/",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/sahkoisten-ja-optisten-laitteiden-valmistus/suomi/mikroskooppien-maahantuontiin-jarjestelmien-suunnitteluun-ja-huoltoon-erikoistunut-yritys/123593/",
       "source": "Suomen Yrityskaupat",
-      "score": 6.2,
-      "insight": "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
+      "score": 6.3,
+      "insight": "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+    },
+    {
+      "name": "Luomajärven Kievari, palkittu maatilamatkailun ja elämysten paikka Etelä-Suomessa",
+      "industry": "Matkailu- ja ohjelmapalvelu",
+      "price": "405 000 EUR Sisältäen hienot kiinteistöt, lisäksi voi ostaa joko/tai hevos/eläin ja matkailu-toiminnot!",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/matkailu-ja-ohjelmapalvelu/suomi/luomajarven-kievari-palkittu-maatilamatkailun-ja-elamysten-paikka-etela-suomessa/115953/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.3,
+      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
       "name": "Yritys, joka tarjoaa ompeluteollisuudelle kankaiden erikoiskäsittely-, värjäys- ja viimeistelypalveluja",
@@ -84,24 +94,14 @@
       "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
     },
     {
-      "name": "Kylmälaitealan huoltoyritys",
-      "industry": "Koneiden ja laitteiden huolto",
-      "price": "980 000 EUR Osakekaupalla sekä huolto että vuokraustoiminta kalustoineen",
-      "location": "Pirkanmaa",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/koneiden-ja-laitteiden-huolto/pirkanmaa/kylmalaitealan-huoltoyritys/113828/",
+      "name": "Geomar vuokra – siivouspalvelut Oy",
+      "industry": "Kiinteistöalan palvelut, Kiinteistöjen ja rakennusten omistaminen",
+      "price": "859 000 EUR Liiketoimintakauppa",
+      "location": "Turun talousalue",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/geomar-vuokra-siivouspalvelut-oy/124165/",
       "source": "Suomen Yrityskaupat",
-      "score": 5.6,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.6/10:n taustalla oikea operatiivinen mahdollisuus."
-    },
-    {
-      "name": "Johtava siivousliike Virossa",
-      "industry": "Siivous, puhtaanapito, Ympäristönhuolto",
-      "price": "Tarjousten perusteella",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/viro/johtava-siivousliike-virossa/78334/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.6,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.6/10:n taustalla oikea operatiivinen mahdollisuus."
+      "score": 5.9,
+      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.9/10:n taustalla oikea operatiivinen mahdollisuus."
     }
   ]
 }
