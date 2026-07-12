@@ -155,15 +155,20 @@ img, svg { display: block; max-width: 100%; }
 
 /* ── HERO ── */
 .hero {
-  min-height: 88vh;
+  min-height: min(760px, calc(100vh - 64px));
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 760px);
   align-items: center;
-  gap: 40px;
-  padding: var(--section) var(--gutter);
-  background: var(--color-dark);
+  padding: clamp(88px, 12vw, 140px) var(--gutter) clamp(64px, 9vw, 104px);
+  background:
+    linear-gradient(90deg, rgba(26,26,46,.94) 0%, rgba(26,26,46,.82) 46%, rgba(26,26,46,.35) 100%),
+    url('../assets/img/nousuun-hero-workspace.jpg') center / cover no-repeat;
   color: var(--color-white);
   overflow: hidden;
+}
+
+.hero-content {
+  max-width: 760px;
 }
 
 .hero-eyebrow {
@@ -172,7 +177,7 @@ img, svg { display: block; max-width: 100%; }
   font-weight: 600;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--color-sky);
+  color: #BFE8FF;
   margin-bottom: 16px;
 }
 
@@ -189,8 +194,8 @@ img, svg { display: block; max-width: 100%; }
 .hero-subtitle {
   font-size: 19px;
   line-height: 1.65;
-  color: rgba(250,250,247,.75);
-  max-width: 500px;
+  color: rgba(250,250,247,.84);
+  max-width: 680px;
   margin-bottom: 36px;
 }
 
@@ -204,7 +209,7 @@ img, svg { display: block; max-width: 100%; }
 .hero-actions .btn-outline:hover { background: rgba(250,250,247,.1); border-color: var(--color-white); }
 
 .hero-visual {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }

@@ -1,7 +1,7 @@
 {
   "agent": "Agentti A - Tapahtumat",
   "quality": "curated_weekly_report",
-  "updated_at": "2026-05-18T07:58:13.745733+00:00",
+  "updated_at": "2026-05-20T19:12:46.411707+00:00",
   "week": "2026-W21",
   "events": [
     {
@@ -217,5 +217,5 @@
       "featured": true
     }
   ],
-  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\Agent_Outputs\\Agentti_A_Tapahtumat\\weekly_reports\\2026-W21_events.json"
+  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\04_Community\\Events\\weekly_event_reports\\2026-W21_events.json"
 }

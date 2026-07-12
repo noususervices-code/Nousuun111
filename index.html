@@ -3,176 +3,306 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nousuun.fi auttaa nousevia yrittajia uudessa maailmassa Suomessa ja Euroopassa. Tapahtumat, yritysideat, rahoitus ja uutiset yhdessa paikassa." />
-  <title>Nousuun.fi - Yrittajan aamupalaveri</title>
+  <meta name="description" content="Nousuun.fi palvelee alkavaa ja kasvavaa yrittäjää Suomessa. Virtuaalinen palvelupolku, tapahtumat, rahoitus, työkalut ja ajankohtaiset ideat yhdessä paikassa." />
+  <meta name="keywords" content="starttiraha, yrityksen perustaminen, yrittäjän palvelupolku, yrittäjätapahtumat, rahoitus, omistajanvaihdos, aloittava yrittäjä, kasvava yrittäjä, Suomi" />
+  <title>Nousuun.fi — suomalaisen yrittäjän inspiraatiolähde</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nousuun.fi — suomalaisen yrittäjän inspiraatiolähde" />
+  <meta property="og:description" content="Virtuaalinen palvelupolku, viikon tapahtumat, rahoitusnostot ja seuraavat asiat, joita alkavan tai kasvavan yrittäjän kannattaa miettiä." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nousuun.fi/" />
+  <meta property="og:image" content="https://nousuun.fi/assets/img/nousuun-hero-workspace.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@320;330;340;480;540;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="canonical" href="https://nousuun.fi/" />
 </head>
 <body>
+
+  <!-- NAV -->
   <header class="site-header">
     <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
-      <span class="brand-mark">N</span>
-      <span>nousuun<span>.fi</span></span>
+      <svg class="brand-plane" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
     </a>
-    <nav class="top-nav" aria-label="Paavalikko">
-      <a href="#tapahtumat">Tapahtumat</a>
-      <a href="#yritykset">Yritykset</a>
+    <nav class="top-nav" aria-label="Päävalikko">
+      <a href="polku/">Yrittäjän polku</a>
       <a href="#rahoitus">Rahoitus</a>
-      <a href="#uutiset">Uutiset</a>
-      <a href="blog/">Blogi</a>
+      <a href="#tapahtumat">Tapahtumat</a>
+      <a href="#ajankohtaista">Ajankohtaista</a>
     </nav>
-    <a class="button button-primary" href="mailto:jaakko@nousuun.fi">Ehdota aihetta</a>
+    <a class="btn btn-primary btn-sm" href="polku/">Aloita polku →</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
   </header>
 
   <main>
-    <section class="hero-section">
-      <div class="hero-copy">
-        <p class="eyebrow">Uusi maailma tarvitsee uudet yrittajat</p>
-        <h1>Nousevan yrittajan aamupalaveri.</h1>
-        <p class="lead">
-          Nousuun.fi auttaa nousevia yrittajia Suomessa ja Euroopassa loytamaan tapahtumat,
-          yritysmahdollisuudet, rahoituksen ja olennaiset uutiset ilman infoahkya.
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Suomalaisen yrittäjän inspiraatiolähde</p>
+        <h1 class="hero-title">Nousuun.fi auttaa ottamaan <span class="accent">seuraavan askeleen.</span></h1>
+        <p class="hero-subtitle">
+          Rakennamme virtuaalista palvelupolkua alkavalle ja kasvavalle yrittäjälle Suomessa:
+          tapahtumat, rahoitusnostot, työkalut, palvelut ja ajankohtaiset kysymykset yhdessä paikassa.
         </p>
-        <div class="actions">
-          <a class="button button-primary" href="#viikko">Katso viikon nousut</a>
-          <a class="button button-secondary" href="#arkkitehtuuri">Miten alusta toimii</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="polku/">Aloita yrittäjän polku →</a>
+          <a class="btn btn-outline btn-lg" href="#tapahtumat">Katso viikon tapahtumat</a>
         </div>
       </div>
-      <aside class="hero-panel" aria-label="Nousuun.fi lyhyesti">
-        <p class="eyebrow">V4 tarkoitus</p>
-        <h2>Itsensa paivittava yrittajaalusta.</h2>
-        <p>
-          Agentit kokoavat viikoittain tapahtumat, yritysnostot, rahoitushaut ja uutiset.
-          Jake kuratoi suunnan ja julkaisee sen, mika aidosti auttaa eteenpain.
-        </p>
-      </aside>
-    </section>
-
-    <section class="marquee-strip" aria-label="Sisaltoteemat">
-      <span>Tekoaly kaytantoon</span>
-      <span>Omistajanvaihdokset</span>
-      <span>Startup ja pk-rahoitus</span>
-      <span>Helsinki ja Eurooppa</span>
-      <span>Yhteiso ensin</span>
-    </section>
-
-    <section class="intro-grid" id="viikko">
-      <div>
-        <p class="eyebrow">Taman viikon fokus</p>
-        <h2>Ei yksi blogi, vaan rytmi joka auttaa toimimaan.</h2>
-      </div>
-      <p>
-        Sivusto rakentuu neljan paasisallon ymparille: tapahtumat, viikon yritykset,
-        rahoitus ja uutiset. Jokainen osio on suunniteltu modernille pien- tai
-        yksinyrittajalle, joka haluaa pysya mukana ilman etta paiva katoaa selaamiseen.
-      </p>
-    </section>
-
-    <section class="color-block block-lilac" id="tapahtumat">
-      <div class="section-heading">
-        <p class="eyebrow">A. Tapahtumat</p>
-        <h2>Missa kannattaa olla mukana?</h2>
-        <p>Helsinki, Uusimaa ja valikoidut eurooppalaiset kasvutapahtumat.</p>
-      </div>
-      <div class="card-grid" id="events-section" data-state="loading">
-        <p class="loading">Ladataan tapahtumia...</p>
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="plane-svg" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="skyGlow" cx="60%" cy="40%" r="50%">
+              <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="300" cy="130" rx="200" ry="140" fill="url(#skyGlow)"/>
+          <path d="M 60 300 Q 220 230 390 75" stroke="#FF6B35" stroke-width="2.5" stroke-dasharray="10,7" fill="none" opacity="0.55"/>
+          <circle cx="120" cy="55" r="2" fill="#FAFAF7" opacity="0.4"/>
+          <circle cx="330" cy="45" r="2.2" fill="#FAFAF7" opacity="0.5"/>
+          <circle cx="465" cy="28" r="2.5" fill="#FAFAF7" opacity="0.4"/>
+          <g transform="translate(368, 95) rotate(-32)">
+            <ellipse cx="0" cy="0" rx="40" ry="11" fill="#FF6B35"/>
+            <circle cx="12" cy="-4" r="5" fill="#1A1A2E" opacity="0.5"/>
+            <circle cx="24" cy="-4" r="5" fill="#1A1A2E" opacity="0.5"/>
+            <polygon points="-6,-11 20,-11 7,-28 -13,-28" fill="#FF6B35" opacity="0.82"/>
+            <polygon points="-6,11 20,11 7,28 -13,28" fill="#FF6B35" opacity="0.82"/>
+            <polygon points="-33,-8 -19,-8 -26,-22" fill="#F4A261"/>
+          </g>
+        </svg>
       </div>
     </section>
 
-    <section class="color-block block-lime" id="yritykset">
-      <div class="section-heading">
-        <p class="eyebrow">B. Viikon yritykset</p>
-        <h2>Ostettavia, kehitettavia ja opittavia bisneksia.</h2>
-        <p>Yrityskauppaideat, liikeideaspotit ja AI-potentiaalin nakokulma.</p>
-      </div>
-      <div class="card-grid" id="companies-section" data-state="loading">
-        <p class="loading">Ladataan yritysnostoja...</p>
-      </div>
-    </section>
-
-    <section class="color-block block-mint" id="rahoitus">
-      <div class="section-heading">
-        <p class="eyebrow">C. Rahoitus</p>
-        <h2>Raha, tuet ja mahdollisuudet selkokielella.</h2>
-        <p>Starttiraha, Business Finland, EU-haut, apurahat ja ohjelmat yrittajan nakokulmasta.</p>
-      </div>
-      <div class="card-grid" id="funding-section" data-state="loading">
-        <p class="loading">Ladataan rahoitusnostoja...</p>
-      </div>
-    </section>
-
-    <section class="color-block block-cream" id="uutiset">
-      <div class="section-heading">
-        <p class="eyebrow">D. Uutiset ja blogi</p>
-        <h2>Mita uusi maailma tarkoittaa yrittajalle?</h2>
-        <p>Lyhyt uutiskooste ja yksi alkuperainen artikkeli kaytannon toimenpiteilla.</p>
-      </div>
-      <div class="card-grid" id="news-section" data-state="loading">
-        <p class="loading">Ladataan uutisia...</p>
-      </div>
-    </section>
-
-    <section class="architecture" id="arkkitehtuuri">
-      <div class="section-heading">
-        <p class="eyebrow">Arkkitehtuuri</p>
-        <h2>Staattinen sivusto, elava data.</h2>
-        <p>
-          GitHub Actions ajaa agentit aikataululla. Agentit paivittavat JSON-tiedostot,
-          jotka selain renderoi suoraan sivulle.
-        </p>
-      </div>
-      <div class="flow-grid">
-        <article>
-          <span>01</span>
-          <h3>Agentti hakee</h3>
-          <p>Linked Events, RSS, yrityskauppalistat ja rahoituslahteet.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>AI tiivistaa</h3>
-          <p>Relevanssi, kaytannon merkitys ja selkea pisteytys yrittajalle.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>JSON paivittyy</h3>
-          <p>Data tallentuu repoihin ilman raskasta CMS-kerrosta.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Sivu nayttaa tuoreen</h3>
-          <p>Etusivu ja alasivut lukevat uusimman datan automaattisesti.</p>
-        </article>
+    <!-- NELJÄ REITTIÄ -->
+    <section class="pillars">
+      <div class="container">
+        <div class="pillars-grid pillars-4">
+          <a class="pillar-card" href="polku/">
+            <div class="pillar-icon">✈</div>
+            <h2 class="pillar-title">Yrittäjän polku</h2>
+            <p class="pillar-desc">Virtuaalinen palvelupolku ideasta ensimmäisiin asiakkaisiin ja seuraavaan kasvuloikkaan.</p>
+            <span class="pillar-cta">Näytä polku →</span>
+          </a>
+          <a class="pillar-card" href="#rahoitus">
+            <div class="pillar-icon">⛽</div>
+            <h2 class="pillar-title">Rahoitus</h2>
+            <p class="pillar-desc">Starttiraha, avustukset ja ajankohtaiset haut yrittäjän kielellä.</p>
+            <span class="pillar-cta">Katso haut →</span>
+          </a>
+          <a class="pillar-card" href="#tuki">
+            <div class="pillar-icon">🧭</div>
+            <h2 class="pillar-title">Valmennus &amp; tuki</h2>
+            <p class="pillar-desc">Neuvonta, valmennukset ja käytännön työkalut, kun seuraava askel kaipaa selkeyttä.</p>
+            <span class="pillar-cta">Löydä vauhti →</span>
+          </a>
+          <a class="pillar-card" href="#tapahtumat">
+            <div class="pillar-icon">🛬</div>
+            <h2 class="pillar-title">Tapahtumat</h2>
+            <p class="pillar-desc">Viikon hyödyllisimmät tapahtumat, joissa voi oppia, tavata ihmisiä ja löytää uutta suuntaa.</p>
+            <span class="pillar-cta">Selaa tapahtumia →</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <p class="eyebrow">Yhteiso</p>
-      <h2>Noustaan yhdessa, mutta pidetaan jalat maassa.</h2>
-      <p>
-        Nousuun.fi ei lupaa helppoa voittoa. Se lupaa paremman kartan, konkreettisia
-        nostoja ja yhteisen rytmin uuden maailman yrittajille.
-      </p>
-      <a class="button button-primary" href="mailto:jaakko@nousuun.fi">Ota yhteytta</a>
+    <!-- TAPAHTUMAT (agenttidata) -->
+    <section class="events-section" id="tapahtumat">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Päivittyy viikoittain</p>
+            <h2>Missä kannattaa olla mukana seuraavaksi?</h2>
+            <p class="section-desc">Kuratoidut tapahtumat alkaville yrittäjille, kasvua hakeville tekijöille ja niille, jotka haluavat löytää uutta vauhtia.</p>
+          </div>
+        </div>
+        <div class="events-grid" id="events-container">
+          <p class="loading-text">Ladataan tapahtumia...</p>
+        </div>
+      </div>
     </section>
+
+    <!-- RAHOITUS (agenttidata) -->
+    <section class="feature-section" id="rahoitus">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Päivittyy viikoittain</p>
+            <h2>Mitä rahoitusta kannattaa miettiä nyt?</h2>
+            <p class="section-desc">Starttiraha, Business Finland, EU-haut ja apurahat selkokielellä: kenelle haku sopii ja mikä voisi olla seuraava järkevä askel.</p>
+          </div>
+          <a class="btn btn-outline" href="tyokalut/#starttiraha-testi">Testaa starttiraha-oikeutesi →</a>
+        </div>
+        <div class="funding-grid" id="funding-container">
+          <p class="loading-text">Ladataan rahoitusnostoja...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALMENNUS & TUKI -->
+    <section class="support-section" id="tuki">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Maksutonta apua</p>
+            <h2>Palvelut ja työkalut, joista saat vauhtia</h2>
+            <p class="section-desc">Et ole yksin. Suomessa on paljon maksutonta apua, mutta sen löytäminen vie aikaa. Aloita näistä.</p>
+          </div>
+        </div>
+        <div class="tools-grid">
+          <a class="tool-card" href="https://uusyrityskeskus.fi/" target="_blank" rel="noopener">
+            <div class="tool-icon">💬</div>
+            <h3>Uusyrityskeskus</h3>
+            <p>Maksuton yritysneuvonta ja liiketoimintasuunnitelman sparraus koko Suomessa.</p>
+          </a>
+          <a class="tool-card" href="https://www.hel.fi/fi/yritykset-ja-tyo" target="_blank" rel="noopener">
+            <div class="tool-icon">🏙</div>
+            <h3>Business Helsinki</h3>
+            <p>Neuvonta, valmennukset ja infot pääkaupunkiseudun alkaville yrittäjille.</p>
+          </a>
+          <a class="tool-card" href="https://www.suomi.fi/yritykselle" target="_blank" rel="noopener">
+            <div class="tool-icon">📋</div>
+            <h3>Suomi.fi</h3>
+            <p>Viralliset ohjeet: perustamisilmoitus, luvat, verotus ja YEL yhdestä paikasta.</p>
+          </a>
+          <a class="tool-card" href="tyokalut/">
+            <div class="tool-icon">🛠</div>
+            <h3>Nousuun-työkalut</h3>
+            <p>Starttiraha-testi, hinnoittelulaskuri ja myyntiviestin malli — kun haluat tehdä seuraavan asian heti.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AJANKOHTAISTA: OMISTAJANVAIHDOKSET + UUTISET -->
+    <section class="current-section" id="ajankohtaista">
+      <div class="container">
+        <div class="current-grid">
+          <div class="current-col">
+            <p class="eyebrow">Omistajanvaihdokset</p>
+            <h2>Voisiko valmis yritys olla sinun polkusi?</h2>
+            <p class="section-desc">Kaikkea ei tarvitse aloittaa tyhjästä. Viikon kiinnostavimmat myynnissä olevat yritykset ja omistajanvaihdokset.</p>
+            <div id="companies-container"><p class="loading-text">Ladataan yritysnostoja...</p></div>
+          </div>
+          <div class="current-col">
+            <p class="eyebrow">Ajankohtaista</p>
+            <h2>Mitä kannattaa miettiä seuraavaksi?</h2>
+            <p class="section-desc">Lyhyt kooste yrittäjyyden uutisista, ilmiöistä ja signaaleista — vain se, mikä auttaa eteenpäin.</p>
+            <div id="news-container"><p class="loading-text">Ladataan uutisia...</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UUTISKIRJE -->
+    <section class="newsletter-section">
+      <div class="container newsletter-inner">
+        <div class="newsletter-text">
+          <h2>Tilaa yrittäjän vauhtikirje.</h2>
+          <p>Joka viikko: hyödylliset tapahtumat, rahoitushaut ja yksi asia, jota kannattaa miettiä seuraavaksi. Ei turhaa. Ei spämmiä.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event, this)">
+          <input type="email" class="newsletter-input" placeholder="sähköpostiosoitteesi" required aria-label="Sähköpostiosoite"/>
+          <button type="submit" class="btn btn-primary btn-lg">Tilaa ilmaiseksi</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
-      <span class="brand-mark">N</span>
-      <span>nousuun<span>.fi</span></span>
-    </a>
-    <div class="footer-links">
-      <a href="#tapahtumat">Tapahtumat</a>
-      <a href="#yritykset">Yritykset</a>
-      <a href="#rahoitus">Rahoitus</a>
-      <a href="#uutiset">Uutiset</a>
-      <a href="https://linkedin.com/in/jaakkokalke" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>nousuun.fi</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="polku/">Yrittäjän polku</a>
+        <a href="#rahoitus">Rahoitus</a>
+        <a href="#tapahtumat">Tapahtumat</a>
+        <a href="tyokalut/">Työkalut</a>
+        <a href="mailto:jaakko@nousuun.fi">Ota yhteyttä</a>
+      </nav>
+      <p class="footer-copy">© 2026 Nousuun.fi · <a href="mailto:jaakko@nousuun.fi">jaakko@nousuun.fi</a></p>
     </div>
-    <p>2026 Jaakko Kalke. Rakennettu nouseville yrittajille.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    function handleNewsletterSubmit(e, form) {
+      e.preventDefault();
+      form.innerHTML = '<p class="success-msg">✓ Kiitos! Ensimmäinen viikkokooste tulee pian.</p>';
+    }
+
+    const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const cut = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n).trimEnd() + '…' : s; };
+    const fiDate = d => { const o = d ? new Date(d) : null; return (o && !isNaN(o)) ? o.toLocaleDateString('fi-FI', {day:'numeric', month:'long'}) : (d || ''); };
+    const fail = (id, msg) => { const el = document.getElementById(id); if (el) el.innerHTML = `<p class="loading-text">${msg}</p>`; };
+
+    // Tapahtumat
+    fetch('data/events.json').then(r => r.json()).then(data => {
+      const events = (data.events || []).slice(0, 6);
+      if (!events.length) return fail('events-container', 'Uusia tapahtumia ladataan pian.');
+      document.getElementById('events-container').innerHTML = events.map(ev => `
+        <article class="event-card">
+          <div class="event-card-top">
+            <span class="event-badge">${esc(ev.tags?.[0] || 'tapahtuma')}</span>
+            <span class="event-date">${fiDate(ev.date)}</span>
+          </div>
+          <h3 class="event-title">${esc(ev.name)}</h3>
+          <p class="event-location">📍 ${esc(ev.location || 'Helsinki')}</p>
+          <p class="event-desc">${esc(cut(ev.description, 130))}</p>
+          <a class="btn btn-sm btn-outline event-link" href="${esc(ev.url || '#')}" target="_blank" rel="noopener">Lue lisää →</a>
+        </article>`).join('');
+    }).catch(() => fail('events-container', 'Tapahtumia ei juuri nyt saatu ladattua — kokeile pian uudelleen.'));
+
+    // Rahoitus
+    fetch('data/funding.json').then(r => r.json()).then(data => {
+      const items = (data.funding || []).slice(0, 4);
+      if (!items.length) return fail('funding-container', 'Rahoitusnostot päivittyvät pian.');
+      document.getElementById('funding-container').innerHTML = items.map(f => `
+        <a class="funding-card" href="${esc(f.url || '#')}" target="_blank" rel="noopener">
+          <div class="funding-top">
+            <span class="chip">${esc(f.type || 'Rahoitus')}</span>
+            <span class="funding-deadline">${esc(f.deadline || '')}</span>
+          </div>
+          <h3>${esc(f.name)}</h3>
+          <p>${esc(cut(f.summary, 140))}</p>
+          <span class="pillar-cta">Lue lisää →</span>
+        </a>`).join('');
+    }).catch(() => fail('funding-container', 'Rahoitusnostot päivittyvät pian.'));
+
+    // Omistajanvaihdokset
+    fetch('data/companies.json').then(r => r.json()).then(data => {
+      const items = (data.companies || []).slice(0, 3);
+      if (!items.length) return fail('companies-container', 'Yritysnostot päivittyvät pian.');
+      document.getElementById('companies-container').innerHTML = items.map(c => `
+        <a class="list-item" href="${esc(c.url || '#')}" target="_blank" rel="noopener">
+          <h3>${esc(cut(c.name, 70))}</h3>
+          <p>${esc(cut(c.insight || c.industry, 110))}</p>
+          <span class="list-meta">${esc(c.location || '')} · ${esc(c.source || '')}</span>
+        </a>`).join('');
+    }).catch(() => fail('companies-container', 'Yritysnostot päivittyvät pian.'));
+
+    // Uutiset
+    fetch('data/news.json').then(r => r.json()).then(data => {
+      const items = (data.articles || []).slice(0, 3);
+      if (!items.length) return fail('news-container', 'Uutiset päivittyvät pian.');
+      document.getElementById('news-container').innerHTML = items.map(a => `
+        <a class="list-item" href="${esc(a.url || '#')}" ${/^https?:/.test(a.url) ? 'target="_blank" rel="noopener"' : ''}>
+          <h3>${esc(cut(a.title, 80))}</h3>
+          <p>${esc(cut(a.summary, 110))}</p>
+          <span class="list-meta">${esc(a.source || '')}</span>
+        </a>`).join('');
+    }).catch(() => fail('news-container', 'Uutiset päivittyvät pian.'));
+  </script>
 </body>
 </html>
