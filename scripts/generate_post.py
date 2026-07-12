@@ -189,7 +189,7 @@ def build_post_html(slug, title, tag, excerpt, body_html, date_label, date_iso, 
   <div class="contact-inner">
     <h2 style="font-size:1.8rem;">Noustaan yhdessä.</h2>
     <p>Haluatko sparrata? Kirjoita minulle.</p>
-    <a href="mailto:jaakko@nousuun.fi" class="btn-white">jaakko@nousuun.fi →</a>
+    <a href="mailto:nousu.services@gmail.com" class="btn-white">nousu.services@gmail.com →</a>
   </div>
 </section>
 
