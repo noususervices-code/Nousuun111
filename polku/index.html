@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aloittavan yrittäjän polku Suomessa — viisi vaihetta ideasta ensimmäisiin asiakkaisiin. Starttiraha, yritysmuoto, myynti ja tarkistuslista." />
+  <title>Yrittäjän polku Suomessa — Nousuun.fi</title>
+  <meta property="og:title" content="Yrittäjän polku Suomessa — ideasta lentoon" />
+  <meta property="og:description" content="5 vaihetta yrityksen perustamiseen Suomessa. Starttiraha, toiminimi vs. osakeyhtiö, ensimmäinen asiakas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* Polku-sivun lisätyylit */
+    .polku-hero {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: var(--section) var(--gutter);
+      text-align: center;
+    }
+    .polku-hero h1 { color: var(--color-white); max-width: 700px; margin: 0 auto 20px; }
+    .polku-hero p { color: rgba(250,250,247,.75); max-width: 560px; margin: 0 auto 36px; font-size: 18px; }
+
+    /* Runway-aikajana */
+    .runway-section { padding: var(--section) 0; }
+    .runway-bar {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto 64px;
+      padding: 0 20px;
+    }
+    .runway-bar::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      right: 80px;
+      height: 3px;
+      background: repeating-linear-gradient(
+        90deg, var(--color-primary) 0, var(--color-primary) 12px, transparent 12px, transparent 22px
+      );
+      transform: translateY(-50%);
+    }
+    .runway-milestone {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .runway-num {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #fff;
+      font-family: var(--font-main);
+      font-weight: 800;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 6px rgba(255,107,53,.15);
+    }
+    .runway-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-gray);
+      text-align: center;
+      max-width: 80px;
+      line-height: 1.3;
+      font-family: var(--font-ui);
+    }
+    .runway-plane {
+      font-size: 28px;
+      animation: fly 3s ease-in-out infinite alternate;
+    }
+    @keyframes fly { 0% { transform: translateY(0) rotate(0deg); } 100% { transform: translateY(-8px) rotate(-5deg); } }
+
+    /* Vaihe-kortit */
+    .vaihe-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .vaihe-card {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 28px;
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    .vaihe-num-big {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #fff;
+      font-family: var(--font-main);
+      font-weight: 800;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .vaihe-content h2 { margin-bottom: 4px; font-size: 22px; }
+    .vaihe-meta {
+      font-size: 13px;
+      color: var(--color-primary);
+      font-weight: 600;
+      font-family: var(--font-ui);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .vaihe-content p { color: #444; line-height: 1.7; font-size: 16px; }
+    .vaihe-content ul { padding-left: 20px; margin: 12px 0; color: #444; font-size: 16px; line-height: 1.8; }
+    .vaihe-link { color: var(--color-primary); font-weight: 600; font-size: 15px; margin-top: 16px; display: inline-flex; align-items: center; gap: 6px; }
+    .vaihe-link:hover { text-decoration: underline; }
+
+    /* Yritysmuoto-taulukko */
+    .yritysmuoto-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+    .yritysmuoto-table th {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: 12px 16px;
+      text-align: left;
+      font-family: var(--font-main);
+      font-size: 13px;
+    }
+    .yritysmuoto-table th:first-child { border-radius: 10px 0 0 0; }
+    .yritysmuoto-table th:last-child { border-radius: 0 10px 0 0; }
+    .yritysmuoto-table td { padding: 12px 16px; border-bottom: 1px solid rgba(0,0,0,.06); vertical-align: top; }
+    .yritysmuoto-table tr:last-child td { border: none; }
+    .yritysmuoto-table tr:nth-child(even) td { background: rgba(0,0,0,.02); }
+    .td-highlight { font-weight: 600; color: var(--color-primary); }
+
+    /* Checklist */
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: #333;
+      line-height: 1.5;
+    }
+    .checklist input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--color-primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+      cursor: pointer;
+    }
+    .checklist label { cursor: pointer; }
+    .checklist input:checked + label { text-decoration: line-through; color: var(--color-gray); }
+
+    /* CTA alaosa */
+    .polku-cta {
+      background: var(--color-surface);
+      padding: var(--section) 0;
+    }
+    .polku-cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .polku-cta h2 { margin-bottom: 12px; }
+    .polku-cta p { color: var(--color-gray); margin-bottom: 28px; }
+
+    @media (max-width: 700px) {
+      .runway-bar { display: none; }
+      .vaihe-card { grid-template-columns: 1fr; }
+      .vaihe-num-big { width: 48px; height: 48px; font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
+    </a>
+    <nav class="top-nav" aria-label="Päävalikko">
+      <a href="/polku/" style="color: var(--color-primary);">Yrittäjän polku</a>
+      <a href="/#tapahtumat">Tapahtumat</a>
+      <a href="/tyokalut/">Työkalut</a>
+      <a href="/#rahoitus">Rahoitus</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="/tyokalut/#starttiraha-testi">Starttiraha-testi →</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="polku-hero">
+      <p class="eyebrow" style="color: var(--color-sky); margin-bottom: 16px;">Runway — yrittäjän reittisuunnitelma</p>
+      <h1>Perusta yritys Suomessa selkeämmin.</h1>
+      <p>Ideasta ensimmäisiin asiakkaisiin — viisi vaihetta. Ei turhaa teoriaa. Vain se, mitä sinun täytyy tietää.</p>
+      <a class="btn btn-primary btn-lg" href="#vaihe-1">Aloita vaiheesta 1 →</a>
+    </section>
+
+    <!-- RUNWAY VISUALISOINTI -->
+    <section class="runway-section">
+      <div class="container">
+
+        <!-- Animoitu runway -->
+        <div class="runway-bar" aria-hidden="true">
+          <div class="runway-milestone">
+            <div class="runway-num">1</div>
+            <span class="runway-label">Idea kirkastuu</span>
+          </div>
+          <div class="runway-milestone">
+            <div class="runway-num">2</div>
+            <span class="runway-label">Rahoitus</span>
+          </div>
+          <div class="runway-milestone">
+            <div class="runway-num">3</div>
+            <span class="runway-label">Yritysmuoto</span>
+          </div>
+          <div class="runway-milestone">
+            <div class="runway-num">4</div>
+            <span class="runway-label">1. asiakas</span>
+          </div>
+          <div class="runway-plane">✈</div>
+        </div>
+
+        <!-- VAIHEKORTIT -->
+        <div class="vaihe-grid">
+
+          <!-- Vaihe 1 -->
+          <div class="vaihe-card" id="vaihe-1">
+            <div class="vaihe-num-big">1</div>
+            <div class="vaihe-content">
+              <p class="vaihe-meta">✈ Idea kirkastuu</p>
+              <h2>Mikä on sinun lentokoneesi?</h2>
+              <p>Ennen kuin perustat yrityksen, kirkasta kolme asiaa. Ne ovat yrityksesi perusta — ilman niitä lentokone ei nouse.</p>
+              <ul>
+                <li><strong>Kenelle myyt?</strong> — kuka on juuri se ihminen tai yritys jolla on ongelma jonka ratkaiset</li>
+                <li><strong>Mitä myyt?</strong> — mikä on konkreettinen tuote tai palvelu</li>
+                <li><strong>Miksi he ostavat sinulta?</strong> — mikä tekee sinusta erilaisen tai paremman</li>
+              </ul>
+              <p>Jos näihin on helppo vastata, olet valmis seuraavaan vaiheeseen. Jos ei, käytä hetki — se säästää kuukausia.</p>
+              <a class="vaihe-link" href="/tyokalut/#liikeidea">Käytä liikeidean kirkastustyökalua →</a>
+            </div>
+          </div>
+
+          <!-- Vaihe 2 -->
+          <div class="vaihe-card" id="vaihe-2">
+            <div class="vaihe-num-big">2</div>
+            <div class="vaihe-content">
+              <p class="vaihe-meta">⛽ Tankkaa ennen lentoa</p>
+              <h2>Starttiraha ja rahoitusmahdollisuudet</h2>
+              <p><strong>Starttiraha</strong> on Suomen valtion tuki uudelle kokoaikaiselle yrittäjälle. Sen tarkoitus on turvata yrittäjän toimeentulo toiminnan käynnistymisvaiheessa — tyypillisesti 6 kuukautta.</p>
+              <ul>
+                <li>Haetaan työvoimaviranomaiselta (Uudenmaan TE-toimisto tai alueellinen viranomainen)</li>
+                <li>Edellyttää liiketoimintasuunnitelman ja kannattavuuslaskelman</li>
+                <li>Yritys ei saa olla vielä perustettu hakuhetkellä</li>
+                <li>Sopii toiminimelle ja osakeyhtiölle (ei kevytyrittäjälle)</li>
+              </ul>
+              <p style="font-size:14px; color: var(--color-gray); background: rgba(0,0,0,.04); padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--color-primary);">
+                <strong>Huom:</strong> Starttiraha ei ole automaattinen oikeus. Viranomainen arvioi liiketoimintasuunnitelman, yrittäjävalmiudet ja kilpailutilanteen. Tämä ei ole virallinen neuvonta — hae aina suoraan viranomaiselta.
+              </p>
+              <a class="vaihe-link" href="/tyokalut/#starttiraha-testi">Testaa oma tilanteesi →</a>
+            </div>
+          </div>
+
+          <!-- Vaihe 3 -->
+          <div class="vaihe-card" id="vaihe-3">
+            <div class="vaihe-num-big">3</div>
+            <div class="vaihe-content">
+              <p class="vaihe-meta">📋 Valitse oikea konttityyppi</p>
+              <h2>Kevytyrittäjyys, toiminimi vai osakeyhtiö?</h2>
+              <p>Yritysmuodon valinta vaikuttaa vastuuseen, verotukseen ja hallintoon. Tässä selkeä vertailu:</p>
+              <table class="yritysmuoto-table">
+                <thead>
+                  <tr>
+                    <th>Ominaisuus</th>
+                    <th>Kevytyrittäjä</th>
+                    <th>Toiminimi</th>
+                    <th>Osakeyhtiö</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Perustamiskustannus</td>
+                    <td class="td-highlight">0 €</td>
+                    <td>60–75 €</td>
+                    <td>380 € (+ notaari)</td>
+                  </tr>
+                  <tr>
+                    <td>Henkilökohtainen vastuu</td>
+                    <td>Rajoitettu</td>
+                    <td>Täysi vastuu</td>
+                    <td>Rajoitettu</td>
+                  </tr>
+                  <tr>
+                    <td>YEL-vakuutus</td>
+                    <td>Ei vaadita</td>
+                    <td>Kyllä (jos tulot riittävät)</td>
+                    <td>Kyllä (jos yrittäjäroolissa)</td>
+                  </tr>
+                  <tr>
+                    <td>Starttiraha mahdollinen</td>
+                    <td>❌ Ei</td>
+                    <td class="td-highlight">✓ Kyllä</td>
+                    <td class="td-highlight">✓ Kyllä</td>
+                  </tr>
+                  <tr>
+                    <td>Paras kun</td>
+                    <td>Testaat ideaa, satunnainen työ</td>
+                    <td>Vakiintunut, yksinyrittäjä</td>
+                    <td>Kasvusuunnitelma, tiimi</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-top:16px; font-size:15px; color: var(--color-gray);">Useimmille aloittaville yrittäjille <strong>toiminimi on paras lähtökohta</strong> — halpa perustaa, helppo hallita.</p>
+            </div>
+          </div>
+
+          <!-- Vaihe 4 -->
+          <div class="vaihe-card" id="vaihe-4">
+            <div class="vaihe-num-big">4</div>
+            <div class="vaihe-content">
+              <p class="vaihe-meta">🛫 Lentoonlähtö</p>
+              <h2>Ensimmäinen myynti</h2>
+              <p>Yritys ei nouse ilmaan ennen kuin sinulla on maksava asiakas. Tässä viisi tapaa löytää ensimmäinen asiakas Suomessa:</p>
+              <ul>
+                <li><strong>Verkostosi</strong> — kenen lähipiirissä on ongelma jonka ratkaiset? Aloita sieltä.</li>
+                <li><strong>LinkedIn</strong> — B2B-palveluissa yksinkertainen, selkeä viesti tekee ihmiä. Ei spämmäystä — yksi hyvä viesti.</li>
+                <li><strong>Facebook-ryhmät</strong> — yrittäjäryhmissä näkyvyys on vielä ilmaista ja orgaanista</li>
+                <li><strong>Suora yhteydenotto</strong> — soita tai kirjoita 10 potentiaaliselle asiakkaalle tällä viikolla</li>
+                <li><strong>Tapahtumat</strong> — yrittäjätapahtumissa kasvotusten verkostoituminen on edelleen tehokkain tapa</li>
+              </ul>
+              <a class="vaihe-link" href="/tyokalut/#myyntiviesti">Rakenna myyntiviesti nyt →</a>
+            </div>
+          </div>
+
+          <!-- Vaihe 5 — Checklist -->
+          <div class="vaihe-card" id="vaihe-5">
+            <div class="vaihe-num-big">✓</div>
+            <div class="vaihe-content">
+              <p class="vaihe-meta">🗺 Tarkistuslista</p>
+              <h2>Ennen lentoa — mitä tehdä?</h2>
+              <p>10 asiaa jotka kannattaa tehdä ennen tai heti yrityksen perustamisen jälkeen.</p>
+              <ul class="checklist" id="checklist">
+                <li><input type="checkbox" id="c1"><label for="c1">Kirjoita liikeidea selkeästi paperille (3 lausetta riittää)</label></li>
+                <li><input type="checkbox" id="c2"><label for="c2">Tarkista starttiraha-oikeutesi ennen yrityksen perustamista</label></li>
+                <li><input type="checkbox" id="c3"><label for="c3">Valitse yritysmuoto (toiminimi / osakeyhtiö)</label></li>
+                <li><input type="checkbox" id="c4"><label for="c4">Rekisteröi yritys (ytj.fi tai prh.fi)</label></li>
+                <li><input type="checkbox" id="c5"><label for="c5">Avaa yritystili pankkiin</label></li>
+                <li><input type="checkbox" id="c6"><label for="c6">Tarkista YEL-vakuutustarve</label></li>
+                <li><input type="checkbox" id="c7"><label for="c7">Ota kirjanpito haltuun (aluksi excel riittää, sitten tilitoimisto)</label></li>
+                <li><input type="checkbox" id="c8"><label for="c8">Ota yhteyttä Business Helsinkiin tai paikalliseen yrittäjäneuvontaan</label></li>
+                <li><input type="checkbox" id="c9"><label for="c9">Kirjoita ensimmäinen myyntiviesti ja lähetä 5 ihmiselle</label></li>
+                <li><input type="checkbox" id="c10"><label for="c10">Osallistu yhteen yrittäjätapahtumaan ensimmäisen kuukauden aikana</label></li>
+              </ul>
+              <p id="progress-text" style="font-size:14px; color: var(--color-gray); margin-top:8px;"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="polku-cta">
+      <div class="container polku-cta-inner">
+        <h2>Oletko valmis lentoon?</h2>
+        <p>Tilaa viikoittainen yrittäjäopas — tapahtumat, starttiraha-vinkit ja käytännön työkalut suoraan sähköpostiisi.</p>
+        <form onsubmit="handleNewsletterSubmit(event, this)" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <input type="email" placeholder="sähköpostiosoitteesi" required class="newsletter-input" style="min-width:240px; padding:14px 20px; border-radius:999px; border:1.5px solid rgba(0,0,0,.15); font-size:16px; font-family:var(--font-ui);"/>
+          <button type="submit" class="btn btn-primary btn-lg">Tilaa ilmaiseksi</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>nousuun.fi</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Etusivu</a>
+        <a href="/tyokalut/">Työkalut</a>
+        <a href="/#tapahtumat">Tapahtumat</a>
+        <a href="mailto:jaakko@nousuun.fi">Ota yhteyttä</a>
+      </nav>
+      <p class="footer-copy">© 2026 Nousuun.fi</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleNewsletterSubmit(e, form) {
+      e.preventDefault();
+      form.innerHTML = '<p style="color:var(--color-primary);font-weight:600;">✓ Kiitos! Ensimmäinen reittisuunnitelma tulee pian.</p>';
+    }
+
+    // Checklist progress
+    const boxes = document.querySelectorAll('#checklist input[type=checkbox]');
+    const progressText = document.getElementById('progress-text');
+    function updateProgress() {
+      const done = [...boxes].filter(b => b.checked).length;
+      progressText.textContent = done === 0 ? '' :
+        done === boxes.length ? '🎉 Kaikki tehty — olet lentovalmis!' :
+        `${done}/${boxes.length} tehty — jatka!`;
+    }
+    boxes.forEach(b => b.addEventListener('change', updateProgress));
+
+    // Tallenna checklist-tila (sessionStorage)
+    boxes.forEach((b, i) => {
+      const key = `checklist_${i}`;
+      if (sessionStorage.getItem(key) === 'true') b.checked = true;
+      b.addEventListener('change', () => sessionStorage.setItem(key, b.checked));
+    });
+    updateProgress();
+  </script>
+</body>
+</html>
