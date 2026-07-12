@@ -247,6 +247,62 @@ img, svg { display: block; max-width: 100%; }
 .pillar-desc { font-size: 15px; color: var(--color-gray); line-height: 1.55; flex: 1; margin: 0; }
 .pillar-cta { font-weight: 600; font-size: 14px; color: var(--color-primary); font-family: var(--font-main); }
 
+/* ── VIIKON MITTARIT ── */
+.scan-section {
+  padding: var(--section) 0;
+  background: var(--color-white);
+}
+.scan-layout {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+  gap: 48px;
+  align-items: center;
+}
+.scan-copy {
+  max-width: 520px;
+}
+.scan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.scan-card {
+  min-width: 0;
+  min-height: 210px;
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: var(--shadow-sm);
+  transition: transform .18s, box-shadow .18s;
+}
+.scan-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.scan-card span {
+  color: var(--color-sky);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.scan-card h3 {
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 1.25;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.scan-card p {
+  color: rgba(250,250,247,.72);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* ── FEATURE SECTIONS ── */
 .feature-section { padding: var(--section) 0; }
 
@@ -532,6 +588,9 @@ img, svg { display: block; max-width: 100%; }
   .feature-visual { display: none; }
 
   .tools-grid { grid-template-columns: 1fr 1fr; }
+  .scan-layout { grid-template-columns: 1fr; }
+  .scan-copy { max-width: none; }
+  .scan-grid { grid-template-columns: 1fr; }
   .section-header { flex-direction: column; align-items: flex-start; }
   .newsletter-inner { grid-template-columns: 1fr; }
   .newsletter-input { min-width: 100%; }
@@ -627,6 +686,8 @@ img, svg { display: block; max-width: 100%; }
 .list-meta { font-size: 12px; color: var(--color-gray); opacity: .8; font-family: var(--font-ui); }
 
 @media (max-width: 1080px) {
+  .scan-layout { grid-template-columns: 1fr; align-items: start; }
+  .scan-copy { max-width: 720px; }
   .pillars-grid.pillars-4 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
