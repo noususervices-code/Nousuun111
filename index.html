@@ -296,7 +296,7 @@
       if (!items.length) return fail('companies-container', 'Yritysnostot päivittyvät pian.');
       document.getElementById('companies-container').innerHTML = items.map(c => `
         <a class="list-item" href="${esc(c.url || '#')}" target="_blank" rel="noopener">
-          <h3>${esc(cut(c.name, 70))}</h3>
+          <h3>${esc(c.name)}</h3>
           <p>${esc(cut(c.insight || c.industry, 110))}</p>
           <span class="list-meta">${esc(c.location || '')} · ${esc(c.source || '')}</span>
         </a>`).join('');
@@ -308,7 +308,7 @@
       if (!items.length) return fail('news-container', 'Uutiset päivittyvät pian.');
       document.getElementById('news-container').innerHTML = items.map(a => `
         <a class="list-item" href="${esc(a.url || '#')}" ${/^https?:/.test(a.url) ? 'target="_blank" rel="noopener"' : ''}>
-          <h3>${esc(cut(a.title, 80))}</h3>
+          <h3>${esc(a.title)}</h3>
           <p>${esc(cut(a.summary, 110))}</p>
           <span class="list-meta">${esc(a.source || '')}</span>
         </a>`).join('');
