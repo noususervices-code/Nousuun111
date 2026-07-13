@@ -1,41 +1,23 @@
 {
-  "updated_at": "2026-07-12T07:51:41+03:00",
+  "updated_at": "2026-07-13T10:37:34.180964+00:00",
   "funding": [
     {
       "name": "Starttiraha",
       "type": "Alkuvaiheen tuki",
       "deadline": "Jatkuva haku",
       "region": "Suomi",
-      "summary": "Aloittavan päätoimisen yrittäjän henkilökohtainen tuki: noin 37,21 €/päivä (n. 800 €/kk brutto), enintään 12 kuukautta. Huom: 1.5.2026 alkaen korotusosaa ei enää myönnetä — kaikki saavat saman perusosan. Hae omalta työvoimaviranomaiselta ennen yritystoiminnan aloittamista.",
+      "summary": "Aloittavan paatoimisen yrittajan henkilokohtainen tuki ensivaiheeseen.",
       "url": "https://www.suomi.fi/palvelut/starttiraha-tyollisyyspalvelut/55b76e7f-e4f6-4b9f-b2f1-b0ce7791e214",
-      "source": "Suomi.fi / Työvoimapalvelut"
+      "source": "manual seed"
     },
     {
-      "name": "Business Finland Sprint",
-      "type": "Avustus t&k-projektiin",
-      "deadline": "31.8.2026 (jatkuva haku avautuu 1.9.2026)",
-      "region": "Suomi",
-      "summary": "Tempo-rahoituksen korvannut uusi avustus: max 100 000 €, kattaa 75 % projektin kustannuksista, ei tarvitse maksaa takaisin. Alle 5-vuotiaille osakeyhtiöille, jotka kehittävät innovatiivista ratkaisua kansainvälisille markkinoille. Edellyttää mm. 50 000 € omaa pääomaa ja kahden hengen tiimin. Määräaikainen pilottihaku päättyy 31.8.2026 — sen jälkeen haku jatkuu jatkuvana.",
-      "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/sprint-rahoitushaku/",
-      "source": "Business Finland"
-    },
-    {
-      "name": "Finnvera Alkutakaus",
-      "type": "Takaus pankkilainalle",
+      "name": "Business Finland Tempo",
+      "type": "Kansainvalinen kasvu",
       "deadline": "Jatkuva haku",
       "region": "Suomi",
-      "summary": "Kun omat vakuudet eivät riitä pankkilainaan: Finnvera takaa jopa 80 % lainasta, takaus 10 000–80 000 € kerrallaan. Tarkoitettu alle 3 vuotta sitten rekisteröidyille yrityksille, joiden omistajat ovat yksityishenkilöitä. Oma pankki hakee takauksen puolestasi — sinun ei tarvitse asioida Finnveran kanssa suoraan.",
-      "url": "https://www.finnvera.fi/rahoitus/takaukset/alkutakaus",
-      "source": "Finnvera"
-    },
-    {
-      "name": "Maaseudun yritystoiminnan käynnistystuki",
-      "type": "Kertakorvaus aloittavalle yrittäjälle",
-      "deadline": "Jatkuva haku (valintajaksoittain)",
-      "region": "Maaseutualueet",
-      "summary": "Perustatko yrityksen maaseudulle? Päätoimisen yritystoiminnan käynnistämiseen voi saada 7 500 € kertakorvauksen — myös osa-aikaiseen yrittäjyyteen ja yritystoiminnan kokeiluun on omat tukensa. Edellytyksenä, ettei sinulla ole aiempaa merkittävää yrittäjäkokemusta. Haetaan Ruokaviraston kautta, tukea saa kerran ohjelmakaudella 2023–27.",
-      "url": "https://www.ruokavirasto.fi/tuet/maaseudun-yrittajyys/maaseudun-yritystuet/kaynnistystuki/",
-      "source": "Ruokavirasto"
+      "summary": "Rahoitus innovatiivisille yrityksille, jotka tavoittelevat kansainvalista kasvua.",
+      "url": "https://www.businessfinland.fi/",
+      "source": "manual seed"
     }
   ]
 }
