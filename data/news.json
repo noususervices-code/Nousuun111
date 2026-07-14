@@ -1,34 +1,19 @@
 {
-  "updated_at": "2026-07-12T07:37:10.930012+03:00",
-  "week": "2026-W28",
+  "updated_at": "2026-07-14T07:50:08.020114+00:00",
   "articles": [
     {
-      "title": "Yksinyrittäjäbarometri 2026: kattava kuva 230 000 yksinyrittäjän arjesta",
-      "source": "Suomen Yrittäjät (yrittajat.fi)",
+      "title": "AI ei ole osasto. Se on tyotapa.",
+      "source": "Nousuun.fi",
       "relevance_score": 9,
-      "summary": "Taloustutkimuksen toteuttama valtakunnallinen barometri kartoittaa yksinyrittäjien tilannetta, toimeentuloa, hyvinvointia ja toimintaympäristöä. Suomessa on noin 230 000 yksinyrittäjää eli valtaosa kaikista yrittäjistä. Raportti julkaistaan myös alueraportteina (mm. pääkaupunkiseutu).",
-      "url": "https://www.yrittajat.fi/ajankohtaista/tutkimukset/yksinyrittajabarometri-2026/"
+      "summary": "Aloita yhdesta arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
+      "url": "blog/"
     },
     {
-      "title": "Yrittäjägallup: Yrittäjien jaksaminen heikentynyt – apua haetaan, mutta moni jää yksin",
-      "source": "Suomen Yrittäjät (yrittajat.fi)",
-      "relevance_score": 9,
-      "summary": "Verianin toteuttaman gallupin mukaan yrittäjien jaksaminen on heikentynyt ja yhä useampi on ylirasittunut. Ongelmat kasaantuvat pienille yrityksille ja yksinyrittäjille, joilla ei ole työyhteisön tai työterveyshuollon turvaverkkoa.",
-      "url": "https://www.yrittajat.fi/ajankohtaista/tiedotteet/yrittajien-jaksaminen-heikentynyt-apua-haetaan-mutta-moni-jaa-yksin/"
-    },
-    {
-      "title": "Tunnettu ravintoloitsija ei ole pitänyt kesälomaa viiteen vuoteen – 'Suomi on järkyttävä byrokratian kukkanen'",
-      "source": "Yrittajat.fi (uutinen 11.6.2026)",
-      "relevance_score": 9,
-      "summary": "Michelin-ravintoloitsija Ilkka Lääveri kuvaa, miten hän hoiti sijaisjärjestelyt sairaalasängystä leikkauksen jälkeen ja vastaa sähköposteihin öisin ja sunnuntaisin. Yksi ryhmävaraus vaatii 20 viestiä — näkymätön hallintotyö syö kaiken ajan.",
-      "url": "https://www.yrittajat.fi/uutiset/tunnettu-ravintoloitsija-ei-ole-pitanyt-kesalomaa-viiteen-vuoteen-meidan-saantomme-on-tehty-yritysjattilaisille-ja-suomi-on-jarkyttava-byrokratian-kukkanen/"
-    },
-    {
-      "title": "Näin Suomi hyödyntää tekoälyä 2026: Yritysten kahtiajako syvenee – edelläkävijät karkaavat",
-      "source": "AI Finland",
-      "relevance_score": 9,
-      "summary": "Vuoden 2026 raportin mukaan tekoälyn hyödyntämisessä on syvenevä kahtiajako: edistyneet yritykset karkaavat, muut jumittavat. Pk-barometrin mukaan vain noin neljännes pk-yrityksistä käyttää tekoälyä säännöllisesti ja kolmannes ei lainkaan.",
-      "url": "https://aifinland.fi/nain-suomi-hyodyntaa-tekoalya-2026-yritysten-kahtiajako-syvenee-edellakavijat-karkaavat/"
+      "title": "Eurooppa etsii uusia kasvuyrittajia",
+      "source": "Nousuun.fi",
+      "relevance_score": 8,
+      "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksia, EU-rahoitusta ja pienia testejja rajojen yli.",
+      "url": "blog/"
     }
   ]
 }
