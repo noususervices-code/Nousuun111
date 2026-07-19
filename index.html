@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nousuun.fi on suomalaisen yrittäjän kiitorata: inspiraationlähde, palvelupolku, viikon mittaristo, tapahtumat, rahoitus ja työkalut yhdessä paikassa." />
+  <meta name="description" content="Nousuun.fi kokoaa yrittäjän tärkeimmät asiat yhteen: rahoitushaut, tapahtumat, työkalut ja selkeä polku idean kirkastamisesta ensimmäisiin asiakkaisiin." />
   <meta name="keywords" content="starttiraha, yrityksen perustaminen, yrittäjän palvelupolku, yrittäjätapahtumat, rahoitus, omistajanvaihdos, aloittava yrittäjä, kasvava yrittäjä, Suomi" />
-  <title>Nousuun.fi — suomalaisen yrittäjän kiitorata</title>
+  <title>Nousuun.fi — suomalaisen yrittäjän palvelupolku</title>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Nousuun.fi — suomalaisen yrittäjän kiitorata" />
-  <meta property="og:description" content="Inspiraationlähde ja palvelupolku yrittäjälle: katso viikon mittarit, rakenna oma koneesi ja ota seuraava askel nousuun." />
+  <meta property="og:title" content="Nousuun.fi — suomalaisen yrittäjän palvelupolku" />
+  <meta property="og:description" content="Nousuun.fi kokoaa yrittäjän tärkeimmät asiat yhteen: rahoitushaut, tapahtumat, työkalut ja selkeä polku idean kirkastamisesta ensimmäisiin asiakkaisiin." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nousuun.fi/" />
   <meta property="og:image" content="https://nousuun.fi/assets/img/nousuun-hero-workspace.jpg" />
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=flight-20260712" />
+  <link rel="stylesheet" href="css/style.css?v=yhdessa-20260714" />
   <link rel="canonical" href="https://nousuun.fi/" />
 </head>
 <body>
@@ -26,7 +26,8 @@
   <header class="site-header">
     <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
       <svg class="brand-plane" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 16L10 10L14 14L21 7" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 7H21V12" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
     </a>
@@ -45,69 +46,60 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow">Suomalaisen yrittäjän kiitorata</p>
-        <h1 class="hero-title">Rakenna oma koneesi. Ota suunta <span class="accent">nousuun.</span></h1>
+        <p class="hero-eyebrow">Suomalaisen yrittäjän palvelupolku</p>
+        <h1 class="hero-title">Ota seuraava askel nousuun.</h1>
         <p class="hero-subtitle">
-          Nousuun.fi on inspiraationlähde ja palvelupolku alkavalle tai kasvavalle yrittäjälle Suomessa.
-          Katso viikon mittarit, näe maisema ja valitse seuraava järkevä askel.
+          Nousuun.fi kokoaa yhteen paikkaan sen, mitä alkava tai kasvava yrittäjä oikeasti tarvitsee: rahoitushaut, tapahtumat, työkalut ja selkeän polun idean kirkastamisesta ensimmäisiin asiakkaisiin.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="#seuraava-askel">Rakenna oma koneesi →</a>
-          <a class="btn btn-outline btn-lg" href="#viikon-mittarit">Katso viikon mittarit</a>
+          <a class="btn btn-primary btn-lg" href="#seuraava-askel">Aloita yrittäjän polku →</a>
+          <a class="btn btn-outline btn-lg" href="#ajankohtaiset-nostot">Katso viikon nostot</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <svg class="plane-svg" viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <radialGradient id="skyGlow" cx="60%" cy="40%" r="50%">
-              <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.18"/>
-              <stop offset="100%" stop-color="#1A1A2E" stop-opacity="0"/>
-            </radialGradient>
+            <linearGradient id="riseGlow" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stop-color="#FAFAF7" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#FF6B35" stop-opacity="0.2"/>
+            </linearGradient>
           </defs>
-          <ellipse cx="300" cy="130" rx="200" ry="140" fill="url(#skyGlow)"/>
-          <path d="M 60 300 Q 220 230 390 75" stroke="#FF6B35" stroke-width="2.5" stroke-dasharray="10,7" fill="none" opacity="0.55"/>
-          <circle cx="120" cy="55" r="2" fill="#FAFAF7" opacity="0.4"/>
-          <circle cx="330" cy="45" r="2.2" fill="#FAFAF7" opacity="0.5"/>
-          <circle cx="465" cy="28" r="2.5" fill="#FAFAF7" opacity="0.4"/>
-          <g transform="translate(368, 95) rotate(-32)">
-            <ellipse cx="0" cy="0" rx="40" ry="11" fill="#FF6B35"/>
-            <circle cx="12" cy="-4" r="5" fill="#1A1A2E" opacity="0.5"/>
-            <circle cx="24" cy="-4" r="5" fill="#1A1A2E" opacity="0.5"/>
-            <polygon points="-6,-11 20,-11 7,-28 -13,-28" fill="#FF6B35" opacity="0.82"/>
-            <polygon points="-6,11 20,11 7,28 -13,28" fill="#FF6B35" opacity="0.82"/>
-            <polygon points="-33,-8 -19,-8 -26,-22" fill="#F4A261"/>
-          </g>
+          <rect x="36" y="40" width="448" height="280" rx="24" fill="url(#riseGlow)" stroke="#FF6B35" stroke-opacity="0.22"/>
+          <path d="M92 270 C158 238 184 214 236 210 C302 205 322 152 410 96" stroke="#FF6B35" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M384 94 L414 92 L405 121" stroke="#FF6B35" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="104" cy="270" r="22" fill="#FAFAF7" opacity="0.94"/>
+          <circle cx="236" cy="210" r="22" fill="#FAFAF7" opacity="0.94"/>
+          <circle cx="410" cy="96" r="22" fill="#FAFAF7" opacity="0.94"/>
+          <path d="M86 302 C94 288 114 288 122 302" stroke="#FAFAF7" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+          <path d="M218 242 C226 228 246 228 254 242" stroke="#FAFAF7" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+          <path d="M392 128 C400 114 420 114 428 128" stroke="#FAFAF7" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
         </svg>
       </div>
     </section>
 
-    <!-- VIIKON MITTARIT -->
-    <section class="scan-section" id="viikon-mittarit">
+    <!-- AJANKOHTAISET NOSTOT -->
+    <section class="scan-section" id="ajankohtaiset-nostot">
       <div class="container">
         <div class="scan-layout">
           <div class="scan-copy">
-            <p class="eyebrow">Tällä viikolla kannattaa huomata</p>
-            <h2>Lentäjä katsoo sekä mittareita että maisemaa.</h2>
+            <p class="eyebrow">Tällä viikolla</p>
+            <h2>Mitä yrittäjän kannattaa huomata juuri nyt?</h2>
             <p class="section-desc">
-              Ennen seuraavaa liikettä kannattaa vilkaista ympärille: missä ihmiset kokoontuvat,
-              millä rahoituksella saa polttoainetta ja mitkä signaalit muuttavat reittiä.
+              Kolme asiaa, jotka päivitämme joka viikko: missä kannattaa näkyä, mistä saa rahoitusta ja mitkä signaalit vaikuttavat suuntaan.
             </p>
           </div>
-          <div class="scan-grid" aria-label="Viikon mittarit">
+          <div class="scan-grid" aria-label="Ajankohtaiset nostot">
             <a class="scan-card" href="#tapahtumat">
-              <span>01 / Maisema</span>
-              <h3>Tapahtumat ja kohtaamiset</h3>
-              <p>Missä kannattaa näkyä, oppia ja tavata seuraavat ihmiset?</p>
+              <span>01 / Tapahtumat</span>
+              <h3>Missä kannattaa oppia ja tavata oikeat ihmiset?</h3>
             </a>
             <a class="scan-card" href="#rahoitus">
-              <span>02 / Polttoaine</span>
-              <h3>Rahoitus ja haut</h3>
-              <p>Mikä tuki, haku tai deadline voi antaa yritykselle lisää vauhtia?</p>
+              <span>02 / Rahoitus</span>
+              <h3>Mikä tuki tai haku on ajankohtainen juuri nyt?</h3>
             </a>
             <a class="scan-card" href="#ajankohtaista">
-              <span>03 / Horisontti</span>
-              <h3>Uutiset ja yritysmahdollisuudet</h3>
-              <p>Mitä yrittäjän kannattaa nähdä ennen kuin reitti lukitaan?</p>
+              <span>03 / Ajankohtaista</span>
+              <h3>Mitkä uutiset ja ilmiöt vaikuttavat yrittäjän arkeen?</h3>
             </a>
           </div>
         </div>
@@ -120,34 +112,34 @@
         <div class="section-header">
           <div>
             <p class="eyebrow">Valitse seuraava askel</p>
-            <h2>Rakenna oma lentokoneesi.</h2>
-            <p class="section-desc">Yritys ei nouse yhdellä osalla. Tarvitset rungon, polttoaineen, ohjaamon ja ilmatilan, jossa uskaltaa lähteä liikkeelle.</p>
+            <h2>Mistä sinä olet nyt liikkeellä?</h2>
+            <p class="section-desc">Yritys ei synny yhdellä päätöksellä. Etene siitä kohdasta, joka on sinulle ajankohtainen.</p>
           </div>
         </div>
         <div class="pillars-grid pillars-4">
           <a class="pillar-card" href="polku/">
-            <div class="pillar-icon">✈</div>
-            <h2 class="pillar-title">Runko: yrittäjän polku</h2>
+            <div class="pillar-icon">01</div>
+            <h2 class="pillar-title">Yrittäjän polku</h2>
             <p class="pillar-desc">Kirkasta idea, valitse yritysmuoto ja rakenna perusta ensimmäisiin asiakkaisiin asti.</p>
-            <span class="pillar-cta">Rakenna runko →</span>
+            <span class="pillar-cta">Aloita polku →</span>
           </a>
           <a class="pillar-card" href="#rahoitus">
-            <div class="pillar-icon">⛽</div>
-            <h2 class="pillar-title">Polttoaine: rahoitus</h2>
+            <div class="pillar-icon">02</div>
+            <h2 class="pillar-title">Rahoitus</h2>
             <p class="pillar-desc">Starttiraha, avustukset ja ajankohtaiset haut yrittäjän kielellä.</p>
-            <span class="pillar-cta">Tankkaa vauhtia →</span>
+            <span class="pillar-cta">Katso rahoitus →</span>
           </a>
           <a class="pillar-card" href="#tuki">
-            <div class="pillar-icon">🧭</div>
-            <h2 class="pillar-title">Ohjaamo: tuki &amp; työkalut</h2>
-            <p class="pillar-desc">Neuvonta, valmennukset ja käytännön työkalut, kun mittarit kaipaavat selkeyttä.</p>
-            <span class="pillar-cta">Avaa ohjaamo →</span>
+            <div class="pillar-icon">03</div>
+            <h2 class="pillar-title">Tuki ja työkalut</h2>
+            <p class="pillar-desc">Maksuton neuvonta, valmennukset ja käytännön työkalut.</p>
+            <span class="pillar-cta">Katso työkalut →</span>
           </a>
           <a class="pillar-card" href="#tapahtumat">
-            <div class="pillar-icon">🛬</div>
-            <h2 class="pillar-title">Ilmatila: tapahtumat</h2>
-            <p class="pillar-desc">Tapahtumat, joissa voi oppia, tavata ihmisiä ja löytää uutta suuntaa.</p>
-            <span class="pillar-cta">Katso ilmatila →</span>
+            <div class="pillar-icon">04</div>
+            <h2 class="pillar-title">Tapahtumat</h2>
+            <p class="pillar-desc">Tilaisuudet, joissa opit ja tapaat muita yrittäjiä.</p>
+            <span class="pillar-cta">Katso tapahtumat →</span>
           </a>
         </div>
       </div>
@@ -158,9 +150,9 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Maisema</p>
+            <p class="eyebrow">Tapahtumat</p>
             <h2>Missä kannattaa olla mukana seuraavaksi?</h2>
-            <p class="section-desc">Kuratoidut tapahtumat alkaville yrittäjille, kasvua hakeville tekijöille ja niille, jotka katsovat maisemaa avoimin silmin.</p>
+            <p class="section-desc">Kuratoidut tapahtumat alkaville ja kasvua hakeville yrittäjille — poimimme ne, joihin oikeasti kannattaa käyttää aikaa.</p>
           </div>
         </div>
         <div class="events-grid" id="events-container">
@@ -174,11 +166,11 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Polttoainemittari</p>
-            <h2>Mitä rahoitusta kannattaa miettiä nyt?</h2>
-            <p class="section-desc">Starttiraha, Business Finland, EU-haut ja apurahat selkokielellä: kenelle haku sopii ja milloin tankkaus kannattaa tehdä.</p>
+            <p class="eyebrow">Rahoitus</p>
+            <h2>Mitä rahoitusta kannattaa hakea nyt?</h2>
+            <p class="section-desc">Starttiraha, Business Finland, EU-haut ja apurahat selkokielellä: kenelle haku sopii ja milloin se kannattaa jättää.</p>
           </div>
-          <a class="btn btn-outline" href="tyokalut/#starttiraha-testi">Testaa starttiraha-oikeutesi →</a>
+          <a class="btn btn-outline" href="tyokalut/#starttiraha-testi">Testaa, voitko saada starttirahaa →</a>
         </div>
         <div class="funding-grid" id="funding-container">
           <p class="loading-text">Ladataan rahoitusnostoja...</p>
@@ -191,9 +183,9 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Ohjaamo ja tukitorni</p>
-            <h2>Palvelut ja työkalut, joista saat vauhtia</h2>
-            <p class="section-desc">Et ole yksin. Suomessa on paljon maksutonta apua, mutta sen löytäminen vie aikaa. Aloita näistä ja rakenna oma ohjaamosi.</p>
+            <p class="eyebrow">Tuki ja työkalut</p>
+            <h2>Maksutonta apua on paljon — tässä tärkeimmät.</h2>
+            <p class="section-desc">Et ole yksin. Suomessa on runsaasti maksutonta yritysneuvontaa, mutta sen löytäminen vie aikaa. Aloita näistä.</p>
           </div>
         </div>
         <div class="tools-grid">
@@ -236,15 +228,15 @@
       <div class="container">
         <div class="current-grid">
           <div class="current-col">
-            <p class="eyebrow">Valmis kone</p>
+            <p class="eyebrow">Omistajanvaihdokset</p>
             <h2>Voisiko valmis yritys olla sinun polkusi?</h2>
-            <p class="section-desc">Kaikkea ei tarvitse aloittaa tyhjästä. Viikon kiinnostavimmat myynnissä olevat yritykset ja omistajanvaihdokset.</p>
+            <p class="section-desc">Kaikkea ei tarvitse aloittaa tyhjästä. Viikon kiinnostavimmat myynnissä olevat yritykset.</p>
             <div id="companies-container"><p class="loading-text">Ladataan yritysnostoja...</p></div>
           </div>
           <div class="current-col">
-            <p class="eyebrow">Horisontti</p>
+            <p class="eyebrow">Ajankohtaista</p>
             <h2>Mitä kannattaa miettiä seuraavaksi?</h2>
-            <p class="section-desc">Lyhyt kooste yrittäjyyden uutisista, ilmiöistä ja signaaleista — kuin horisontti, joka auttaa valitsemaan reitin.</p>
+            <p class="section-desc">Lyhyt viikkokooste yrittäjyyden uutisista ja ilmiöistä — poimimme signaalit, jotka vaikuttavat suomalaisen yrittäjän arkeen.</p>
             <div id="news-container"><p class="loading-text">Ladataan uutisia...</p></div>
           </div>
         </div>
@@ -255,12 +247,12 @@
     <section class="newsletter-section">
       <div class="container newsletter-inner">
         <div class="newsletter-text">
-          <h2>Tilaa yrittäjän vauhtikirje.</h2>
-          <p>Joka viikko: hyödylliset tapahtumat, rahoitushaut ja yksi asia, jota kannattaa miettiä seuraavaksi. Ei turhaa. Ei spämmiä.</p>
+          <h2>Tilaa yrittäjän viikkokirje.</h2>
+          <p>Joka viikko: ajankohtaiset rahoitushaut, parhaat tapahtumat ja yksi asia, jota kannattaa miettiä seuraavaksi. Ei turhaa. Ei spämmiä.</p>
         </div>
         <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event, this)">
           <input type="email" class="newsletter-input" placeholder="sähköpostiosoitteesi" required aria-label="Sähköpostiosoite"/>
-          <button type="submit" class="btn btn-primary btn-lg">Tilaa ilmaiseksi</button>
+          <button type="submit" class="btn btn-primary btn-lg">Tilaa maksutta</button>
         </form>
       </div>
     </section>
@@ -271,7 +263,8 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 16L10 10L14 14L21 7" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 7H21V12" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>nousuun.fi</span>
       </div>
@@ -280,9 +273,9 @@
         <a href="#rahoitus">Rahoitus</a>
         <a href="#tapahtumat">Tapahtumat</a>
         <a href="tyokalut/">Työkalut</a>
-        <a href="mailto:nousu.services@gmail.com">Ota yhteyttä</a>
+        <a href="mailto:info@nousuun.fi">Ota yhteyttä</a>
       </nav>
-      <p class="footer-copy">© 2026 Nousuun.fi · <a href="mailto:nousu.services@gmail.com">nousu.services@gmail.com</a></p>
+      <p class="footer-copy">© 2026 Nousuun.fi · <a href="mailto:info@nousuun.fi">info@nousuun.fi</a></p>
     </div>
   </footer>
 
@@ -293,7 +286,24 @@
     }
 
     const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-    const cut = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n).trimEnd() + '…' : s; };
+    const completeSentence = (s, n) => {
+      s = String(s || '').replace(/\s+/g, ' ').trim();
+      if (s.length <= n) return s;
+      const sentences = s.match(/[^.!?]+[.!?]+/g) || [];
+      let result = '';
+      for (const sentence of sentences) {
+        const candidate = `${result} ${sentence.trim()}`.trim();
+        if (candidate.length > n) break;
+        result = candidate;
+      }
+      return result || sentences[0]?.trim() || s;
+    };
+    const normalizeCompanyTitle = s => {
+      s = String(s || '').replace(/!+/g, '').replace(/\s+/g, ' ').trim();
+      return s && s === s.toUpperCase() && /[A-ZÅÄÖ]/.test(s)
+        ? s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()
+        : s;
+    };
     const fiDate = d => { const o = d ? new Date(d) : null; return (o && !isNaN(o)) ? o.toLocaleDateString('fi-FI', {day:'numeric', month:'long'}) : (d || ''); };
     const fail = (id, msg) => { const el = document.getElementById(id); if (el) el.innerHTML = `<p class="loading-text">${msg}</p>`; };
 
@@ -309,7 +319,7 @@
           </div>
           <h3 class="event-title">${esc(ev.name)}</h3>
           <p class="event-location">📍 ${esc(ev.location || 'Helsinki')}</p>
-          <p class="event-desc">${esc(cut(ev.description, 130))}</p>
+          <p class="event-desc">${esc(completeSentence(ev.description, 180))}</p>
           <a class="btn btn-sm btn-outline event-link" href="${esc(ev.url || '#')}" target="_blank" rel="noopener">Lue lisää →</a>
         </article>`).join('');
     }).catch(() => fail('events-container', 'Tapahtumia ei juuri nyt saatu ladattua — kokeile pian uudelleen.'));
@@ -325,7 +335,7 @@
             <span class="funding-deadline">${esc(f.deadline || '')}</span>
           </div>
           <h3>${esc(f.name)}</h3>
-          <p>${esc(cut(f.summary, 140))}</p>
+          <p>${esc(completeSentence(f.summary, 180))}</p>
           <span class="pillar-cta">Lue lisää →</span>
         </a>`).join('');
     }).catch(() => fail('funding-container', 'Rahoitusnostot päivittyvät pian.'));
@@ -336,8 +346,8 @@
       if (!items.length) return fail('companies-container', 'Yritysnostot päivittyvät pian.');
       document.getElementById('companies-container').innerHTML = items.map(c => `
         <a class="list-item" href="${esc(c.url || '#')}" target="_blank" rel="noopener">
-          <h3>${esc(c.name)}</h3>
-          <p>${esc(cut(c.insight || c.industry, 110))}</p>
+          <h3>${esc(normalizeCompanyTitle(c.name))}</h3>
+          <p>${esc(completeSentence(c.insight || c.industry, 180))}</p>
           <span class="list-meta">${esc(c.location || '')} · ${esc(c.source || '')}</span>
         </a>`).join('');
     }).catch(() => fail('companies-container', 'Yritysnostot päivittyvät pian.'));
@@ -349,7 +359,7 @@
       document.getElementById('news-container').innerHTML = items.map(a => `
         <a class="list-item" href="${esc(a.url || '#')}" ${/^https?:/.test(a.url) ? 'target="_blank" rel="noopener"' : ''}>
           <h3>${esc(a.title)}</h3>
-          <p>${esc(cut(a.summary, 110))}</p>
+          <p>${esc(completeSentence(a.summary, 180))}</p>
           <span class="list-meta">${esc(a.source || '')}</span>
         </a>`).join('');
     }).catch(() => fail('news-container', 'Uutiset päivittyvät pian.'));

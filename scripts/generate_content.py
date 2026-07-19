@@ -21,17 +21,17 @@ def main():
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "articles": [
             {
-                "title": "AI ei ole osasto. Se on tyotapa.",
+                "title": "AI ei ole osasto. Se on työtapa.",
                 "source": "Nousuun.fi",
                 "relevance_score": 9,
-                "summary": "Aloita yhdesta arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
+                "summary": "Aloita yhdestä arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
                 "url": "blog/",
             },
             {
-                "title": "Eurooppa etsii uusia kasvuyrittajia",
+                "title": "Eurooppa etsii uusia kasvuyrittäjiä",
                 "source": "Nousuun.fi",
                 "relevance_score": 8,
-                "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksia, EU-rahoitusta ja pienia testejja rajojen yli.",
+                "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksiä, EU-rahoitusta ja pieniä testejä rajojen yli.",
                 "url": "blog/",
             },
         ],

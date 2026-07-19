@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: python scripts/fetch_events.py
+      - run: python scripts/validate_content_quality.py data/events.json
       - name: Commit Agentti A fallback updates
         run: |
           git config user.email "bot@nousuun.fi"

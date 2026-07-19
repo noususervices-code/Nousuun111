@@ -17,6 +17,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: python scripts/generate_content.py
+      - run: python scripts/validate_content_quality.py data/news.json
       - name: Commit updates
         run: |
           git config user.email "bot@nousuun.fi"

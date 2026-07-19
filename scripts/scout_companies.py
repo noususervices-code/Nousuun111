@@ -99,6 +99,15 @@ def clean_text(value):
     return re.sub(r"\s+", " ", html.unescape(value or "")).strip()
 
 
+def normalize_title(value):
+    """Remove listing-site shouting while preserving ordinary proper names."""
+    title = re.sub(r"!+", "", clean_text(value)).strip()
+    letters = "".join(char for char in title if char.isalpha())
+    if letters and letters == letters.upper():
+        title = title.capitalize()
+    return title
+
+
 def fetch_source_rows():
     body = urlencode({"action": "ms_selling", "filters": urlencode(FILTERS)})
     request = Request(
@@ -121,7 +130,7 @@ def fetch_source_rows():
 
 
 def normalize_listing(row):
-    title = clean_text(row[0]["text"])
+    title = normalize_title(row[0]["text"])
     industry = clean_text(row[1]["text"])
     location = clean_text(row[2]["text"])
     price = clean_text(row[3]["text"]) or "Ei julkinen"
@@ -159,14 +168,15 @@ def score_listing(item):
 def build_insight(item, score):
     text = f"{item['name']} {item['industry']}".lower()
     if any(keyword in text for keyword in ["verkkokauppa", "ict", "ohjelm"]):
-        angle = "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla."
+        angle = "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä."
     elif any(keyword in text for keyword in ["maahantuonti", "tekn", "kauppa"]):
-        angle = "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista."
+        angle = "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle."
     elif any(keyword in text for keyword in ["palvelu", "huolto", "konsult", "koulutus"]):
-        angle = "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi."
+        angle = "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista."
     else:
-        angle = "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea."
-    return f"{angle} Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score {score}/10:n taustalla oikea operatiivinen mahdollisuus."
+        angle = "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle."
+    detail = f"Sijainti: {item['location']}. Hintatieto: {item['price']}."
+    return f"{angle} {detail}"
 
 
 def update_meta(timestamp):
@@ -193,6 +203,13 @@ def main():
         listings.append(item)
 
     listings.sort(key=lambda item: item["score"], reverse=True)
+    seen_insights = set()
+    for item in listings:
+        normalized = item["insight"].casefold().strip()
+        if normalized in seen_insights:
+            item["insight"] = f"{item['insight']} Toimiala: {item['industry']}."
+            normalized = item["insight"].casefold().strip()
+        seen_insights.add(normalized)
     payload = {
         "agent": "Agentti B - Viikon yritykset",
         "updated_at": timestamp,

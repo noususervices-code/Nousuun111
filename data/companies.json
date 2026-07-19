@@ -1,17 +1,17 @@
 {
   "agent": "Agentti B - Viikon yritykset",
-  "updated_at": "2026-07-13T10:21:09.365091+00:00",
+  "updated_at": "2026-07-19T11:00:00+03:00",
   "week": "2026-W29",
   "companies": [
     {
-      "name": "Tunnettu hyvämaineinen ja laadukas KANNATTAVA verkkosivusto myynnissä!",
+      "name": "Kannattava ja vakiintunut verkkosivusto",
       "industry": "ATK-ohjelmointi, ATK-ylläpito (ICT), Kustannustoiminta, Mainostoimisto, markkinointi, Muu palvelualan yritys, Muu toimiala, Verkkokauppa",
       "price": "350 000 EUR",
       "location": "Kaikki alueet",
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/atk-ohjelmointi-atk-yllapito-ict/kaikki-alueet/tunnettu-hyvamaineinen-ja-laadukas-kannattava-verkkosivusto-myynnissa/124063/",
       "source": "Suomen Yrityskaupat",
       "score": 8.7,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 8.7/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Valmis kävijävirta ja tulovirta sopivat ostajalle, joka haluaa kehittää digiliiketoimintaa ilman nollasta aloittamista. Tarkista ennen tarjousta liikenteen lähteet ja tulonmuodostuksen jatkuvuus."
     },
     {
       "name": "Suomalaisten keskuudessa arvostettuja laadukkaita meikkipöytiä ja meikkivaloja myyvä verkkokauppa.",
@@ -21,7 +21,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kauneudenhoito/kaikki-alueet/virolainen-verkkokauppayritys-joka-suunnittelee-valmistaa-ja-myy-koti-ja-kauneushoitolan-tuotteita-valot-peilit/118391/",
       "source": "Suomen Yrityskaupat",
       "score": 6.9,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.9/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Selkeä kauneustuotteiden niche ja 50 000 euron hintapyyntö tekevät kohteesta saavutettavan verkkokauppaoston. Tarkista brändien myyntihistoria, varaston arvo ja asiakashankinnan kustannus."
     },
     {
       "name": "Luotettava ja menestyvä autohuoltoliiketoiminta Keski-Suomessa",
@@ -31,7 +31,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ajoneuvojen-huoltokorjaamot/keski-suomi/luotettava-ja-menestyva-autohuoltoliiketoiminta-keski-suomessa/126182/",
       "source": "Suomen Yrityskaupat",
       "score": 6.6,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.6/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Autohuollossa toistuva huoltotarve voi tuoda vakaata kassavirtaa ja pitkäaikaisia asiakkuuksia. Tarkista korjaamon käyttöaste, kaluston kunto ja avainhenkilöiden jatkohalukkuus."
     },
     {
       "name": "Kannattava ja aseman omaava kattofirma, jolla kymmenien vuosien kokemus",
@@ -41,7 +41,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/suomi/kannattava-ja-aseman-omaava-kattofirma-jolla-kymmenien-vuosien-kokemus/121290/",
       "source": "Suomen Yrityskaupat",
       "score": 6.3,
-      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Kymmenien vuosien toiminta voi tarkoittaa valmista mainetta ja vahvaa paikallista suosittelukantaa. Tarkista tilauskanta, sesonkivaihtelu ja se, kuinka paljon myynti nojaa nykyiseen omistajaan."
     },
     {
       "name": "Vakaa ja kannattava bussiliiketoiminta – valmiina jatkajalle",
@@ -51,7 +51,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kuljetusliikkeet-taksit/satakunta/vakaa-ja-kannattava-bussiliiketoiminta-valmiina-jatkajalle/125909/",
       "source": "Suomen Yrityskaupat",
       "score": 6.3,
-      "insight": "Kohde on kiinnostava yritysoston nakokulmasta, jos ostaja loytaa selkean kasvukulman ja pystyy yksinkertaistamaan arkea. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Kalusto ja mahdolliset jatkuvat kuljetussopimukset voivat antaa ostajalle valmiin tulopohjan. Tarkista sopimusten siirrettävyys, lupatilanne ja lähivuosien kalustoinvestoinnit."
     },
     {
       "name": "Hyvällä sijainnilla, kannattava päivittäistavara- ja nonfood-kauppa",
@@ -61,7 +61,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarvikkeiden-myynti-tuonti-vienti/keski-suomi/hyvalla-sijainnilla-kannattava-paivittaistavara-ja-nonfood-kauppa/121270/",
       "source": "Suomen Yrityskaupat",
       "score": 6.3,
-      "insight": "Tuote- ja kauppabisneksessa kasvu voi loytya verkkokaupasta, B2B-myynnista ja paremmasta sisaltomarkkinoinnista. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.3/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Hyvä sijainti ja päivittäinen asiointitarve voivat tuoda tasaista asiakasvirtaa. Tarkista myyntikate, vuokrasopimus ja varaston kiertonopeus ennen tarjousta."
     },
     {
       "name": "Vakiintunut erikoistunut elintarvikeliike huippusijainnilla myynnissä",
@@ -71,7 +71,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarviketeollisuus/varsinais-suomi/vakiintunut-erikoistunut-elintarvikeliike-huippusijainnilla-myynnissa/126960/",
       "source": "Suomen Yrityskaupat",
       "score": 6.2,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 6.2/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Erikoistunut valikoima ja huippusijainti voivat tuoda uskollisen paikallisen asiakaskunnan kohtuullisella 50 000 euron ostohinnalla. Tarkista vuokrasopimus, toimittajariippuvuudet ja asiakaskäyntien määrä."
     },
     {
       "name": "Maahantuoja ja myyjä: erittäin arvostettuja merkkituotteita, teetä ja kahvia sekä niiden tarvikkeita",
@@ -81,7 +81,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarvikkeiden-myynti-tuonti-vienti/viro/maahantuoja-ja-myyja-erittain-arvostettuja-merkkituotteita-teeta-ja-kahvia-seka-niiden-tarvikkeita/123754/",
       "source": "Suomen Yrityskaupat",
       "score": 5.9,
-      "insight": "Digitalinen pohja tekee tasta kiinnostavan: myyntia, asiakaspalvelua ja raportointia voi kehittaa nopeasti AI:n avulla. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.9/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Arvostetut tuotemerkit, maahantuonti ja verkkokauppa muodostavat valmiin monikanavaisen myyntipohjan. Selvitä toimittajasopimusten siirrettävyys ja riippuvuus yksittäisistä merkeistä."
     },
     {
       "name": "Geomar vuokra – siivouspalvelut Oy",
@@ -91,7 +91,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/geomar-vuokra-siivouspalvelut-oy/124165/",
       "source": "Suomen Yrityskaupat",
       "score": 5.9,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.9/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Siivouspalvelujen arvo syntyy usein jatkuvista sopimuksista ja tiheästä asiakasrytmistä. Tarkista sopimuskannan pysyvyys, asiakaskeskittymä ja henkilöstön siirtyminen kaupassa."
     },
     {
       "name": "Myydään suosittu aktiviteettipuisto Kalajoen Hiekkasärkillä – SuperPark Kalajoki",
@@ -101,7 +101,7 @@
       "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/muu-pohjois-pohjanmaa/myydaan-suosittu-aktiviteettipuisto-kalajoen-hiekkasarkilla-superpark-kalajoki/126186/",
       "source": "Suomen Yrityskaupat",
       "score": 5.9,
-      "insight": "Palvelubisnes sopii modernille yrittajalle, jos prosessit, myynti ja asiakasviestinta saadaan jarjestelmalliseksi. Tarkista ennen yhteydenottoa kassavirta, omistajan rooli ja se, onko Nousuun-score 5.9/10:n taustalla oikea operatiivinen mahdollisuus."
+      "insight": "Tunnettu konsepti ja Kalajoen matkailuvirta tarjoavat valmiin kysyntäpohjan, mutta liiketoiminta on todennäköisesti sesonkiluonteista. Tarkista käyttöaste, konseptimaksut, vuokravastuut ja tulevat laiteinvestoinnit."
     }
   ]
 }
