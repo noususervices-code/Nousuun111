@@ -1,23 +1,60 @@
 {
-  "updated_at": "2026-07-19T10:30:00+03:00",
+  "updated_at": "2026-07-20T07:45:00+03:00",
+  "week": "2026-W30",
   "funding": [
     {
       "name": "Starttiraha",
       "type": "Alkuvaiheen tuki",
       "deadline": "Jatkuva haku",
       "region": "Suomi",
-      "summary": "Aloittavan päätoimisen yrittäjän henkilökohtainen tuki yritystoiminnan ensimmäisiin kuukausiin.",
+      "summary": "Henkilökohtainen tuki päätoimiseksi yrittäjäksi ryhtyvän toimeentuloon yritystoiminnan alkuvaiheessa. Hae ennen päätoimisen yritystoiminnan aloittamista ja tarkista oman työllisyysalueesi käsittelytilanne.",
       "url": "https://www.suomi.fi/palvelut/starttiraha-tyollisyyspalvelut/55b76e7f-e4f6-4b9f-b2f1-b0ce7791e214",
-      "source": "manual seed"
+      "source": "Suomi.fi / työllisyyspalvelut"
     },
     {
       "name": "Business Finland Sprint",
       "type": "Kansainvälinen kasvu",
-      "deadline": "Jatkuva haku 1.9.2026 alkaen",
+      "deadline": "31.8.2026; jatkuva haku alkaa 1.9.2026",
       "region": "Suomi",
-      "summary": "Rahoitus pienille innovatiivisille yrityksille, jotka kehittävät uutta ratkaisua ja tavoittelevat nopeaa kansainvälistä kasvua.",
+      "summary": "Avustus pienille innovatiivisille yrityksille uuden ratkaisun kehittämiseen ja kansainvälisen kasvun valmiuksien osoittamiseen. Ennen hakemusta yrityksen tulee rekisteröityä My Business Finlandiin ja käydä asiantuntijan sparrauskeskustelu.",
       "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/sprint-rahoitushaku/",
       "source": "Business Finland"
+    },
+    {
+      "name": "Yrityksen kehittämisavustus",
+      "type": "Kehittämisavustus",
+      "deadline": "Jatkuva haku (13.3.2026 alkaen)",
+      "region": "Suomi; alueelliset painotukset",
+      "summary": "Harkinnanvarainen avustus startup- ja pk-yritysten merkittäviin kehittämis- ja investointihankkeisiin. Tarkista oman elinvoimakeskuksesi alueelliset painotukset ja jätä hakemus ennen hankkeen aloittamista.",
+      "url": "https://elinvoimakeskus.fi/yrityksen-kehittamisavustus",
+      "source": "Elinvoimakeskus"
+    },
+    {
+      "name": "Finnvera: laina mikroyrityksen kasvuun",
+      "type": "Laina",
+      "deadline": "Jatkuva haku",
+      "region": "Suomi",
+      "summary": "Laina 1–9 henkilöä työllistävän mikro- tai aloittavan yrityksen kasvu- ja tuottavuushankkeeseen, kun markkinaehtoista rahoitusta ei ole saatu. Hae vasta, kun yrityksellä on selkeä suunnitelma ja todellinen rahoitustarve.",
+      "url": "https://www.finnvera.fi/rahoitus/lainat/laina-mikroyrityksen-kasvuun",
+      "source": "Finnvera"
+    },
+    {
+      "name": "Finnveran alkutakaus",
+      "type": "Takaus",
+      "deadline": "Jatkuva haku pankin kautta",
+      "region": "Suomi",
+      "summary": "Pankkilainan vakuudeksi tarkoitettu takaus enintään kolme vuotta toimineelle pk-yritykselle, jonka vakuudet eivät muuten riitä investointi- tai käyttöpääomarahoitukseen. Oma pankki arvioi lainan ja hakee takausta Finnveralta.",
+      "url": "https://www.finnvera.fi/rahoitus/takaukset/alkutakaus",
+      "source": "Finnvera"
+    },
+    {
+      "name": "EIC Accelerator 2026",
+      "type": "EU-rahoitus",
+      "deadline": "Seuraavat arviointierät 2.9.2026 ja 4.11.2026",
+      "region": "EU / Suomi",
+      "summary": "Rahoitus kaupallistamiseen ja skaalaamiseen startupeille ja pk-yrityksille, joilla on läpimurtoinnovaatio ja vahva kansainvälinen kasvupotentiaali. Lyhyen hakemuksen voi jättää jatkuvasti; hyväksytyt hakijat etenevät täyteen hakemukseen.",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities_en",
+      "source": "European Innovation Council"
     }
   ]
 }
