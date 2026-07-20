@@ -1,154 +1,171 @@
 {
   "agent": "Agentti A - Tapahtumat",
   "quality": "curated_weekly_report",
-  "updated_at": "2026-07-12T07:37:10.930012+03:00",
-  "week": "2026-W28",
+  "updated_at": "2026-07-20T04:34:35.226718+00:00",
+  "week": "2026-W30",
   "events": [
     {
-      "name": "Cursor Mini Summer Hackathon Helsinki",
-      "date": "2026-07-15",
-      "time": "14:30–18:00",
-      "location": "Kamppi, Helsinki (tarkka osoite ilmoittautuneille)",
-      "description": "Käytännön rakenteluiltapäivä kaikentasoisille AI-tekijöille. Osallistujat muodostavat tiimejä, rakentavat Cursorilla projektin ja esittelevät lopuksi minidemon.",
-      "url": "https://luma.com/rvqgc8me",
+      "name": "Stop Overthinking and Build a Great Startup Idea",
+      "date": "2026-07-20",
+      "time": "19:00",
+      "location": "Verkossa",
+      "description": "Ajankohtainen ja matalan kynnyksen aloituspaikka ideavaiheeseen jumiutuneelle yrittäjyyttä harkitsevalle.",
+      "url": "https://fi.co/event/stop-overthinking-and-build-a-great-startup-idea-finland-nordics-fall-2026.",
       "image": "",
-      "source": null,
+      "source": "Founder Institute Finland",
       "tags": [
-        "AI",
-        "hackathon",
-        "no-code",
-        "builders",
-        "networking"
-      ],
-      "score": 8.3,
-      "featured": true
-    },
-    {
-      "name": "Helsinki Tech Mixer and Social (Tech / AI / Data / IT)",
-      "date": "2026-07-17",
-      "time": "18:00 alkaen",
-      "location": "Old Irish Pub, Mannerheimintie 12, Helsinki",
-      "description": "Viikoittainen perjantain afterwork tech-, AI- ja data-alan tekijöille. Rento tapa verkostoitua ja tavata startup-ihmisiä Helsingissä.",
-      "url": "https://www.eventbrite.com/e/helsinki-tech-mixer-and-social-tech-ai-data-it-tickets-1989644939574",
-      "image": "",
-      "source": null,
-      "tags": [
-        "verkostoituminen",
-        "tech",
-        "AI",
-        "afterwork"
-      ],
-      "score": 6.8,
-      "featured": false
-    },
-    {
-      "name": "Founders Running Club :: Helsinki",
-      "date": "2026-07-18",
-      "time": "10:00",
-      "location": "Helsinki Central Library Oodi, Töölönlahdenkatu 4",
-      "description": "Kevyt yhteislenkki foundereille, sijoittajille ja startup-tekijöille. Lenkin jälkeen jatketaan verkostoitumista kahvin äärellä.",
-      "url": "https://lu.ma/6hyoqm94",
-      "image": "",
-      "source": null,
-      "tags": [
-        "hyvinvointi",
-        "verkostoituminen",
-        "founderit",
-        "yhteisö"
-      ],
-      "score": 7.2,
-      "featured": false
-    },
-    {
-      "name": "AI Solution Sprint",
-      "date": "2026-09-09",
-      "time": "09:00–17:00 (9.–10.9.)",
-      "location": "Maria 01, Lapinlahdenkatu 16, Helsinki",
-      "description": "Kaksipäiväinen työpaja yrityksille ja AI-ratkaisujen rakentajille. Osallistujat ratkovat yritysten todellisia haasteita Business Helsingin ja korkeakoulukumppanien kanssa.",
-      "url": "https://tapahtumat.hel.fi/fi/tapahtumat/helsinki:agpie4mqvy",
-      "image": "",
-      "source": null,
-      "tags": [
-        "AI",
+        "startup-idea",
+        "alkuvaihe",
         "työpaja",
-        "pk-yritykset",
-        "Business Helsinki"
+        "founder"
       ],
-      "score": 8.0,
-      "featured": true
-    },
-    {
-      "name": "FiBAN Academy 1/3 – Getting Started With Angel Investing",
-      "date": "2026-09-09",
-      "time": "13:00",
-      "location": "Kasarmikatu 21 B, Helsinki",
-      "description": "Enkelisijoittamisen perusteet tuleville sijoittajille ja rahoitusta hakeville foundereille. Tilaisuus auttaa ymmärtämään, miten enkelisijoittaja arvioi yritystä ja sijoitusmahdollisuutta.",
-      "url": "https://foundercal.com/events/fiban-academy-1-3-getting-started-with-angel-investing-8L0afGoUIENW4HC",
-      "image": "",
-      "source": null,
-      "tags": [
-        "rahoitus",
-        "enkelisijoittaminen",
-        "VC",
-        "oppiminen"
-      ],
-      "score": 7.4,
+      "score": 7.9,
       "featured": false
     },
     {
-      "name": "Maria 01 NEXT Startup Festival & Afterparty",
-      "date": "2026-09-23",
-      "time": "23.–24.9., koko päivä + afterparty",
-      "location": "Maria 01, Lapinlahdenkatu 16, Helsinki",
-      "description": "Kaksipäiväinen startup-festivaali foundereille, sijoittajille ja ekosysteemin rakentajille. Ohjelma kokoaa Maria 01:een uusia yrityksiä, ideoita ja kasvun kannalta hyödyllisiä kontakteja.",
-      "url": "https://maria.io/events/maria-01-next-startup-festival-afterparty-2/",
+      "name": "VIP Pitch Lounge: Pitch Live and Get Feedback",
+      "date": "2026-07-28",
+      "time": "19:00",
+      "location": "Verkossa / tiedot rekisteröityneille",
+      "description": "Suora sijoittajapalaute auttaa terävöittämään pitchiä ennen oikeita rahoituskeskusteluja.",
+      "url": "https://fi.co/event/vip-pitch-lounge-pitch-live-and-get-feedback-from-investors-advisors-finland-nordics-fall-2026.",
       "image": "",
-      "source": null,
+      "source": "Founder Institute Finland",
+      "tags": [
+        "pitchaus",
+        "rahoitus",
+        "startup",
+        "sijoittajat"
+      ],
+      "score": 8.6,
+      "featured": true
+    },
+    {
+      "name": "Learn from Solo Alumni: How FI Grads Built Without a Co-Founder",
+      "date": "2026-08-04",
+      "time": "19:00",
+      "location": "Verkossa",
+      "description": "Osuu suoraan yksin rakentavien yrittäjien tarpeeseen saada realistisia toimintamalleja ja vertaisesimerkkejä.",
+      "url": "https://fi.co/event/learn-from-solo-alumni-how-fi-grads-built-without-a-co-founder-finland-nordics-fall-2026.",
+      "image": "",
+      "source": "Founder Institute Finland",
+      "tags": [
+        "yksinyrittäjä",
+        "startup",
+        "founder",
+        "vertaisoppiminen"
+      ],
+      "score": 8.4,
+      "featured": true
+    },
+    {
+      "name": "From Idea to Action: The Startup Mindset",
+      "date": "2026-08-10",
+      "time": "15:30",
+      "location": "Verkossa",
+      "description": "Auttaa rakentamaan selkeän sillan ideoinnista käytännön tekemiseen.",
+      "url": "https://fi.co/event/from-idea-to-action-the-startup-mindset-finland-nordics-fall-2026.",
+      "image": "",
+      "source": "Founder Institute Finland",
       "tags": [
         "startup",
-        "festivaali",
-        "verkostoituminen",
-        "ekosysteemi"
+        "toteutus",
+        "mindset",
+        "alkuvaihe"
       ],
-      "score": 8.5,
+      "score": 7.8,
       "featured": true
     },
     {
-      "name": "VERGE | Deep Tech: Beyond the Screen. Into the Bedrock.",
-      "date": "2026-09-29",
-      "time": "13:00",
-      "location": "Epicenter Helsinki",
-      "description": "Deep tech -tapahtuma foundereille, sijoittajille ja yrityspäättäjille. Ohjelma käsittelee ohjelmistojen ulkopuolelle ulottuvia teknologioita ja niiden kaupallisia mahdollisuuksia.",
-      "url": "https://foundercal.com/events/verge-deep-tech-beyond-the-screen-into-the-bedrock-helsinki-eIwfbDgPS1Qjr0U",
+      "name": "Monthly AI Meetup @ Helsinki XR Center",
+      "date": "2026-08-12",
+      "time": "17:00",
+      "location": "Helsinki XR Center, Hämeentie 135 A, Helsinki",
+      "description": "Myyntipuheettomassa formaatissa ongelmien omistajat ja AI-tekijät rakentavat konkreettisia kokeiluja yhdessä.",
+      "url": "https://www.aimeetup.fi/",
       "image": "",
-      "source": null,
+      "source": "Digiole & Helsinki XR Center",
       "tags": [
-        "deep tech",
-        "konferenssi",
-        "sijoittajat",
-        "innovaatio"
+        "AI",
+        "työpaja",
+        "automaatio",
+        "verkostoituminen"
       ],
-      "score": 7.5,
-      "featured": false
+      "score": 8.9,
+      "featured": true
     },
     {
-      "name": "Espoo Growth Secrets Workshop",
-      "date": "2026-09-29",
+      "name": "Founders Running Club Helsinki",
+      "date": "2026-08-15",
       "time": "10:00",
-      "location": "Espoon keskus, Espoo",
-      "description": "Käytännön kasvutyöpaja pääkaupunkiseudun pienyrityksille ja startupeille. Osallistuja saa keinoja myynnin, markkinoinnin ja toiminnan skaalaamiseen.",
-      "url": "https://foundercal.com/events/espoo-growth-secrets-workshop-29-9-2026-mB6SmBJcKss6Wmr",
+      "location": "Kansalaistori, Helsinki",
+      "description": "Yhdistää matalan kynnyksen founder-verkostoitumisen ja yrittäjän hyvinvoinnin.",
+      "url": "https://www.meetup.com/founders-running-club-helsinki/events/kzfcvtyjclbtb/",
       "image": "",
-      "source": null,
+      "source": "Founders Running Club",
       "tags": [
-        "kasvu",
-        "pk-yritykset",
-        "työpaja",
-        "Espoo"
+        "founderit",
+        "verkostoituminen",
+        "hyvinvointi",
+        "yhteisö"
       ],
-      "score": 6.6,
-      "featured": false
+      "score": 8,
+      "featured": true
+    },
+    {
+      "name": "Claude in Business Helsinki",
+      "date": "2026-08-21",
+      "time": "09:00",
+      "location": "Epicenter, Mikonkatu 9, Helsinki",
+      "description": "Poikkeuksellisen käytännöllinen AI-liiketoimintatapahtuma, jossa esitellään oikeita työnkulkuja ja syntyy vahvoja verkostoja.",
+      "url": "https://claudehelsinki.com/",
+      "image": "",
+      "source": "Arc Studio & Epicenter Helsinki",
+      "tags": [
+        "AI",
+        "Claude",
+        "liiketoiminnan kehitys",
+        "verkostoituminen"
+      ],
+      "score": 9.3,
+      "featured": true
+    },
+    {
+      "name": "The Splash! — Helsinki's Entrepreneurship Forum",
+      "date": "2026-08-28",
+      "time": "09:00",
+      "location": "Helsinki (tarkka paikka järjestäjältä)",
+      "description": "Tiivis founder- ja sijoittajaohjelma yhdistää tekemisen, oppimisen ja oikeat kontaktit.",
+      "url": "https://thesplashforum.com/",
+      "image": "",
+      "source": "The Splash!",
+      "tags": [
+        "startup",
+        "founderit",
+        "sijoittajat",
+        "verkostoituminen"
+      ],
+      "score": 9.1,
+      "featured": true
+    },
+    {
+      "name": "Latin America Business Forum 2026",
+      "date": "2026-08-31",
+      "time": "12:30",
+      "location": "Haaga-Helia, Ratapihantie 13, Helsinki / verkossa",
+      "description": "Tarjoaa konkreettista markkinoillemenotietoa ja B2B-kontakteja suomalaisille kasvuyrityksille.",
+      "url": "https://www.kauppakamarikauppa.fi/products/latin-america-business-forum-2026-hybridi-3182026",
+      "image": "",
+      "source": "Helsingin seudun kauppakamari kumppaneineen",
+      "tags": [
+        "kansainvälistyminen",
+        "B2B",
+        "vienti",
+        "verkostoituminen"
+      ],
+      "score": 8.2,
+      "featured": true
     }
   ],
-  "source_report": "04_Community/Events/weekly_event_reports/2026-W28_events.json"
+  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\04_Community\\Events\\weekly_event_reports\\2026-W30_events.json"
 }
