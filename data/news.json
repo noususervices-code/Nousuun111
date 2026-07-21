@@ -1,41 +1,19 @@
 {
-  "updated_at": "2026-07-20T08:00:00+03:00",
-  "week": "2026-W30",
+  "updated_at": "2026-07-21T08:11:49.844790+00:00",
   "articles": [
     {
-      "title": "Joka kolmas päätoiminen yksinyrittäjä ansaitsee alle 2 000 euroa kuukaudessa",
-      "source": "Yrittäjät.fi",
-      "relevance_score": 10,
-      "summary": "Tuore yksinyrittäjäbarometri nostaa esiin hinnoittelun, riittävän asiakasvirran ja työllistämisen kustannukset. Luku pakottaa tarkistamaan, kattaako oma hinta tavoitepalkan, kulut ja puskurin.",
-      "url": "https://www.yrittajat.fi/uutiset/raportti-paljastaa-joka-kolmas-yksinyrittaja-ansaitsee-alle-2-000-euroa-2/"
+      "title": "AI ei ole osasto. Se on työtapa.",
+      "source": "Nousuun.fi",
+      "relevance_score": 9,
+      "summary": "Aloita yhdestä arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
+      "url": "blog/"
     },
     {
-      "title": "Yrittäjä, ota ohituskaista tekoälyn haltuunottoon ja helpota arkeasi",
-      "source": "Yrittäjät.fi",
-      "relevance_score": 9,
-      "summary": "Seitsemän lyhyen videon sarja näyttää konkreettisia tapoja käyttää tekoälyä markkinoinnissa, tiivistämisessä, kääntämisessä ja agenttien rakentamisessa. Hyvä lähtökohta on valita yksi toistuva työ ja mitata säästynyt aika.",
-      "url": "https://www.yrittajat.fi/uutiset/yrittaja-ota-ohituskaista-tekoalyn-haltuunottoon-ja-helpota-arkeasi/"
-    },
-    {
-      "title": "YEL-uudistuksen luonnos ei vielä poista epävarmuutta työtulon perusteista",
-      "source": "Yrittäjät.fi",
-      "relevance_score": 9,
-      "summary": "YEL-uudistus on lausuntokierroksella, ja keskustelu koskee erityisesti ansiotiedon ajantasaisuutta sekä eläkeyhtiön perustelujen läpinäkyvyyttä. Erota nykyiset velvoitteet vuoden 2028 tavoitelluista muutoksista.",
-      "url": "https://www.yrittajat.fi/uutiset/yel-uudistuksen-tavoitteet-uhkaavat-jaada-toteutumatta-nama-asiat-yrittajat-korjaisi/"
-    },
-    {
-      "title": "Business Finlandin Sprint-rahoitus jatkuu jatkuvana hakuna syyskuussa",
-      "source": "Business Finland",
-      "relevance_score": 9,
-      "summary": "Pienille kansainvälistä kasvua hakeville yrityksille suunnattu Sprint jatkuu 1.9.2026 alkaen jatkuvana hakuna. Valmistautuminen alkaa My Business Finland -arviosta ja asiantuntijasparrauksesta, ei suoraan hakemuslomakkeesta.",
-      "url": "https://www.businessfinland.fi/ajankohtaista/uutiset/2026/sprint-rahoitus-jatkuu/"
-    },
-    {
-      "title": "Finnvera jatkaa mikro- ja aloittavien yritysten kasvulainan hakua",
-      "source": "Finnvera",
-      "relevance_score": 9,
-      "summary": "Kasvulainan hakua jatketaan 31.7. jälkeen toistaiseksi. Rahoitus on tarkoitettu selkeään kasvu- tai tuottavuushankkeeseen silloin, kun yritys ei ole saanut siihen markkinaehtoista rahoitusta.",
-      "url": "https://www.finnvera.fi/finnvera/uutishuone/uutiset/finnvera-jatkaa-mikro-ja-aloittavien-yritysten-kasvuhankkeisiin-suunnatun-lainan-hakuaikaa"
+      "title": "Eurooppa etsii uusia kasvuyrittäjiä",
+      "source": "Nousuun.fi",
+      "relevance_score": 8,
+      "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksiä, EU-rahoitusta ja pieniä testejä rajojen yli.",
+      "url": "blog/"
     }
   ]
 }
