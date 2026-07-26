@@ -1,13 +1,13 @@
 {
   "agent": "Agentti A - Tapahtumat",
   "quality": "curated_weekly_report",
-  "updated_at": "2026-07-20T04:34:35.226718+00:00",
+  "updated_at": "2026-07-26T06:35:00+03:00",
   "week": "2026-W30",
   "events": [
     {
       "name": "Stop Overthinking and Build a Great Startup Idea",
       "date": "2026-07-20",
-      "time": "19:00",
+      "time": "12:00–13:30",
       "location": "Verkossa",
       "description": "Ajankohtainen ja matalan kynnyksen aloituspaikka ideavaiheeseen jumiutuneelle yrittäjyyttä harkitsevalle.",
       "url": "https://fi.co/event/stop-overthinking-and-build-a-great-startup-idea-finland-nordics-fall-2026.",
@@ -27,7 +27,7 @@
       "date": "2026-07-28",
       "time": "19:00",
       "location": "Verkossa / tiedot rekisteröityneille",
-      "description": "Suora sijoittajapalaute auttaa terävöittämään pitchiä ennen oikeita rahoituskeskusteluja.",
+      "description": "Hyvä harjoituspaikka pitchin terävöittämiseen. VIP-tilaisuus on tarkoitettu ohjelmaan hyväksytyille foundereille sekä FI:n mentoreille ja kumppaneille.",
       "url": "https://fi.co/event/vip-pitch-lounge-pitch-live-and-get-feedback-from-investors-advisors-finland-nordics-fall-2026.",
       "image": "",
       "source": "Founder Institute Finland",
@@ -43,7 +43,7 @@
     {
       "name": "Learn from Solo Alumni: How FI Grads Built Without a Co-Founder",
       "date": "2026-08-04",
-      "time": "19:00",
+      "time": "12:00–13:30",
       "location": "Verkossa",
       "description": "Osuu suoraan yksin rakentavien yrittäjien tarpeeseen saada realistisia toimintamalleja ja vertaisesimerkkejä.",
       "url": "https://fi.co/event/learn-from-solo-alumni-how-fi-grads-built-without-a-co-founder-finland-nordics-fall-2026.",
@@ -61,7 +61,7 @@
     {
       "name": "From Idea to Action: The Startup Mindset",
       "date": "2026-08-10",
-      "time": "15:30",
+      "time": "08:30–10:00",
       "location": "Verkossa",
       "description": "Auttaa rakentamaan selkeän sillan ideoinnista käytännön tekemiseen.",
       "url": "https://fi.co/event/from-idea-to-action-the-startup-mindset-finland-nordics-fall-2026.",

@@ -186,6 +186,7 @@ def update_meta(timestamp):
         meta = {"sections": {}}
     meta["updated_at"] = timestamp
     meta.setdefault("sections", {})["companies"] = timestamp
+    meta.setdefault("weeks", {})["companies"] = datetime.now(timezone.utc).strftime("%G-W%V")
     META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -211,7 +212,7 @@ def main():
             normalized = item["insight"].casefold().strip()
         seen_insights.add(normalized)
     payload = {
-        "agent": "Agentti B - Viikon yritykset",
+        "agent": "Agentti B - Omistajanvaihdokset",
         "updated_at": timestamp,
         "week": datetime.now(timezone.utc).strftime("%G-W%V"),
         "companies": listings[:10],

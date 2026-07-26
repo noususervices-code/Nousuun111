@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yritykset - Nousuun.fi</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nousuun.fi:n viikoittaiset omistajanvaihdos- ja yritysostonostot suomalaiselle yrittäjälle." />
+  <title>Omistajanvaihdokset — Nousuun.fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=content-20260726" />
+  <link rel="canonical" href="https://nousuun.fi/yritykset/" />
 </head>
-<body>
-  <main class="color-block block-lime" style="margin-top:40px">
-    <div class="section-heading">
-      <p class="eyebrow">Viikon yritykset</p>
-      <h2>Yrityskaupat ja liikeideaspotit.</h2>
-      <p>Hakutoiminto ja arkisto tulevat, kun scout-agentti on vakaa.</p>
-    </div>
-    <a class="button button-primary" href="../#yritykset">Takaisin etusivulle</a>
+<body data-content-page="companies">
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-symbol">↗</span><span class="brand-text">nousuun<span class="brand-dot">.fi</span></span></a>
+    <nav class="top-nav"><a href="/polku/">Yrittäjän polku</a><a href="/tapahtumat/">Tapahtumat</a><a href="/yritykset/" aria-current="page">Omistajanvaihdokset</a><a href="/uutiset/">Ajankohtaista</a><a href="/blog/">Blogi</a></nav>
+    <a class="btn btn-primary btn-sm" href="/blog/yrityksen-ostaminen-omistajanvaihdos.html">Ostajan opas</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
+  <main>
+    <section class="archive-hero">
+      <div class="container">
+        <p class="eyebrow">Omistajanvaihdokset</p>
+        <h1>Kaikkea ei tarvitse aloittaa tyhjästä.</h1>
+        <p>Viikon kiinnostavat myynnissä olevat yritykset arvioituna kassavirran, ostettavuuden ja kehityspotentiaalin näkökulmasta. Tarkista aina taloustiedot ja vastuut ennen etenemistä.</p>
+        <span class="archive-status" id="content-status">Ladataan uusinta katsausta…</span>
+      </div>
+    </section>
+    <section class="archive-section">
+      <div class="container">
+        <div class="archive-note"><strong>Muista ennen yhteydenottoa:</strong> selvitä kolmen vuoden tilinpäätökset, omistajan rooli, asiakaskeskittymä, sopimusten siirrettävyys ja tarvittava käyttöpääoma.</div>
+        <div class="archive-grid" id="content-list"><p class="loading-text">Ladataan omistajanvaihdosnostoja…</p></div>
+      </div>
+    </section>
   </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span>↗</span><span>nousuun.fi</span></div><nav class="footer-nav"><a href="/tapahtumat/">Tapahtumat</a><a href="/uutiset/">Ajankohtaista</a><a href="/blog/">Blogi</a></nav><p class="footer-copy">© 2026 Nousuun.fi</p></div></footer>
+  <script src="../js/content-page.js"></script>
 </body>
 </html>

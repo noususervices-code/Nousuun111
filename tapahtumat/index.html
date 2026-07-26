@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tapahtumat - Nousuun.fi</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nousuun.fi:n kuratoimat tulevat yrittäjyys-, startup-, tekoäly- ja verkostoitumistapahtumat." />
+  <title>Tapahtumat — Nousuun.fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=content-20260726" />
+  <link rel="canonical" href="https://nousuun.fi/tapahtumat/" />
 </head>
-<body>
-  <main class="color-block block-lilac" style="margin-top:40px">
-    <div class="section-heading">
-      <p class="eyebrow">Tapahtumat</p>
-      <h2>Viikon yrittajatapahtumat.</h2>
-      <p>Laajempi listaus rakentuu v4.1-vaiheessa. Etusivu nayttaa jo uusimmat JSON-nostot.</p>
-    </div>
-    <a class="button button-primary" href="../#tapahtumat">Takaisin etusivulle</a>
+<body data-content-page="events">
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-symbol">↗</span><span class="brand-text">nousuun<span class="brand-dot">.fi</span></span></a>
+    <nav class="top-nav"><a href="/polku/">Yrittäjän polku</a><a href="/tapahtumat/" aria-current="page">Tapahtumat</a><a href="/yritykset/">Omistajanvaihdokset</a><a href="/uutiset/">Ajankohtaista</a><a href="/blog/">Blogi</a></nav>
+    <a class="btn btn-primary btn-sm" href="/#tapahtumat">Viikon nostot</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
+  <main>
+    <section class="archive-hero archive-hero-dark">
+      <div class="container">
+        <p class="eyebrow">Nousuun-tapahtumat</p>
+        <h1>Missä kannattaa olla mukana?</h1>
+        <p>Kuratoitu lista yrittäjille, foundereille ja kasvun rakentajille. Mukana vain tapahtumia, joilla on selkeä oppimis-, verkostoitumis- tai liiketoiminta-arvo.</p>
+        <span class="archive-status" id="content-status">Ladataan ajankohtaista viikkoa…</span>
+      </div>
+    </section>
+    <section class="archive-section"><div class="container archive-grid" id="content-list"><p class="loading-text">Ladataan tapahtumia…</p></div></section>
   </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span>↗</span><span>nousuun.fi</span></div><nav class="footer-nav"><a href="/yritykset/">Omistajanvaihdokset</a><a href="/uutiset/">Ajankohtaista</a><a href="/blog/">Blogi</a></nav><p class="footer-copy">© 2026 Nousuun.fi</p></div></footer>
+  <script src="../js/content-page.js"></script>
 </body>
 </html>

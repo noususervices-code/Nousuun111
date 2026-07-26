@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nousuun.fi-blogi tarjoaa käytännönläheisiä kirjoituksia hinnoittelusta, tekoälystä, rahoituksesta ja omistajanvaihdoksista suomalaiselle yrittäjälle." />
   <title>Blogi — Nousuun.fi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=blog-20260726" />
+  <link rel="canonical" href="https://nousuun.fi/blog/" />
 </head>
 <body>
-<nav>
-  <a href="/" class="logo"><div class="logo-mark"><svg viewBox="0 0 20 20"><path d="M3 14 L10 5 L17 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="5" r="2" fill="white"/></svg></div><span class="logo-text">nousuun<span>.fi</span></span></a>
-  <ul class="nav-links"><li><a href="/#about">Minusta</a></li><li><a href="/#services">Palvelut</a></li><li><a href="/blog/">Blogi</a></li></ul>
-  <a href="/#contact" class="nav-btn">Ota yhteyttä</a>
-</nav>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
+      <span class="brand-symbol" aria-hidden="true">↗</span>
+      <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
+    </a>
+    <nav class="top-nav" aria-label="Päävalikko">
+      <a href="/polku/">Yrittäjän polku</a>
+      <a href="/tapahtumat/">Tapahtumat</a>
+      <a href="/yritykset/">Omistajanvaihdokset</a>
+      <a href="/uutiset/">Ajankohtaista</a>
+      <a href="/blog/" aria-current="page">Blogi</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="mailto:nousu.services@gmail.com">Ota yhteyttä</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
 
-<main class="blog-index-page">
-  <h1>Blogi</h1>
-  <p class="subtitle">Ajatuksia yrittäjyydestä, tekoälystä ja kasvusta — inspiroitu 67 lähteestä.</p>
-
-  <div class="tag-filter" style="margin-bottom:2.5rem;">
-    <a href="index.html" class="tfilter active" data-tag="all">Kaikki</a>
-    <a href="tags/yrittajyyskasvatus.html" class="tfilter" data-tag="Yrittäjyyskasvatus">Yrittäjyyskasvatus</a>
-    <a href="tags/tekoaly-pk-yrityksille.html" class="tfilter" data-tag="Tekoäly pk-yrityksille">Tekoäly pk-yrityksille</a>
-    <a href="tags/startup-rahoitus.html" class="tfilter" data-tag="Startup-rahoitus">Startup-rahoitus</a>
-    <a href="tags/henkilobrandays.html" class="tfilter" data-tag="Henkilöbrändäys">Henkilöbrändäys</a>
-    <a href="tags/nuorisoyrittajyys.html" class="tfilter" data-tag="Nuorisoyrittäjyys">Nuorisoyrittäjyys</a>
-  </div>
-
-  <div class="post-list" id="post-list"></div>
-</main>
-
-<footer>
-  <a href="/" class="footer-logo">nousuun<span>.fi</span></a>
-  <ul class="footer-links"><li><a href="/#about">Minusta</a></li><li><a href="/blog/">Blogi</a></li><li><a href="https://linkedin.com/in/jaakkokalke" target="_blank">LinkedIn</a></li></ul>
-  <span>© 2026 Jaakko Kalke</span>
-</footer>
-
-<script src="../js/main.js"></script>
-<script>
-async function loadPosts() {
-  const list = document.getElementById('post-list');
-  const res = await fetch('posts.json');
-  const posts = await res.json();
-  list.innerHTML = posts.map(p => `
-    <a href="${p.slug}.html" class="post-item">
-      <span class="post-date">${p.dateLabel}</span>
-      <div>
-        <span class="post-cat-badge">${p.category}</span>
-        <h2>${p.title}</h2>
-        <p>${p.excerpt}</p>
-        ${p.source !== 'Alkuperäinen' ? `<span class="ai-badge">🤖 AI-generoitu · ${p.source}</span>` : ''}
+  <main>
+    <section class="editorial-hero">
+      <div class="container editorial-hero-inner">
+        <p class="eyebrow">Nousuun.fi / Blogi</p>
+        <h1>Vähemmän kohinaa.<br />Enemmän seuraavia askelia.</h1>
+        <p>Kirjoituksia suomalaisen yrittäjän arjesta, kannattavuudesta, tekoälystä ja uuden yrityspolun rakentamisesta. Jokainen artikkeli päättyy asiaan, jonka voit tehdä heti.</p>
       </div>
-    </a>`).join('');
-}
-loadPosts();
-</script>
+    </section>
+
+    <section class="blog-library">
+      <div class="container">
+        <div class="blog-feature-grid">
+          <a class="blog-feature-card" href="yksinyrittajan-minimihinta.html">
+            <span class="blog-kicker">Hinnoittelu · 7 min</span>
+            <h2>Miksi 2 000 €/kk ei riitä: yksinyrittäjän minimihinta auki euro eurosta</h2>
+            <p>Hinnoittelu ei ala kilpailijan hinnasta. Se alkaa tavoitepalkasta, kuluista, käyttöasteesta ja puskurista.</p>
+            <span class="text-link">Laske oman hintasi logiikka →</span>
+          </a>
+          <div class="blog-side-stack">
+            <a class="blog-card" href="ensimmainen-ai-automaatio.html">
+              <span class="blog-kicker">Tekoäly arjessa · 6 min</span>
+              <h2>Ensimmäinen AI-automaatio ilman kaaosta</h2>
+              <p>Valitse yksi toistuva tehtävä, rajaa riski ja mittaa tulos ennen kuin rakennat lisää.</p>
+            </a>
+            <a class="blog-card" href="yrityksen-ostaminen-omistajanvaihdos.html">
+              <span class="blog-kicker">Omistajanvaihdos · 8 min</span>
+              <h2>Yrityksen ostaminen voi olla nopeampi alku kuin perustaminen</h2>
+              <p>Valmis asiakaskunta houkuttelee, mutta hyvä kauppa ratkaistaan kassavirrassa, siirrettävyydessä ja omistajan roolissa.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="blog-section-heading">
+          <div>
+            <p class="eyebrow">Arkistosta</p>
+            <h2>Ihminen ja tekoäly samassa työssä</h2>
+          </div>
+        </div>
+        <a class="blog-row" href="frontier-work.html">
+          <div>
+            <span class="blog-kicker">Tekoäly pk-yrityksille · 5 min</span>
+            <h3>Ihminen–AI-rajapinnalla: uusi taito, jota kukaan ei opeta</h3>
+          </div>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span>↗</span><span>nousuun.fi</span></div>
+      <nav class="footer-nav">
+        <a href="/tapahtumat/">Tapahtumat</a>
+        <a href="/yritykset/">Omistajanvaihdokset</a>
+        <a href="/uutiset/">Ajankohtaista</a>
+        <a href="/blog/">Blogi</a>
+      </nav>
+      <p class="footer-copy">© 2026 Nousuun.fi</p>
+    </div>
+  </footer>
 </body>
 </html>

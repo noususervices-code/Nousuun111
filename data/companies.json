@@ -1,107 +1,107 @@
 {
-  "agent": "Agentti B - Viikon yritykset",
-  "updated_at": "2026-07-20T09:56:02.853589+00:00",
+  "agent": "Agentti B - Omistajanvaihdokset",
+  "updated_at": "2026-07-26T03:31:02.299721+00:00",
   "week": "2026-W30",
   "companies": [
     {
-      "name": "Pitkään toiminut kannattava höyrymyynnin ja -palveluiden erikoisosaaja",
-      "industry": "Kiinteistöalan palvelut, Koneiden, laitteiden, tavaroiden vuokraus, LVI-asennus, huolto, suunnittelu, Muu palvelualan yritys, Muu toimiala, Muu valmistava teollisuus, Palveluyritykset, Rakentaminen",
-      "price": "320 000 EUR Osakekauppa (myös liiketoimintakauppa mahdollinen)",
-      "location": "Turun talousalue",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/pitkaan-toiminut-kannattava-hoyrymyynnin-ja-palveluiden-erikoisosaaja/125367/",
-      "source": "Suomen Yrityskaupat",
-      "score": 7.3,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Turun talousalue. Hintatieto: 320 000 EUR Osakekauppa (myös liiketoimintakauppa mahdollinen)."
-    },
-    {
-      "name": "Menestyvä akku- ja autolasiliiketoiminta etsii uutta omistajaa",
-      "industry": "Ajoneuvojen myynti, huolto, varaosat, Muut vähittäiskaupat, Tekninen kauppa",
-      "price": "351 000 EUR Osakekannan kauppa. Liiketoimintakauppa myös mahdollinen.",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ajoneuvojen-myynti-huolto-varaosat/keski-suomi/akku-ja-autolasiliiketoiminta/117046/",
-      "source": "Suomen Yrityskaupat",
-      "score": 7.0,
-      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Keski-Suomi. Hintatieto: 351 000 EUR Osakekannan kauppa. Liiketoimintakauppa myös mahdollinen.."
-    },
-    {
-      "name": "Hyvällä sijainnilla, kannattava päivittäistavara- ja nonfood-kauppa",
-      "industry": "Elintarvikkeiden myynti, tuonti, vienti",
-      "price": "tarjouksien perusteella",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarvikkeiden-myynti-tuonti-vienti/keski-suomi/hyvalla-sijainnilla-kannattava-paivittaistavara-ja-nonfood-kauppa/121270/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Keski-Suomi. Hintatieto: tarjouksien perusteella."
-    },
-    {
-      "name": "Sähköalan palveluyritys",
-      "industry": "Sähköasennus, -huolto, -suunnittelu",
-      "price": "740 000 EUR Liiketoimintakauppa",
-      "location": "Pirkanmaa",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/pirkanmaa/sahkoalan-palveluyritys/125139/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Pirkanmaa. Hintatieto: 740 000 EUR Liiketoimintakauppa."
-    },
-    {
-      "name": "Kaksi kannattavaa päiväkotia Etelä-Suomen kaupungissa, myydään yhdessä tai erikseen",
-      "industry": "Lasten päivä- ja iltapäiväkerhot",
-      "price": "795 000 EUR",
-      "location": "Etelä-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/lasten-paiva-ja-iltapaivakerhot/etela-suomi/kaksi-paivakotia-etela-suomen-kaupungissa/120659/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Etelä-Suomi. Hintatieto: 795 000 EUR."
-    },
-    {
-      "name": "Menestyvä kahvila-ravintola valtatien varrella keskeisellä paikalla, jonka suosio tasaisessa kasvussa",
-      "industry": "Ravintolat, kahvilat",
-      "price": "280 000 EUR",
+      "name": "Huippupaikalla sijaitseva vapaa-ajan tuotteiden erikoisliike ja rautakauppa palvelut",
+      "industry": "Koneiden ja laitteiden huolto, Muut vähittäiskaupat, Pienkoneiden myynti ja huolto, Rakentaminen, Rautakauppa, Sisustustavaraliike, -rakentaminen, Tekninen kauppa, Vähittäis- ja tukkukaupat, tuonti, edustus",
+      "price": "TARJOUS",
       "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ravintolat-kahvilat/suomi/menestyva-kahvila-ravintola-valtatien-varrella-keskeisella-paikalla-jonka-suosio-tasaisessa-kasvussa/127080/",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/koneiden-ja-laitteiden-huolto/suomi/myydaan-huippupaikalla-sijaitseva-rautakauppa-vapaa-ajan-tuotteiden-seka-koneiden-myyntiin-ja-varaosa-ja-huoltopalveluihin-erikoistunut-yritys/117102/",
       "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 280 000 EUR."
+      "score": 6.6,
+      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Suomi. Hintatieto: TARJOUS."
     },
     {
-      "name": "Täyden palvelun hautaustoimisto",
-      "industry": "Hautaustoimisto",
-      "price": "150 000 EUR",
+      "name": "Vakiintunut ja erikoistunut toimija kiinteistöhuoltoalalla Ruotsissa – hyvät laajentumismahdollisuudet",
+      "industry": "Kiinteistöalan palvelut, Koneiden ja laitteiden huolto, Tekninen kauppa",
+      "price": "Tarjousten perusteella",
+      "location": "Ruotsi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/ruotsi/vakiintunut-ja-erikoistunut-toimija-kiinteistohuoltoalalla-ruotsissa-hyvat-laajentumismahdollisuudet/126489/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.6,
+      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Ruotsi. Hintatieto: Tarjousten perusteella."
+    },
+    {
+      "name": "Projektimajoitusta tarjoava menestyvä yritys, jolla useita kanta-asiakkaita",
+      "industry": "Majoitusyritys, hotellit",
+      "price": "420 000 EUR Hp sisältää yhtiön omistamat asunto-osakkeet.",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/majoitusyritys-hotellit/suomi/projektimajoitusta-tarjoava-menestyva-yritys-jolla-useita-kanta-asiakkaita/126214/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.3,
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 420 000 EUR Hp sisältää yhtiön omistamat asunto-osakkeet.."
+    },
+    {
+      "name": "Virossa hyvin tunnettu kestokukkien ja -kasvien sekä sisustustuotteiden myyjä",
+      "industry": "Kukkakaupat, kukkakioskit, Verkkokauppa",
+      "price": "149 000 EUR",
       "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/hautaustoimisto/viro/tayden-palvelun-hautaustoimisto/119808/",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kukkakaupat-kukkakioskit/viro/virossa-hyvin-tunnettu-kestokukkien-ja-kasvien-seka-sisustustuotteiden-myyja/125869/",
       "source": "Suomen Yrityskaupat",
       "score": 6.2,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Viro. Hintatieto: 150 000 EUR."
+      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Viro. Hintatieto: 149 000 EUR."
     },
     {
-      "name": "Eksklusiivisten korujen (kulta, timantit) maahantuoja ja myyjä",
-      "industry": "Kultasepänliike, Verkkokauppa",
-      "price": "+ varasto",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kultasepanliike/viro/eksklusiivisten-korujen-kulta-timantit-maahantuoja-ja-myyja/120589/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Viro. Hintatieto: + varasto."
-    },
-    {
-      "name": "Myynnissä Rakennuspalvelu Aalinniemi Oy:n liiketoiminta",
-      "industry": "Maarakennus ja suunnittelu, Rakentaminen",
-      "price": "340 000 EUR",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/maarakennus-ja-suunnittelu/suomi/rakennusalan-erikoistyot-keski-suomessa/116203/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Suomi. Hintatieto: 340 000 EUR."
-    },
-    {
-      "name": "Yritys, jonka päätoimialana on asuntovaunujen ja matkailuautojen myynti, vuokraus ja huolto",
+      "name": "Seikkailupuisto Huikian liiketoiminta Oulussa",
       "industry": "Muu palvelualan yritys",
-      "price": "1 000 000 EUR",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/suomi/yritys-jonka-paatoimialana-on-asuntovaunujen-ja-matkailuautojen-myynti-vuokraus-ja-huolto/118681/",
+      "price": "240 000 EUR TARJOUSHINTA Liiketoimintakauppa",
+      "location": "Pohjois-Pohjanmaa",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/pohjois-pohjanmaa/seikkailupuisto-huikian-liiketoiminta-oulussa/124397/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.2,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Pohjois-Pohjanmaa. Hintatieto: 240 000 EUR TARJOUSHINTA Liiketoimintakauppa."
+    },
+    {
+      "name": "Täyden palvelun messujärjestelyjä tarjoava yritys",
+      "industry": "Muu palvelualan yritys",
+      "price": "320 000 EUR",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/viro/tayden-palvelun-messujarjestelyja-tarjoava-yritys/126218/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Viro. Hintatieto: 320 000 EUR."
+    },
+    {
+      "name": "Juhla- ja Pitopalvelu Vikström Salossa",
+      "industry": "Pitopalvelu, liikkuva elintarvikemyynti",
+      "price": "myydään tarjousten perusteella, mahdollisuus ostaa osissa",
+      "location": "Varsinais-Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/pitopalvelu-liikkuva-elintarvikemyynti/varsinais-suomi/juhla-ja-pitopalvelu-vikstrom-salossa/107102/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Varsinais-Suomi. Hintatieto: myydään tarjousten perusteella, mahdollisuus ostaa osissa."
+    },
+    {
+      "name": "Upea maalaishotelli maalaismiljöössä ravintola ja viihdepalveluineen sekä suosittu upea kesäteatteriareena",
+      "industry": "Majoitusyritys, hotellit, Ravintolat, kahvilat",
+      "price": "650 000 EUR",
+      "location": "Keski-Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/majoitusyritys-hotellit/keski-suomi/upea-maalaishotelli-maalaismiljoossa-ravintola-ja-viihdepalveluineen-seka-suosittu-upea-kesateatteriareena/123531/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Keski-Suomi. Hintatieto: 650 000 EUR."
+    },
+    {
+      "name": "Pieni puuteollisuus myydään maa-alueineen ja tuotantorakennuksineen",
+      "industry": "Puutavaran ja puutuotteiden valmistus",
+      "price": "Tarjousten perusteella",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/puutavaran-ja-puutuotteiden-valmistus/viro/pieni-puuteollisuus-myydaan-maa-alueineen-ja-tuotantorakennuksineen/124353/",
       "source": "Suomen Yrityskaupat",
       "score": 5.6,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Suomi. Hintatieto: 1 000 000 EUR."
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Viro. Hintatieto: Tarjousten perusteella."
+    },
+    {
+      "name": "Metallialan yritys, jolla on erittäin pitkä historia ja vankka asiakaskunta",
+      "industry": "Metallituotteiden valmistus",
+      "price": "200 000 EUR",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/metallituotteiden-valmistus/viro/metallialan-yritys-jolla-on-erittain-pitka-historia-ja-vankka-asiakaskunta/117842/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.6,
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Viro. Hintatieto: 200 000 EUR."
     }
   ]
 }

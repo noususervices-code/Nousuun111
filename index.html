@@ -33,9 +33,10 @@
     </a>
     <nav class="top-nav" aria-label="Päävalikko">
       <a href="polku/">Yrittäjän polku</a>
-      <a href="#rahoitus">Rahoitus</a>
-      <a href="#tapahtumat">Tapahtumat</a>
-      <a href="#ajankohtaista">Ajankohtaista</a>
+      <a href="tapahtumat/">Tapahtumat</a>
+      <a href="yritykset/">Omistajanvaihdokset</a>
+      <a href="uutiset/">Ajankohtaista</a>
+      <a href="blog/">Blogi</a>
     </nav>
     <a class="btn btn-primary btn-sm" href="polku/">Aloita polku →</a>
     <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
@@ -135,7 +136,7 @@
             <p class="pillar-desc">Maksuton neuvonta, valmennukset ja käytännön työkalut.</p>
             <span class="pillar-cta">Katso työkalut →</span>
           </a>
-          <a class="pillar-card" href="#tapahtumat">
+          <a class="pillar-card" href="tapahtumat/">
             <div class="pillar-icon">04</div>
             <h2 class="pillar-title">Tapahtumat</h2>
             <p class="pillar-desc">Tilaisuudet, joissa opit ja tapaat muita yrittäjiä.</p>
@@ -158,6 +159,7 @@
         <div class="events-grid" id="events-container">
           <p class="loading-text">Ladataan tapahtumia...</p>
         </div>
+        <a class="text-link" href="tapahtumat/">Katso kaikki tulevat tapahtumat →</a>
       </div>
     </section>
 
@@ -232,12 +234,14 @@
             <h2>Voisiko valmis yritys olla sinun polkusi?</h2>
             <p class="section-desc">Kaikkea ei tarvitse aloittaa tyhjästä. Viikon kiinnostavimmat myynnissä olevat yritykset.</p>
             <div id="companies-container"><p class="loading-text">Ladataan yritysnostoja...</p></div>
+            <a class="text-link" href="yritykset/">Katso kaikki omistajanvaihdosnostot →</a>
           </div>
           <div class="current-col">
             <p class="eyebrow">Ajankohtaista</p>
             <h2>Mitä kannattaa miettiä seuraavaksi?</h2>
             <p class="section-desc">Lyhyt viikkokooste yrittäjyyden uutisista ja ilmiöistä — poimimme signaalit, jotka vaikuttavat suomalaisen yrittäjän arkeen.</p>
             <div id="news-container"><p class="loading-text">Ladataan uutisia...</p></div>
+            <a class="text-link" href="uutiset/">Avaa koko ajankohtaista-kooste →</a>
           </div>
         </div>
       </div>
@@ -271,7 +275,10 @@
       <nav class="footer-nav">
         <a href="polku/">Yrittäjän polku</a>
         <a href="#rahoitus">Rahoitus</a>
-        <a href="#tapahtumat">Tapahtumat</a>
+        <a href="tapahtumat/">Tapahtumat</a>
+        <a href="yritykset/">Omistajanvaihdokset</a>
+        <a href="uutiset/">Ajankohtaista</a>
+        <a href="blog/">Blogi</a>
         <a href="tyokalut/">Työkalut</a>
         <a href="mailto:nousu.services@gmail.com">Ota yhteyttä</a>
       </nav>
@@ -309,7 +316,12 @@
 
     // Tapahtumat
     fetch('data/events.json').then(r => r.json()).then(data => {
-      const events = (data.events || []).slice(0, 6);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const events = (data.events || [])
+        .filter(ev => !ev.date || new Date(`${ev.date}T23:59:59`) >= today)
+        .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+        .slice(0, 6);
       if (!events.length) return fail('events-container', 'Uusia tapahtumia ladataan pian.');
       document.getElementById('events-container').innerHTML = events.map(ev => `
         <article class="event-card">
