@@ -16,9 +16,13 @@ LEGACY_REPORT_DIR = ROOT.parent / "04_Community" / "Events" / "weekly_event_repo
 
 
 def find_latest_report():
-    reports = sorted(DEFAULT_REPORT_DIR.glob("*_events.json"))
-    if not reports:
-        reports = sorted(LEGACY_REPORT_DIR.glob("*_events.json"))
+    reports = sorted(
+        [
+            *DEFAULT_REPORT_DIR.glob("*_events.json"),
+            *LEGACY_REPORT_DIR.glob("*_events.json"),
+        ],
+        key=lambda path: path.name,
+    )
     if not reports:
         raise FileNotFoundError(f"No weekly event reports found in {DEFAULT_REPORT_DIR} or {LEGACY_REPORT_DIR}")
     return reports[-1]
@@ -41,6 +45,8 @@ def normalize_event(event):
         "tags": event.get("tagit", [])[:6],
         "score": event.get("score"),
         "featured": bool(event.get("ennakkonosto", False)),
+        "access": event.get("access", "Avoin ilmoittautuminen"),
+        "price": event.get("hinta", "Tarkista järjestäjältä"),
     }
 
 

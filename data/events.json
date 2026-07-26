@@ -1,171 +1,145 @@
 {
   "agent": "Agentti A - Tapahtumat",
-  "quality": "curated_weekly_report",
-  "updated_at": "2026-07-26T06:35:00+03:00",
+  "quality": "public_events_verified",
+  "updated_at": "2026-07-26T07:00:00+03:00",
   "week": "2026-W30",
+  "selection_policy": "Vain kaikille avoimet tapahtumat. Ennakkoilmoittautuminen tai lipun ostaminen on sallittu, mutta jäsenille, asiakkaille, ohjelmaan hyväksytyille tai kutsuvieraille rajatut tapahtumat on suljettu pois.",
   "events": [
-    {
-      "name": "Stop Overthinking and Build a Great Startup Idea",
-      "date": "2026-07-20",
-      "time": "12:00–13:30",
-      "location": "Verkossa",
-      "description": "Ajankohtainen ja matalan kynnyksen aloituspaikka ideavaiheeseen jumiutuneelle yrittäjyyttä harkitsevalle.",
-      "url": "https://fi.co/event/stop-overthinking-and-build-a-great-startup-idea-finland-nordics-fall-2026.",
-      "image": "",
-      "source": "Founder Institute Finland",
-      "tags": [
-        "startup-idea",
-        "alkuvaihe",
-        "työpaja",
-        "founder"
-      ],
-      "score": 7.9,
-      "featured": false
-    },
-    {
-      "name": "VIP Pitch Lounge: Pitch Live and Get Feedback",
-      "date": "2026-07-28",
-      "time": "19:00",
-      "location": "Verkossa / tiedot rekisteröityneille",
-      "description": "Hyvä harjoituspaikka pitchin terävöittämiseen. VIP-tilaisuus on tarkoitettu ohjelmaan hyväksytyille foundereille sekä FI:n mentoreille ja kumppaneille.",
-      "url": "https://fi.co/event/vip-pitch-lounge-pitch-live-and-get-feedback-from-investors-advisors-finland-nordics-fall-2026.",
-      "image": "",
-      "source": "Founder Institute Finland",
-      "tags": [
-        "pitchaus",
-        "rahoitus",
-        "startup",
-        "sijoittajat"
-      ],
-      "score": 8.6,
-      "featured": true
-    },
-    {
-      "name": "Learn from Solo Alumni: How FI Grads Built Without a Co-Founder",
-      "date": "2026-08-04",
-      "time": "12:00–13:30",
-      "location": "Verkossa",
-      "description": "Osuu suoraan yksin rakentavien yrittäjien tarpeeseen saada realistisia toimintamalleja ja vertaisesimerkkejä.",
-      "url": "https://fi.co/event/learn-from-solo-alumni-how-fi-grads-built-without-a-co-founder-finland-nordics-fall-2026.",
-      "image": "",
-      "source": "Founder Institute Finland",
-      "tags": [
-        "yksinyrittäjä",
-        "startup",
-        "founder",
-        "vertaisoppiminen"
-      ],
-      "score": 8.4,
-      "featured": true
-    },
-    {
-      "name": "From Idea to Action: The Startup Mindset",
-      "date": "2026-08-10",
-      "time": "08:30–10:00",
-      "location": "Verkossa",
-      "description": "Auttaa rakentamaan selkeän sillan ideoinnista käytännön tekemiseen.",
-      "url": "https://fi.co/event/from-idea-to-action-the-startup-mindset-finland-nordics-fall-2026.",
-      "image": "",
-      "source": "Founder Institute Finland",
-      "tags": [
-        "startup",
-        "toteutus",
-        "mindset",
-        "alkuvaihe"
-      ],
-      "score": 7.8,
-      "featured": true
-    },
     {
       "name": "Monthly AI Meetup @ Helsinki XR Center",
       "date": "2026-08-12",
-      "time": "17:00",
+      "time": "17:00–19:00",
       "location": "Helsinki XR Center, Hämeentie 135 A, Helsinki",
-      "description": "Myyntipuheettomassa formaatissa ongelmien omistajat ja AI-tekijät rakentavat konkreettisia kokeiluja yhdessä.",
+      "description": "Kaikille avoin ja maksuton työskentelysessio, jossa yritysten käytännön ongelmia ratkotaan yhdessä AI-tekijöiden kanssa. Sopii yrittäjälle, joka haluaa viedä oman käyttötapauksen keskustelusta kokeiluun.",
       "url": "https://www.aimeetup.fi/",
       "image": "",
-      "source": "Digiole & Helsinki XR Center",
-      "tags": [
-        "AI",
-        "työpaja",
-        "automaatio",
-        "verkostoituminen"
-      ],
+      "source": "Digiole ja Helsinki XR Center",
+      "tags": ["AI", "työpaja", "automaatio", "verkostoituminen"],
       "score": 8.9,
-      "featured": true
+      "featured": true,
+      "access": "Avoin kaikille",
+      "price": "Maksuton"
     },
     {
       "name": "Founders Running Club Helsinki",
       "date": "2026-08-15",
-      "time": "10:00",
+      "time": "10:00–11:30",
       "location": "Kansalaistori, Helsinki",
-      "description": "Yhdistää matalan kynnyksen founder-verkostoitumisen ja yrittäjän hyvinvoinnin.",
+      "description": "Avoin founder-yhteisön juoksu yhdistää verkostoitumisen ja yrittäjän hyvinvoinnin ilman seminaarimuotoa. Sopii myös ihmisille, jotka vasta harkitsevat yrittäjyyttä.",
       "url": "https://www.meetup.com/founders-running-club-helsinki/events/kzfcvtyjclbtb/",
       "image": "",
-      "source": "Founders Running Club",
-      "tags": [
-        "founderit",
-        "verkostoituminen",
-        "hyvinvointi",
-        "yhteisö"
-      ],
-      "score": 8,
-      "featured": true
+      "source": "Founders Running Club Helsinki",
+      "tags": ["hyvinvointi", "founderit", "verkostoituminen", "yhteisö"],
+      "score": 8.1,
+      "featured": true,
+      "access": "Avoin yhteisötapahtuma",
+      "price": "Tarkista järjestäjältä"
+    },
+    {
+      "name": "ELLIS Distinguished Lecture: YingLi Tian",
+      "date": "2026-08-20",
+      "time": "09:30–10:30",
+      "location": "Aalto-yliopisto, Maarintie 8, Espoo / verkossa",
+      "description": "Avoin lähiluento ja verkkolähetys näyttää, miten AI-malleja voidaan keventää ja tuoda käytännön ympäristöihin pienemmillä laskentaresursseilla. Erityisen hyödyllinen teknologia- ja tuotevetoisille yrittäjille.",
+      "url": "https://www.ellisinstitute.fi/ellis-distinguished-lecture-yingli-tian",
+      "image": "",
+      "source": "ELLIS Institute Finland",
+      "tags": ["AI", "tutkimus", "tuotekehitys", "teknologia"],
+      "score": 7.6,
+      "featured": false,
+      "access": "Avoin paikan päällä ja verkossa",
+      "price": "Ei ilmoitettu"
+    },
+    {
+      "name": "CCFF Meet & Greet",
+      "date": "2026-08-20",
+      "time": "17:00–19:00",
+      "location": "Helsinki, tarkista paikka ilmoittautumissivulta",
+      "description": "Avoin afterwork kutsuu mukaan myös uudet kävijät ja verkostosta kiinnostuneet. Hyvä matalan kynnyksen paikka rakentaa ranskalais-suomalaisia liike-elämän kontakteja.",
+      "url": "https://www.ccff.fr/en/events/upcoming-events/event-details/event/meet-greet-5-august-20-2026.html",
+      "image": "",
+      "source": "Ranskalais-suomalainen kauppakamari CCFF",
+      "tags": ["kansainvälistyminen", "verkostoituminen", "B2B", "afterwork"],
+      "score": 8.0,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen myös uusille kävijöille",
+      "price": "Tarkista järjestäjältä"
     },
     {
       "name": "Claude in Business Helsinki",
       "date": "2026-08-21",
-      "time": "09:00",
+      "time": "09:00–12:00",
       "location": "Epicenter, Mikonkatu 9, Helsinki",
-      "description": "Poikkeuksellisen käytännöllinen AI-liiketoimintatapahtuma, jossa esitellään oikeita työnkulkuja ja syntyy vahvoja verkostoja.",
+      "description": "Maksuton ja kaikille avoimesti haettava aamupäivä esittelee oikeita Claude-työnkulkuja myynnissä, sisällössä ja yritysten prosesseissa. Paikat vahvistetaan ilmoittautumisjärjestyksessä.",
       "url": "https://claudehelsinki.com/",
       "image": "",
-      "source": "Arc Studio & Epicenter Helsinki",
-      "tags": [
-        "AI",
-        "Claude",
-        "liiketoiminnan kehitys",
-        "verkostoituminen"
-      ],
-      "score": 9.3,
-      "featured": true
+      "source": "Arc Studio ja Epicenter Helsinki",
+      "tags": ["AI", "Claude", "myynti", "liiketoiminnan kehitys"],
+      "score": 9.2,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen, rajallinen kapasiteetti",
+      "price": "Maksuton"
+    },
+    {
+      "name": "Bato Pitch Night",
+      "date": "2026-08-27",
+      "time": "17:30–19:30",
+      "location": "Helsinki Think Company Kumpula, Pietari Kalmin katu 5, Helsinki",
+      "description": "Maksuton pitch-ilta on tarkoitettu varhaisen vaiheen foundereille, yrittäjyyttä harkitseville ja startup-kentästä kiinnostuneille. Kansainvälinen yhteisö tarjoaa palautetta, sijoittajanäkökulmaa ja uusia kontakteja.",
+      "url": "https://www.thinkcompany.fi/what-we-do/events",
+      "image": "",
+      "source": "Bato ja Helsinki Think Company",
+      "tags": ["pitchaus", "startup", "kansainvälisyys", "verkostoituminen"],
+      "score": 8.5,
+      "featured": true,
+      "access": "Maksuton ja avoin kaikille",
+      "price": "Maksuton"
     },
     {
       "name": "The Splash! — Helsinki's Entrepreneurship Forum",
       "date": "2026-08-28",
-      "time": "09:00",
-      "location": "Helsinki (tarkka paikka järjestäjältä)",
-      "description": "Tiivis founder- ja sijoittajaohjelma yhdistää tekemisen, oppimisen ja oikeat kontaktit.",
+      "time": "28.–29.8.2026",
+      "location": "Helsinki, tarkka paikka vahvistetaan järjestäjältä",
+      "description": "Kaikille lipun ostaville avoin kaksipäiväinen foorumi kokoaa yhteen ideavaiheen yrittäjiä, opiskelijavetoisia yrittäjyysyhteisöjä, sijoittajia ja ekosysteemin rakentajia.",
       "url": "https://thesplashforum.com/",
       "image": "",
       "source": "The Splash!",
-      "tags": [
-        "startup",
-        "founderit",
-        "sijoittajat",
-        "verkostoituminen"
-      ],
-      "score": 9.1,
-      "featured": true
+      "tags": ["yrittäjyys", "startup", "luovat alat", "verkostoituminen"],
+      "score": 9.0,
+      "featured": true,
+      "access": "Avoin julkinen lipunmyynti",
+      "price": "Lipullinen, tarkista lipputyyppi"
+    },
+    {
+      "name": "Helsinki Design Week 2026",
+      "date": "2026-08-28",
+      "time": "28.8.–6.9.2026",
+      "location": "Useita tapahtumapaikkoja Helsingissä ja verkossa",
+      "description": "Pohjoismaiden suurin muotoilufestivaali avaa näkymiä luovaan yrittäjyyteen, tuotteisiin, palveluihin ja tulevaisuuden kaupunkiin. Ohjelmassa on sekä avoimia että erikseen ilmoittautumista vaativia tapahtumia.",
+      "url": "https://helsinkidesignweek.com/design-week/programme/?lang=en",
+      "image": "",
+      "source": "Helsinki Design Week",
+      "tags": ["luova talous", "muotoilu", "yrittäjyys", "tulevaisuuden työ"],
+      "score": 8.3,
+      "featured": true,
+      "access": "Julkinen festivaali, tarkista ohjelmakohtaiset tiedot",
+      "price": "Vaihtelee tapahtumittain"
     },
     {
       "name": "Latin America Business Forum 2026",
       "date": "2026-08-31",
-      "time": "12:30",
+      "time": "13:00–17:30",
       "location": "Haaga-Helia, Ratapihantie 13, Helsinki / verkossa",
-      "description": "Tarjoaa konkreettista markkinoillemenotietoa ja B2B-kontakteja suomalaisille kasvuyrityksille.",
-      "url": "https://www.kauppakamarikauppa.fi/products/latin-america-business-forum-2026-hybridi-3182026",
+      "description": "Maksuton hybridifoorumi tarjoaa markkinatietoa ja B2B-kontakteja yrityksille, jotka selvittävät kasvua Latinalaisessa Amerikassa. Ohjelma sopii viennin, kumppanuuksien ja kansainvälistymisen rakentajille.",
+      "url": "https://finnpartnership.fi/en/event/latin-america-business-forum-2026/",
       "image": "",
-      "source": "Helsingin seudun kauppakamari kumppaneineen",
-      "tags": [
-        "kansainvälistyminen",
-        "B2B",
-        "vienti",
-        "verkostoituminen"
-      ],
-      "score": 8.2,
-      "featured": true
+      "source": "FinnCham ja yhteistyökumppanit",
+      "tags": ["kansainvälistyminen", "B2B", "vienti", "verkostoituminen"],
+      "score": 8.4,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen",
+      "price": "Maksuton"
     }
   ],
-  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\04_Community\\Events\\weekly_event_reports\\2026-W30_events.json"
+  "source_report": "Nousuun.fi public-event audit 2026-07-26"
 }

@@ -32,6 +32,8 @@ const renderEvent = item => `
     <dl class="archive-facts">
       <div><dt>Aika</dt><dd>${escapeText(item.time || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Paikka</dt><dd>${escapeText(item.location || "Tarkista järjestäjältä")}</dd></div>
+      <div><dt>Osallistuminen</dt><dd>${escapeText(item.access || "Avoin ilmoittautuminen")}</dd></div>
+      <div><dt>Hinta</dt><dd>${escapeText(item.price || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Järjestäjä</dt><dd>${escapeText(item.source || "–")}</dd></div>
     </dl>
     <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Avaa tapahtumasivu →</a>
