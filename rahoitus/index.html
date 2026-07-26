@@ -4,9 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rahoitus - Nousuun.fi</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css?v=rakenne-20260726" />
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-symbol">↗</span><span class="brand-text">nousuun<span class="brand-dot">.fi</span></span></a>
+    <nav class="top-nav" aria-label="Päävalikko"><a href="/polku/">Yrittäjän polku</a><a href="/tapahtumat/">Tapahtumat</a><a href="/yritykset/">Omistajanvaihdokset</a><a href="/tyokalut/">Työkalut</a><a href="/blog/">Blogi</a></nav>
+    <a class="btn btn-primary btn-sm" href="/#rahoitus">Avoimet haut</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
   <main class="color-block block-mint" style="margin-top:40px">
     <div class="section-heading">
       <p class="eyebrow">Rahoitus</p>

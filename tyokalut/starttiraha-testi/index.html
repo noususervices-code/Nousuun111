@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ilmainen starttiraha-testi: vastaa 12 kysymykseen ja saat 2 minuutissa arvion, voitko saada starttirahaa — sekä henkilökohtaisen listan seuraavista askeleista." />
+  <title>Starttiraha-testi 2026 — selvitä 2 minuutissa, voitko saada starttirahaa | Nousuun.fi</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Starttiraha-testi — voitko saada starttirahaa?" />
+  <meta property="og:description" content="Vastaa 12 kysymykseen ja saat heti arvion tilanteestasi + henkilökohtaiset seuraavat askeleet. Ilmainen, ei rekisteröintiä." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nousuun.fi/tyokalut/starttiraha-testi/" />
+  <link rel="canonical" href="https://nousuun.fi/tyokalut/starttiraha-testi/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css?v=rakenne-20260726" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Paljonko starttiraha on vuonna 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Starttirahan perusosa on peruspäivärahan suuruinen, 37,21 € päivässä eli noin 800 € brutto kuukaudessa. Starttiraha on veronalaista tuloa." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kuinka pitkäksi aikaa starttirahaa voi saada?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Starttirahaa voi saada yhteensä enintään 12 kuukautta. Tyypillisesti tuki myönnetään ensin 6 kuukaudeksi, ja jatkoa haetaan erillisellä jatkohakemuksella." }
+      },
+      {
+        "@type": "Question",
+        "name": "Voinko saada starttirahaa, jos olen jo perustanut yrityksen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Starttirahaa on haettava ennen päätoimisen yritystoiminnan aloittamista. Jos olet toiminut yrittäjänä sivutoimisesti, starttiraha voi olla mahdollinen, kun laajennat toiminnan päätoimiseksi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Estävätkö maksuhäiriömerkinnät starttirahan saamisen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Eivät automaattisesti. Maksuhäiriöt ja verovelat arvioidaan osana kokonaisharkintaa. Hoidettu maksusuunnitelma ja realistinen taloustilanne parantavat mahdollisuuksia selvästi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Mistä starttirahaa haetaan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Starttirahaa haetaan oman työllisyysalueen työvoimaviranomaiselta, yleensä sähköisesti Työmarkkinatorin kautta. Hakemus on jätettävä ennen päätoimisen yritystoiminnan aloittamista." }
+      },
+      {
+        "@type": "Question",
+        "name": "Voiko opiskelija saada starttirahaa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Päätoimiset opinnot ovat yleensä este, koska starttiraha edellyttää päätoimista yrittäjyyttä. Loppuvaiheen tai sivutoimiset opinnot arvioidaan tapauskohtaisesti." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .test-hero {
+      background: var(--color-dark);
+      color: var(--color-white);
+      padding: clamp(48px,7vw,80px) var(--gutter);
+      text-align: center;
+    }
+    .test-hero h1 { color: var(--color-white); max-width: 680px; margin: 0 auto 14px; }
+    .test-hero p { color: rgba(250,250,247,.75); max-width: 540px; margin: 0 auto; font-size: 18px; }
+    .test-hero .hero-meta { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-top:22px; font-size:14px; color: rgba(250,250,247,.65); font-family: var(--font-ui); }
+
+    .test-wrap { max-width: 620px; margin: -36px auto 0; padding: 0 var(--gutter) 64px; position: relative; z-index: 2; }
+    .test-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md, 0 10px 30px rgba(0,0,0,.08));
+      border: 1px solid rgba(0,0,0,.06);
+      padding: clamp(24px,4vw,40px);
+    }
+
+    .progress-track { height: 8px; background: var(--color-surface); border-radius: var(--radius-pill); overflow: hidden; margin-bottom: 8px; }
+    .progress-fill { height: 100%; width: 0%; background: var(--color-primary); border-radius: var(--radius-pill); transition: width .3s ease; }
+    .progress-label { font-size: 13px; color: var(--color-gray); font-family: var(--font-ui); margin-bottom: 24px; }
+
+    .q-step { display: none; }
+    .q-step.active { display: block; animation: fadeIn .25s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity:1; transform: none; } }
+
+    .q-step h2 { font-size: clamp(19px, 3vw, 23px); margin-bottom: 6px; line-height: 1.35; }
+    .q-help { font-size: 14px; color: var(--color-gray); margin-bottom: 18px; font-family: var(--font-ui); }
+
+    .opt-list { display: flex; flex-direction: column; gap: 10px; }
+    .opt-list button {
+      text-align: left;
+      padding: 14px 18px;
+      border: 1.5px solid rgba(0,0,0,.12);
+      border-radius: var(--radius-md);
+      background: var(--color-white);
+      font-size: 15px;
+      font-family: var(--font-ui);
+      color: var(--color-dark);
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .opt-list button:hover { border-color: var(--color-primary); background: rgba(255,107,53,.05); }
+    .back-link { margin-top: 18px; background: none; border: none; color: var(--color-gray); font-size: 14px; cursor: pointer; font-family: var(--font-ui); padding: 0; }
+    .back-link:hover { color: var(--color-dark); }
+
+    /* Tulokset */
+    .result { display: none; }
+    .result.active { display: block; animation: fadeIn .3s ease; }
+    .result-badge {
+      display: inline-block; padding: 6px 16px; border-radius: var(--radius-pill);
+      font-size: 13px; font-weight: 700; font-family: var(--font-ui); margin-bottom: 14px;
+    }
+    .result-badge.green { background: rgba(46,204,113,.15); color: #1d8f4e; }
+    .result-badge.yellow { background: rgba(244,162,97,.18); color: #b06a1d; }
+    .result-badge.red { background: rgba(255,107,53,.12); color: #c9401a; }
+    .result h2 { margin-bottom: 10px; }
+    .result > p { color: var(--color-gray); font-size: 15px; }
+
+    .steps-list { margin: 22px 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .steps-list li {
+      background: var(--color-surface); border-radius: var(--radius-md);
+      padding: 14px 16px; font-size: 14.5px; font-family: var(--font-ui); line-height: 1.5;
+      border-left: 3px solid var(--color-primary);
+    }
+    .steps-list li strong { font-family: var(--font-main); }
+
+    .result-cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+    .disclaimer { font-size: 12.5px; color: var(--color-gray); margin-top: 22px; line-height: 1.55; font-family: var(--font-ui); }
+    .restart { margin-top: 14px; background: none; border: none; color: var(--color-primary); font-weight: 600; font-size: 14px; cursor: pointer; font-family: var(--font-ui); padding: 0; }
+
+    /* Info & FAQ */
+    .info-section { max-width: 720px; margin: 0 auto; padding: clamp(40px,6vw,72px) var(--gutter); }
+    .info-section h2 { margin-bottom: 16px; }
+    .info-section p { color: var(--color-gray); font-size: 15.5px; line-height: 1.65; margin-bottom: 14px; }
+    .fact-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 14px; margin: 26px 0; }
+    .fact-card { background: var(--color-white); border: 1px solid rgba(0,0,0,.07); border-radius: var(--radius-md); padding: 18px; text-align: center; }
+    .fact-card .num { font-size: 24px; font-weight: 800; font-family: var(--font-main); color: var(--color-primary); display: block; }
+    .fact-card .lbl { font-size: 13px; color: var(--color-gray); font-family: var(--font-ui); }
+
+    .faq-item { border-bottom: 1px solid rgba(0,0,0,.08); padding: 16px 0; }
+    .faq-item summary { font-weight: 600; font-family: var(--font-main); font-size: 16px; cursor: pointer; list-style: none; display:flex; justify-content: space-between; gap: 12px; }
+    .faq-item summary::after { content: "+"; color: var(--color-primary); font-weight: 700; }
+    .faq-item[open] summary::after { content: "–"; }
+    .faq-item p { margin: 10px 0 0; color: var(--color-gray); font-size: 14.5px; line-height: 1.6; }
+
+    .bg-alt { background: var(--color-surface); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Nousuun.fi etusivu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
+    </a>
+    <nav class="top-nav" aria-label="Päävalikko">
+      <a href="/polku/">Yrittäjän polku</a>
+      <a href="/tapahtumat/">Tapahtumat</a>
+      <a href="/yritykset/">Omistajanvaihdokset</a>
+      <a href="/tyokalut/" style="color: var(--color-primary);">Työkalut</a>
+      <a href="/blog/">Blogi</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="/polku/">Yrittäjän polku →</a>
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
+  </header>
+
+  <main>
+
+    <section class="test-hero">
+      <p class="eyebrow" style="color: var(--color-sky); margin-bottom: 14px;">Ilmainen työkalu · Ei rekisteröintiä</p>
+      <h1>Voitko saada starttirahaa?</h1>
+      <p>Vastaa 12 kysymykseen ja saat heti arvion tilanteestasi — sekä henkilökohtaisen listan seuraavista askeleista.</p>
+      <div class="hero-meta">
+        <span>⏱ Noin 2 minuuttia</span>
+        <span>📋 Perustuu julkisiin myöntämisedellytyksiin</span>
+        <span>🔒 Vastauksia ei tallenneta</span>
+      </div>
+    </section>
+
+    <div class="test-wrap">
+      <div class="test-card">
+
+        <div id="progress-area">
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <p class="progress-label"><span id="progress-text">Kysymys 1/12</span></p>
+        </div>
+
+        <div id="quiz"></div>
+
+        <!-- TULOKSET -->
+        <div class="result" id="result-area">
+          <span class="result-badge" id="result-badge"></span>
+          <h2 id="result-title"></h2>
+          <p id="result-desc"></p>
+          <ul class="steps-list" id="result-steps"></ul>
+          <div class="result-cta">
+            <a class="btn btn-primary" href="/polku/">Aloita yrittäjän polku →</a>
+            <a class="btn btn-outline" href="/tyokalut/">Katso muut työkalut</a>
+          </div>
+          <button class="restart" onclick="restartQuiz()">↻ Tee testi uudelleen</button>
+          <p class="disclaimer">⚠️ Tämä testi on suuntaa-antava eikä ole viranomaisen päätös tai ennakkoarvio. Starttiraha on harkinnanvarainen tuki, jonka myöntää oman työllisyysalueesi työvoimaviranomainen kokonaisharkinnan perusteella. Varmista aina oma tilanteesi viranomaiselta ennen yritystoiminnan aloittamista. Testi perustuu julkisesti saatavilla oleviin myöntämisedellytyksiin (laki työvoimapalveluiden järjestämisestä).</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TIETOA STARTTIRAHASTA -->
+    <section class="info-section">
+      <h2>Mikä starttiraha on?</h2>
+      <p>Starttiraha on työvoimaviranomaisen myöntämä harkinnanvarainen tuki, joka turvaa yrittäjän toimeentuloa yritystoiminnan käynnistysvaiheessa. Se on tarkoitettu päätoimiseksi yrittäjäksi ryhtyvälle — ja sitä on haettava <strong>ennen</strong> päätoimisen yritystoiminnan aloittamista.</p>
+      <div class="fact-grid">
+        <div class="fact-card"><span class="num">37,21 €</span><span class="lbl">päivässä (2026)</span></div>
+        <div class="fact-card"><span class="num">~800 €</span><span class="lbl">brutto / kk</span></div>
+        <div class="fact-card"><span class="num">6 + 6 kk</span><span class="lbl">tyypillinen kesto</span></div>
+        <div class="fact-card"><span class="num">12 kk</span><span class="lbl">enimmäiskesto</span></div>
+      </div>
+      <p>Starttirahan myöntäminen edellyttää muun muassa päätoimista yrittäjyyttä, riittäviä valmiuksia aiottuun toimintaan, edellytyksiä kannattavaan liiketoimintaan sekä sitä, että tuki on tarpeellinen toimeentulon kannalta. Hakemuksen liitteeksi tarvitaan yleensä liiketoimintasuunnitelma ja kannattavuuslaskelma.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="info-section bg-alt" style="max-width:none;">
+      <div style="max-width:720px;margin:0 auto;">
+        <h2>Usein kysytyt kysymykset</h2>
+        <details class="faq-item">
+          <summary>Paljonko starttiraha on vuonna 2026?</summary>
+          <p>Starttirahan perusosa on peruspäivärahan suuruinen, 37,21 € päivässä eli noin 800 € brutto kuukaudessa (maksupäiviä keskimäärin 21,5/kk). Starttiraha on veronalaista tuloa. Aiempi korotusosa on poistunut lainsäädännöstä.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Kuinka pitkäksi aikaa starttirahaa voi saada?</summary>
+          <p>Yhteensä enintään 12 kuukautta. Tyypillisesti tuki myönnetään ensin 6 kuukaudeksi, ja jatkolle jätetään erillinen jatkohakemus ennen ensimmäisen jakson päättymistä. Jatko ei ole automaattinen — toiminnan on täytynyt edetä suunnitelman mukaisesti.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Voinko saada starttirahaa, jos olen jo perustanut yrityksen?</summary>
+          <p>Ratkaisevaa on päätoimisen toiminnan aloittaminen: starttirahaa on haettava ennen sitä. Jos olet toiminut sivutoimisena yrittäjänä (esim. palkkatyön tai opintojen ohella), starttiraha voi olla mahdollinen, kun siirryt päätoimiseksi.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Estävätkö maksuhäiriömerkinnät starttirahan?</summary>
+          <p>Eivät automaattisesti. Maksuhäiriöt ja verovelat arvioidaan osana kokonaisharkintaa — olennaista on, vaikuttavatko ne yrityksen edellytyksiin kannattavaan toimintaan. Hoidettu maksusuunnitelma parantaa tilannetta selvästi.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Mistä ja miten starttirahaa haetaan?</summary>
+          <p>Starttirahaa haetaan oman työllisyysalueen työvoimaviranomaiselta, yleensä sähköisesti Työmarkkinatorin kautta. Liitteeksi tarvitaan tyypillisesti liiketoimintasuunnitelma ja kannattavuuslaskelma. Maksuttomia neuvontapalveluita saat esimerkiksi Uusyrityskeskuksista.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Voiko opiskelija tai palkkatyössä oleva saada starttirahaa?</summary>
+          <p>Starttiraha edellyttää päätoimista yrittäjyyttä. Päätoimiset opinnot tai jatkuva kokoaikainen palkkatyö ovat siksi yleensä este. Opintojen loppuvaihe tai sivutoimiset opinnot arvioidaan tapauskohtaisesti.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="#FF6B35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>nousuun.fi</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="/">Etusivu</a>
+        <a href="/polku/">Yrittäjän polku</a>
+        <a href="/tyokalut/">Työkalut</a>
+        <a href="mailto:nousu.services@gmail.com">Ota yhteyttä</a>
+      </nav>
+      <p class="footer-copy">© 2026 Nousuun.fi</p>
+    </div>
+  </footer>
+
+  <script>
+    const QUESTIONS = [
+      {
+        id: "situation",
+        title: "Mikä kuvaa nykytilannettasi parhaiten?",
+        help: "Tämä vaikuttaa siihen, mitkä askeleet ovat sinulle ajankohtaisia.",
+        options: [
+          { v: "tyoton", label: "Olen työtön työnhakija", pts: 0 },
+          { v: "palkkatyo", label: "Olen palkkatyössä ja harkitsen yrittäjyyttä", pts: 0 },
+          { v: "opiskelija", label: "Olen opiskelija", pts: 0 },
+          { v: "sivutoiminen", label: "Toimin jo sivutoimisena yrittäjänä", pts: 0 },
+          { v: "muu", label: "Muu tilanne", pts: 0 }
+        ]
+      },
+      {
+        id: "started",
+        title: "Oletko jo aloittanut päätoimisen yritystoiminnan?",
+        help: "Starttirahaa on haettava ennen päätoimisen toiminnan aloittamista.",
+        options: [
+          { v: "en", label: "En — vasta suunnittelen", pts: 2 },
+          { v: "sivutoimisesti", label: "Toimin sivutoimisesti, aion laajentaa päätoimiseksi", pts: 2 },
+          { v: "paatoimisesti", label: "Kyllä, toimin jo päätoimisesti", pts: 0, blocker: true }
+        ]
+      },
+      {
+        id: "fulltime",
+        title: "Aiotko työskennellä yrityksessäsi päätoimisesti?",
+        help: "Starttiraha on tarkoitettu vain päätoimiseen yrittäjyyteen.",
+        options: [
+          { v: "kylla", label: "Kyllä, kokoaikaisesti", pts: 2 },
+          { v: "ei", label: "En — sivutoimisesti muun ohella", pts: 0, blocker: true }
+        ]
+      },
+      {
+        id: "experience",
+        title: "Onko sinulla työkokemusta tai koulutusta alalta, jolle perustat yrityksen?",
+        help: "Riittävät valmiudet ovat yksi myöntämisedellytyksistä.",
+        options: [
+          { v: "molemmat", label: "Kyllä, sekä kokemusta että koulutusta", pts: 3 },
+          { v: "toinen", label: "Jompikumpi — kokemusta tai koulutusta", pts: 2 },
+          { v: "ei", label: "Ei kumpaakaan vielä", pts: 0 }
+        ]
+      },
+      {
+        id: "yrittajyys",
+        title: "Onko sinulla yrittäjäkokemusta tai oletko käynyt yrittäjyyskoulutuksen?",
+        help: "Esimerkiksi yrittäjyyskurssi tai aiempi yritystoiminta.",
+        options: [
+          { v: "kylla", label: "Kyllä", pts: 2 },
+          { v: "ei", label: "En vielä", pts: 0 }
+        ]
+      },
+      {
+        id: "lts",
+        title: "Onko liiketoimintasuunnitelmasi valmis?",
+        help: "Liiketoimintasuunnitelma on hakemuksen tärkein liite.",
+        options: [
+          { v: "valmis", label: "Kyllä, valmis", pts: 3 },
+          { v: "tyonalla", label: "Työn alla", pts: 1 },
+          { v: "ei", label: "Ei vielä", pts: 0 }
+        ]
+      },
+      {
+        id: "laskelma",
+        title: "Oletko tehnyt kannattavuuslaskelman?",
+        help: "Laskelma osoittaa, että toiminnalla on edellytykset kannattaa.",
+        options: [
+          { v: "valmis", label: "Kyllä, valmis", pts: 3 },
+          { v: "tyonalla", label: "Työn alla", pts: 1 },
+          { v: "ei", label: "En vielä", pts: 0 }
+        ]
+      },
+      {
+        id: "credit",
+        title: "Onko sinulla maksuhäiriömerkintöjä tai verovelkaa?",
+        help: "Nämä eivät automaattisesti estä, mutta ne arvioidaan kokonaisharkinnassa.",
+        options: [
+          { v: "ei", label: "Ei ole", pts: 3 },
+          { v: "suunnitelma", label: "On, mutta maksusuunnitelma on tehty ja hoidossa", pts: 1 },
+          { v: "hoitamatta", label: "On, eikä maksusuunnitelmaa ole vielä", pts: -3 }
+        ]
+      },
+      {
+        id: "otherincome",
+        title: "Saisitko starttirahakaudella samaan aikaan palkkaa, opintotukea tai muuta tukea?",
+        help: "Päällekkäiset tulot ja etuudet vaikuttavat myöntämiseen.",
+        options: [
+          { v: "ei", label: "En — starttiraha olisi päätulonlähteeni", pts: 2 },
+          { v: "palkkatyo", label: "Kokoaikainen palkkatyöni jatkuisi rinnalla", pts: 0, blocker: true },
+          { v: "opinnot", label: "Opiskelen päätoimisesti ja saan opintotukea", pts: -2 },
+          { v: "muutuki", label: "Saan muuta tukea samalle ajalle", pts: -1 }
+        ]
+      },
+      {
+        id: "need",
+        title: "Onko starttiraha tarpeellinen toimeentulosi kannalta yrityksen alkuvaiheessa?",
+        help: "Tuen on oltava tarpeellinen — ei vain mukava lisä.",
+        options: [
+          { v: "kylla", label: "Kyllä — tarvitsen tukea toimeentulooni alkuvaiheessa", pts: 2 },
+          { v: "ei", label: "Toimeentuloni on turvattu muutenkin", pts: -2 }
+        ]
+      },
+      {
+        id: "permits",
+        title: "Vaatiiko toimialasi lupia tai rekisteröintejä (esim. sote, ravintola, taksi)?",
+        help: "Luvanvaraisilla aloilla luvat on syytä olla hoidossa tai vireillä.",
+        options: [
+          { v: "eivaadi", label: "Ei vaadi", pts: 2 },
+          { v: "hoidossa", label: "Vaatii — luvat ovat hoidossa tai vireillä", pts: 2 },
+          { v: "eiviela", label: "Vaatii — en ole vielä selvittänyt lupia", pts: 0 }
+        ]
+      },
+      {
+        id: "partners",
+        title: "Perustatko yrityksen yksin vai muiden kanssa?",
+        help: "Osakkaana ratkaisevaa on mm. omistusosuutesi ja asemasi yrityksessä.",
+        options: [
+          { v: "yksin", label: "Yksin", pts: 0 },
+          { v: "osakkaana", label: "Osakkaana muiden kanssa", pts: 0 }
+        ]
+      }
+    ];
+
+    const MAX_PTS = 24; // Positiivisten pisteiden maksimi
+    let current = 0;
+    const answers = {};
+
+    const quizEl = document.getElementById("quiz");
+    const fillEl = document.getElementById("progress-fill");
+    const textEl = document.getElementById("progress-text");
+
+    function renderQuestion() {
+      const q = QUESTIONS[current];
+      fillEl.style.width = ((current) / QUESTIONS.length * 100) + "%";
+      textEl.textContent = "Kysymys " + (current + 1) + "/" + QUESTIONS.length;
+
+      const opts = q.options.map((o, i) =>
+        `<button type="button" onclick="answer('${q.id}', ${i})">${o.label}</button>`
+      ).join("");
+
+      quizEl.innerHTML = `
+        <div class="q-step active">
+          <h2>${q.title}</h2>
+          <p class="q-help">${q.help}</p>
+          <div class="opt-list">${opts}</div>
+          ${current > 0 ? '<button class="back-link" onclick="goBack()">← Edellinen kysymys</button>' : ''}
+        </div>`;
+    }
+
+    function answer(id, optIndex) {
+      const q = QUESTIONS.find(x => x.id === id);
+      answers[id] = q.options[optIndex];
+      current++;
+      if (current < QUESTIONS.length) renderQuestion();
+      else showResult();
+    }
+
+    function goBack() {
+      if (current > 0) { current--; renderQuestion(); }
+    }
+
+    function restartQuiz() {
+      current = 0;
+      for (const k in answers) delete answers[k];
+      document.getElementById("result-area").classList.remove("active");
+      document.getElementById("progress-area").style.display = "";
+      quizEl.style.display = "";
+      renderQuestion();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function showResult() {
+      quizEl.style.display = "none";
+      document.getElementById("progress-area").style.display = "none";
+
+      let pts = 0;
+      const blockers = [];
+      for (const id in answers) {
+        pts += answers[id].pts || 0;
+        if (answers[id].blocker) blockers.push(id);
+      }
+
+      const tips = buildTips(blockers);
+      let tier;
+      if (blockers.length > 0 || pts < 8) tier = "red";
+      else if (pts >= 19 && answers.credit.v === "ei" && answers.otherincome.v === "ei"
+               && answers.lts.v === "valmis" && answers.laskelma.v === "valmis") tier = "green";
+      else tier = "yellow";
+
+      const badge = document.getElementById("result-badge");
+      const title = document.getElementById("result-title");
+      const desc = document.getElementById("result-desc");
+
+      if (tier === "green") {
+        badge.className = "result-badge green"; badge.textContent = "● Hyvät edellytykset";
+        title.textContent = "Tilanteesi näyttää lupaavalta!";
+        desc.textContent = "Vastaustesi perusteella täytät todennäköisesti keskeiset starttirahan myöntämisedellytykset. Muista: starttiraha on aina harkinnanvarainen, ja lopullisen arvion tekee työvoimaviranomainen. Näin etenet:";
+      } else if (tier === "yellow") {
+        badge.className = "result-badge yellow"; badge.textContent = "● Mahdollinen — vaatii valmistelua";
+        title.textContent = "Starttiraha voi olla mahdollinen, mutta muutama asia kannattaa hoitaa ensin.";
+        desc.textContent = "Perusedellytykset näyttävät olevan kohdallaan, mutta hakemuksesi vahvistuu selvästi, kun hoidat alla olevat asiat kuntoon ennen hakemista:";
+      } else {
+        badge.className = "result-badge red"; badge.textContent = "● Ei todennäköisesti juuri nyt";
+        title.textContent = "Starttiraha ei näytä mahdolliselta tässä tilanteessa.";
+        desc.textContent = "Jokin vastauksistasi viittaa esteeseen. Tilanne voi kuitenkin muuttua — katso alta, mikä on esteenä ja mitä voit tehdä:";
+      }
+
+      document.getElementById("result-steps").innerHTML = tips.map(t => `<li>${t}</li>`).join("");
+      document.getElementById("result-area").classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function buildTips(blockers) {
+      const t = [];
+      const a = answers;
+
+      // Esteet ensin
+      if (a.started && a.started.v === "paatoimisesti")
+        t.push("<strong>Keskeinen este:</strong> starttirahaa on haettava ennen päätoimisen yritystoiminnan aloittamista. Jo aloitettuun päätoimiseen toimintaan tukea ei pääsääntöisesti myönnetä.");
+      if (a.fulltime && a.fulltime.v === "ei")
+        t.push("<strong>Keskeinen este:</strong> starttiraha edellyttää päätoimista yrittäjyyttä. Sivutoimiseen yritystoimintaan sitä ei myönnetä — harkitse, voisitko siirtyä päätoimiseksi.");
+      if (a.otherincome && a.otherincome.v === "palkkatyo")
+        t.push("<strong>Keskeinen este:</strong> jatkuva kokoaikainen palkkatyö tarkoittaa, ettei yrittäjyys ole päätoimista. Jos suunnittelet siirtymää, hae starttirahaa vasta kun olet jäämässä pois palkkatyöstä.");
+
+      // Valmistelut
+      if (a.lts && a.lts.v !== "valmis")
+        t.push("<strong>Tee liiketoimintasuunnitelma valmiiksi.</strong> Se on hakemuksen tärkein liite. Uusyrityskeskukset auttavat maksutta — myös laskelmissa.");
+      if (a.laskelma && a.laskelma.v !== "valmis")
+        t.push("<strong>Laadi kannattavuuslaskelma.</strong> Sen tehtävä on osoittaa, että toiminta voi kannattaa. Realistiset luvut ovat uskottavampia kuin optimistiset.");
+      if (a.experience && a.experience.v === "ei" && a.yrittajyys && a.yrittajyys.v === "ei")
+        t.push("<strong>Vahvista valmiuksiasi.</strong> Ilman alan kokemusta tai koulutusta yrittäjyyskurssi on vahva näyttö riittävistä valmiuksista — ja usein käytännössä edellytys.");
+      else if (a.yrittajyys && a.yrittajyys.v === "ei")
+        t.push("<strong>Harkitse yrittäjyyskoulutusta.</strong> Se vahvistaa hakemustasi, vaikka sinulla on jo alan osaamista.");
+      if (a.credit && a.credit.v === "hoitamatta")
+        t.push("<strong>Hoida maksuhäiriöt ja verovelat suunnitelmaan.</strong> Hoitamattomat velat ovat merkittävä riski hakemukselle. Maksusuunnitelma Verohallinnon tai ulosoton kanssa muuttaa tilanteen arviota selvästi.");
+      else if (a.credit && a.credit.v === "suunnitelma")
+        t.push("<strong>Liitä selvitys maksusuunnitelmasta hakemukseen.</strong> Osoita, että talous on hallinnassa ja suunnitelma pitää.");
+      if (a.otherincome && a.otherincome.v === "opinnot")
+        t.push("<strong>Selvitä opintojesi vaikutus.</strong> Päätoimiset opinnot ovat yleensä este. Jos opinnot ovat loppusuoralla tai muutettavissa sivutoimisiksi, tilanne voi olla toinen.");
+      if (a.otherincome && a.otherincome.v === "muutuki")
+        t.push("<strong>Selvitä tukien päällekkäisyys.</strong> Samalle ajalle myönnetyt muut tuet voivat estää starttirahan — kysy tilanteestasi työvoimaviranomaiselta etukäteen.");
+      if (a.need && a.need.v === "ei")
+        t.push("<strong>Huomio tarpeellisuusharkinnasta:</strong> starttiraha myönnetään vain, jos se on tarpeellinen toimeentulosi kannalta. Jos toimeentulosi on muuten turvattu, tuki voidaan evätä tällä perusteella.");
+      if (a.permits && a.permits.v === "eiviela")
+        t.push("<strong>Selvitä toimialasi luvat heti.</strong> Luvanvaraisella alalla lupien puuttuminen viivästyttää tai estää myönteisen päätöksen.");
+      if (a.partners && a.partners.v === "osakkaana")
+        t.push("<strong>Tarkista asemasi yrityksessä.</strong> Osakkaana starttirahan kannalta ratkaisevaa on mm. omistusosuutesi, määräysvaltasi ja työskentelysi yrityksessä. Jos useampi osakas hakee starttirahaa samaan yritykseen, jokainen hakee erikseen.");
+      if (a.situation && a.situation.v === "sivutoiminen" && (!a.started || a.started.v !== "paatoimisesti"))
+        t.push("<strong>Sivutoimisesta päätoimiseksi:</strong> starttiraha voi olla mahdollinen, kun laajennat sivutoimisen toiminnan päätoimiseksi. Hae ennen päätoimiseksi siirtymistä.");
+
+      // Aina lopuksi
+      t.push("<strong>Hae ennen aloittamista.</strong> Jätä hakemus oman työllisyysalueesi työvoimaviranomaiselle (yleensä Työmarkkinatorin kautta) ennen päätoimisen toiminnan aloittamista — älä perusta kiireessä.");
+      return t;
+    }
+
+    renderQuestion();
+  </script>
+
+</body>
+</html>
