@@ -755,6 +755,7 @@ img, svg { display: block; max-width: 100%; }
 }
 .blog-row h3 { margin: 0; font-size: clamp(20px, 3vw, 30px); }
 .blog-row > span { color: var(--color-primary); font-size: 26px; }
+.blog-row + .blog-row { margin-top: 16px; }
 
 .article-shell {
   width: min(100% - 40px, 900px);
