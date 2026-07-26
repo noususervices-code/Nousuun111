@@ -247,6 +247,21 @@ img, svg { display: block; max-width: 100%; }
 .pillar-desc { font-size: 15px; color: var(--color-gray); line-height: 1.55; flex: 1; margin: 0; }
 .pillar-cta { font-weight: 600; font-size: 14px; color: var(--color-primary); font-family: var(--font-main); }
 
+.route-tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 24px 28px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,.55);
+}
+.route-tools strong { font-family: var(--font-main); font-size: 18px; }
+.route-tools p { margin: 4px 0 0; color: var(--color-gray); }
+.route-tools .text-link { flex: 0 0 auto; }
+
 /* ── FEATURE SECTIONS ── */
 .feature-section { padding: var(--section) 0; }
 
@@ -643,6 +658,7 @@ img, svg { display: block; max-width: 100%; }
 }
 @media (max-width: 600px) {
   .pillars-grid.pillars-4 { grid-template-columns: 1fr; }
+  .route-tools { align-items: flex-start; flex-direction: column; }
 }
 
 /* ── SISÄLTÖARKISTOT JA BLOGI ── */
