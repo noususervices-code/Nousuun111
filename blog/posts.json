@@ -1,5 +1,18 @@
 [
   {
+    "slug": "elokuun-kolme-siirtoa-yrittajalle",
+    "title": "Elokuun kolme siirtoa yrittäjälle: merkitse, rajaa ja mene huoneeseen",
+    "category": "Ajankohtaista",
+    "pillar": "tekoaly",
+    "tags": ["Tekoäly", "Rahoitus", "Tapahtumat"],
+    "date": "2026-08-01",
+    "dateLabel": "1. elokuuta 2026",
+    "excerpt": "Tarkista AI:n läpinäkyvyys, rajaa Sprint-hanke ja valitse yksi hyödyllinen tapahtuma. Kolme tekoa elokuun ensimmäiselle viikolle.",
+    "readTime": "7 min",
+    "source": "Nousuun.fi viikkoajo W31",
+    "featured": true
+  },
+  {
     "slug": "riittaako-starttiraha",
     "title": "Riittääkö starttiraha? Mitä 800 euroa kuukaudessa tarkoittaa käytännössä",
     "category": "Rahoitus",
@@ -10,7 +23,7 @@
     "excerpt": "Starttiraha on merkittävä apu, mutta se ei ole palkka. Luvut auki ja rehellinen arvio siitä, paljonko puskuria tarvitset sen rinnalle.",
     "readTime": "7 min",
     "source": "Nousuun.fi",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "yel-tyotulo-yrittajan-tarkein-luku",
