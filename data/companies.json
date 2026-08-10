@@ -1,107 +1,107 @@
 {
   "agent": "Agentti B - Omistajanvaihdokset",
-  "updated_at": "2026-08-03T10:38:25.462776+00:00",
-  "week": "2026-W32",
+  "updated_at": "2026-08-10T08:24:12.267243+00:00",
+  "week": "2026-W33",
   "companies": [
     {
-      "name": "Tunnettu hyvämaineinen ja laadukas KANNATTAVA verkkosivusto myynnissä",
-      "industry": "ATK-ohjelmointi, ATK-ylläpito (ICT), Kustannustoiminta, Mainostoimisto, markkinointi, Muu palvelualan yritys, Muu toimiala, Verkkokauppa",
-      "price": "350 000 EUR",
-      "location": "Kaikki alueet",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/atk-ohjelmointi-atk-yllapito-ict/kaikki-alueet/tunnettu-hyvamaineinen-ja-laadukas-kannattava-verkkosivusto-myynnissa/124063/",
+      "name": "Menestyvä sähköurakointialan yritys myynnissä",
+      "industry": "Insinööritoimisto, Kiinteistöalan palvelut, Koneiden ja laitteiden huolto, Konsultointi, koulutus, LVI-asennus, huolto, suunnittelu, Rakentaminen, Sähköasennus, -huolto, -suunnittelu, Tekninen kauppa",
+      "price": "Osakekauppa",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/insinooritoimisto/suomi/menestyva-sahkourakointialan-yritys-myynnissa/120750/",
       "source": "Suomen Yrityskaupat",
-      "score": 8.7,
-      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Kaikki alueet. Hintatieto: 350 000 EUR."
+      "score": 9.0,
+      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Suomi. Hintatieto: Osakekauppa."
     },
     {
-      "name": "Pitkään toiminut kannattava höyrymyynnin ja -palveluiden erikoisosaaja",
-      "industry": "Kiinteistöalan palvelut, Koneiden, laitteiden, tavaroiden vuokraus, LVI-asennus, huolto, suunnittelu, Muu palvelualan yritys, Muu toimiala, Muu valmistava teollisuus, Palveluyritykset, Rakentaminen",
-      "price": "320 000 EUR Osakekauppa (myös liiketoimintakauppa mahdollinen)",
-      "location": "Turun talousalue",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/pitkaan-toiminut-kannattava-hoyrymyynnin-ja-palveluiden-erikoisosaaja/125367/",
+      "name": "Myydään pitkäaikainen ja vakaa design-, maahantuonti- ja tukkumyyntialan yritys",
+      "industry": "Vähittäis- ja tukkukaupat, tuonti, edustus",
+      "price": "250 000 EUR Liiketoimintakauppa",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/vahittais-ja-tukkukaupat-tuonti-edustus/suomi/myydaan-pitkaaikainen-ja-vakaa-design-maahantuonti-ja-tukkumyyntialan-yritys/121599/",
       "source": "Suomen Yrityskaupat",
-      "score": 7.3,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Turun talousalue. Hintatieto: 320 000 EUR Osakekauppa (myös liiketoimintakauppa mahdollinen)."
+      "score": 7.2,
+      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Suomi. Hintatieto: 250 000 EUR Liiketoimintakauppa."
     },
     {
-      "name": "Suomalaisten keskuudessa arvostettuja laadukkaita meikkipöytiä ja meikkivaloja myyvä verkkokauppa.",
-      "industry": "Kauneudenhoito, Maahantuonti, Verkkokauppa",
-      "price": "50 000 EUR",
-      "location": "Kaikki alueet",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kauneudenhoito/kaikki-alueet/virolainen-verkkokauppayritys-joka-suunnittelee-valmistaa-ja-myy-koti-ja-kauneushoitolan-tuotteita-valot-peilit/118391/",
+      "name": "Kannattava kattorakentamisen liiketoiminta myynnissä",
+      "industry": "Kiinteistöalan palvelut, Rakentaminen",
+      "price": "195 000 EUR Liiketoimintakauppa",
+      "location": "Pirkanmaa",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/pirkanmaa/kannattava-kattorakentamisen-liiketoiminta-myynnissa/116398/",
+      "source": "Suomen Yrityskaupat",
+      "score": 7.2,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Pirkanmaa. Hintatieto: 195 000 EUR Liiketoimintakauppa."
+    },
+    {
+      "name": "Erinomaisesti menestyvä laiturivalmistaja myynnissä",
+      "industry": "Muu valmistava teollisuus, Puutarha, Puutavaran ja puutuotteiden valmistus, Rakentaminen, Verkkokauppa",
+      "price": "Osakekauppa (myös liiketoimintakauppa mahdollinen) tarjousten mukaan",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-valmistava-teollisuus/suomi/menestyva-laiturivalmistaja-myynnissa/118173/",
       "source": "Suomen Yrityskaupat",
       "score": 6.9,
-      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Kaikki alueet. Hintatieto: 50 000 EUR."
+      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Suomi. Hintatieto: Osakekauppa (myös liiketoimintakauppa mahdollinen) tarjousten mukaan."
     },
     {
-      "name": "Luotettava ja menestyvä autohuoltoliiketoiminta Keski-Suomessa",
-      "industry": "Ajoneuvojen huoltokorjaamot",
-      "price": "690 000 EUR Osakekauppa",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ajoneuvojen-huoltokorjaamot/keski-suomi/luotettava-ja-menestyva-autohuoltoliiketoiminta-keski-suomessa/126182/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Keski-Suomi. Hintatieto: 690 000 EUR Osakekauppa."
-    },
-    {
-      "name": "Kannattava ja aseman omaava kattofirma, jolla kymmenien vuosien kokemus",
-      "industry": "Rakentaminen",
-      "price": "660 000 EUR",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/suomi/kannattava-ja-aseman-omaava-kattofirma-jolla-kymmenien-vuosien-kokemus/121290/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 660 000 EUR."
-    },
-    {
-      "name": "Vakaa ja kannattava bussiliiketoiminta – valmiina jatkajalle",
-      "industry": "Kuljetusliikkeet, taksit",
-      "price": "672 000 EUR Substanssiarvo",
-      "location": "Satakunta",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kuljetusliikkeet-taksit/satakunta/vakaa-ja-kannattava-bussiliiketoiminta-valmiina-jatkajalle/125909/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Satakunta. Hintatieto: 672 000 EUR Substanssiarvo."
-    },
-    {
-      "name": "Hyvällä sijainnilla, kannattava päivittäistavara- ja nonfood-kauppa",
-      "industry": "Elintarvikkeiden myynti, tuonti, vienti",
-      "price": "tarjouksien perusteella",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarvikkeiden-myynti-tuonti-vienti/keski-suomi/hyvalla-sijainnilla-kannattava-paivittaistavara-ja-nonfood-kauppa/121270/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle. Sijainti: Keski-Suomi. Hintatieto: tarjouksien perusteella."
-    },
-    {
-      "name": "Vakiintunut erikoistunut elintarvikeliike huippusijainnilla myynnissä",
-      "industry": "Elintarviketeollisuus, Elintarvikkeiden myynti, tuonti, vienti, Muut vähittäiskaupat, Pitopalvelu, liikkuva elintarvikemyynti",
-      "price": "50 000 EUR Liiketoimintakauppa",
-      "location": "Varsinais-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarviketeollisuus/varsinais-suomi/vakiintunut-erikoistunut-elintarvikeliike-huippusijainnilla-myynnissa/126960/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.2,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Varsinais-Suomi. Hintatieto: 50 000 EUR Liiketoimintakauppa."
-    },
-    {
-      "name": "Maahantuoja ja myyjä: erittäin arvostettuja merkkituotteita, teetä ja kahvia sekä niiden tarvikkeita",
-      "industry": "Elintarvikkeiden myynti, tuonti, vienti, Maahantuonti, Verkkokauppa",
-      "price": "125 000 EUR 2,5 X EBITDA",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarvikkeiden-myynti-tuonti-vienti/viro/maahantuoja-ja-myyja-erittain-arvostettuja-merkkituotteita-teeta-ja-kahvia-seka-niiden-tarvikkeita/123754/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Viro. Hintatieto: 125 000 EUR 2,5 X EBITDA."
-    },
-    {
-      "name": "Geomar vuokra – siivouspalvelut Oy",
-      "industry": "Kiinteistöalan palvelut, Kiinteistöjen ja rakennusten omistaminen",
-      "price": "859 000 EUR Liiketoimintakauppa",
+      "name": "Tunnettu ja arvostettu jalkojenhoidon erikoiskauppa myytävänä Länsi‑Suomessa",
+      "industry": "Kauneudenhoito, Muu palvelualan yritys, Terveydenhoito, sosiaaliala, Verkkokauppa",
+      "price": "195 000 EUR Liiketoimintakauppa",
       "location": "Turun talousalue",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/geomar-vuokra-siivouspalvelut-oy/124165/",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kauneudenhoito/turun-talousalue/tunnettu-jalkahoidon-erikoisliike-ja-verkkokauppa-lansi-suomessa/124040/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.9,
+      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Turun talousalue. Hintatieto: 195 000 EUR Liiketoimintakauppa."
+    },
+    {
+      "name": "Vuosikymmeniä toiminut kannattava erikoiselintarviketuotteiden valmistaja myytävänä",
+      "industry": "Elintarviketeollisuus, Elintarvikkeiden myynti, tuonti, vienti",
+      "price": "980 000 EUR Osakekauppana",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/elintarviketeollisuus/suomi/vuosikymmenia-toiminut-kannattava-erikoiselintarviketuotteiden-valmistaja-myytavana/127288/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.3,
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 980 000 EUR Osakekauppana."
+    },
+    {
+      "name": "Myydään autohuoltamo, automaattipesukone ja polttoaineiden myynti",
+      "industry": "Ajoneuvojen huoltokorjaamot, Huoltoasema, polttoaineiden myynti",
+      "price": "200 000 EUR liiketoimintakauppa. Liiketoiminta voidaan myydä myös osissa.",
+      "location": "Pohjois-Savo",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ajoneuvojen-huoltokorjaamot/pohjois-savo/myydaan-autokorjaamo-automaattipesukone-ja-polttoaineiden-myynti-liiketoiminta/121221/",
       "source": "Suomen Yrityskaupat",
       "score": 5.9,
-      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Turun talousalue. Hintatieto: 859 000 EUR Liiketoimintakauppa."
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Pohjois-Savo. Hintatieto: 200 000 EUR liiketoimintakauppa. Liiketoiminta voidaan myydä myös osissa.."
+    },
+    {
+      "name": "Myydään vakiintunut siivous- ja kiinteistöpalveluyritys",
+      "industry": "Kiinteistöalan palvelut, Siivous, puhtaanapito",
+      "price": "550 000 EUR",
+      "location": "Itä-Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/ita-suomi/myydaan-vakiintunut-siivous-ja-kiinteistopalveluyritys/126972/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Itä-Suomi. Hintatieto: 550 000 EUR."
+    },
+    {
+      "name": "Menestyvä mainosalan yritys myynnissä Länsi-Suomessa",
+      "industry": "Mainostoimisto, markkinointi",
+      "price": "125 000 EUR Liiketoimintakauppa, voidaan myydä myös osakekauppana, hinta 159 000 €",
+      "location": "Länsi-Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/mainostoimisto-markkinointi/lansi-suomi/menestyva-mainosalan-yritys-myynnissa-lansi-suomessa/122672/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Länsi-Suomi. Hintatieto: 125 000 EUR Liiketoimintakauppa, voidaan myydä myös osakekauppana, hinta 159 000 €."
+    },
+    {
+      "name": "Erittäin hyvämaineinen maa- ja vesirakentamisen suunnittelu- ja konsultointiyritys",
+      "industry": "Arkkitehti- ja rakennussuunnittelu",
+      "price": "350 000 EUR",
+      "location": "Viro",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/arkkitehti-ja-rakennussuunnittelu/viro/erittain-hyvamaineinen-maa-ja-vesirakentamisen-suunnittelu-ja-konsultointiyritys/124463/",
+      "source": "Suomen Yrityskaupat",
+      "score": 5.9,
+      "insight": "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista. Sijainti: Viro. Hintatieto: 350 000 EUR."
     }
   ]
 }
