@@ -1,158 +1,78 @@
 {
   "agent": "Agentti A - Tapahtumat",
   "quality": "curated_weekly_report",
-  "updated_at": "2026-08-01T18:10:03.507470+00:00",
-  "week": "2026-W31",
+  "updated_at": "2026-08-24T04:00:15.243897+00:00",
+  "week": "2026-W35",
   "events": [
     {
-      "name": "Open House: Learn About The Business Generator Program",
-      "date": "2026-08-05",
-      "time": "10:00-12:00",
-      "location": "Aalto Startup Center Lounge, Otakaari 5, Espoo",
-      "description": "Aikakriittinen ja kaikille avoin mahdollisuus selvittää kiihdyttämön sopivuus ennen ohjelmahaun sulkeutumista.",
-      "url": "https://startupcenter.aalto.fi/events/open-house-learn-about-the-business-generator-program",
+      "name": "Startup World 2026",
+      "date": "2026-08-26",
+      "time": "13:00 alkaen",
+      "location": "Alvarinaukio, Otaniementie, Espoo",
+      "description": "Avoin pääsy Aallon startup-yhteisöön tekee tapahtumasta matalan kynnyksen verkostoitumispaikan uusille perustajille.",
+      "url": "https://luma.com/aaltoes-l1lh",
       "image": "",
-      "source": "Aalto Startup Center",
+      "source": "Aaltoes",
       "tags": [
         "startup",
-        "kiihdyttämö",
-        "rahoitus",
-        "kasvu"
-      ],
-      "score": 8.5,
-      "featured": true,
-      "access": "Avoin ilmoittautuminen",
-      "price": "Ilmainen, ilmoittautuminen pakollinen"
-    },
-    {
-      "name": "Monthly AI Meetup @ Helsinki XR Center",
-      "date": "2026-08-12",
-      "time": "16:30 verkostoituminen, 17:00-19:00 sessio",
-      "location": "Helsinki XR Center, Hämeentie 135 A, Helsinki",
-      "description": "Hands-on-rakenne, aidot liiketoimintahaasteet ja avoin rekisteröityminen tekevät tapahtumasta viikon vahvimman AI-noston.",
-      "url": "https://www.aimeetup.fi/",
-      "image": "",
-      "source": "Digiole & Helsinki XR Center",
-      "tags": [
-        "AI",
-        "työpaja",
-        "automaatio",
+        "Aaltoes",
+        "Slush",
         "verkostoituminen"
       ],
-      "score": 8.9,
-      "featured": true,
+      "score": 7.5,
+      "featured": false,
       "access": "Avoin ilmoittautuminen",
-      "price": "Ilmainen, paikkoja rajoitetusti"
+      "price": "Ei ilmoitettu; avoin rekisteröityminen"
     },
     {
-      "name": "Back to Office – Afterwork",
-      "date": "2026-08-13",
-      "time": "14:00-17:00",
-      "location": "DCF Open Office, Simonkatu 6 A, Helsinki",
-      "description": "Avoin ilmoittautuminen ja tarkka toimialafokus tekevät siitä hyvän paikan kaupallisten kontaktien rakentamiseen.",
-      "url": "https://digitalcommerce.fi/tapahtumat/back-to-office-afterwork/",
+      "name": "Aalto Creatives Afterwork & Info session Autumn 2026",
+      "date": "2026-08-27",
+      "time": "15:00-17:30",
+      "location": "The Stage, Viima, A Grid, Otakaari 5 A, Espoo",
+      "description": "Harvinainen avoin tilaisuus yhdistää luovan työn kaupallistaminen, alumnien kokemukset ja suora keskustelu esihautomon tiimin kanssa.",
+      "url": "https://startupcenter.aalto.fi/events/aalto-creatives-afterwork-info-session-autumn-2026",
       "image": "",
-      "source": "Digital Commerce Finland & HiQ",
+      "source": "Aalto Creatives / Aalto Startup Center",
       "tags": [
-        "digitaalinen kauppa",
-        "verkkokauppa",
-        "markkinointi",
+        "luova talous",
+        "esihautomo",
+        "startup",
         "verkostoituminen"
       ],
-      "score": 8.0,
-      "featured": true,
+      "score": 8.3,
+      "featured": false,
       "access": "Avoin ilmoittautuminen",
-      "price": "Ilmainen, ilmoittautuminen"
+      "price": "Ei ilmoitettu; rekisteröityminen 27.8. klo 15 asti"
     },
     {
-      "name": "Founders Running Club :: Helsinki",
-      "date": "2026-08-15",
-      "time": "10:00-11:30",
-      "location": "Kansalaistori, Alvar Aallon katu, Helsinki",
-      "description": "Yhdistää aidon founder-verkostoitumisen ja hyvinvoinnin ilman raskasta tapahtumaformaattia.",
-      "url": "https://www.meetup.com/founders-running-club-helsinki/events/kzfcvtyjclbtb/",
-      "image": "",
-      "source": "Founders Running Club",
-      "tags": [
-        "founderit",
-        "verkostoituminen",
-        "hyvinvointi",
-        "yhteisö"
-      ],
-      "score": 8.0,
-      "featured": true,
-      "access": "Avoin ilmoittautuminen",
-      "price": "Ilmainen"
-    },
-    {
-      "name": "Aloittavan yrittäjän valmennus nuorille elokuussa",
-      "date": "2026-08-19",
-      "time": "13:00-16:00, neljä tapaamista 19.-27.8.",
-      "location": "Helsingin työllisyyspalvelut, Malminkatu 34, Helsinki",
-      "description": "Maksuton monikertainen valmennus tuottaa konkreettisen suunnitelman ja henkilökohtaista ohjausta rajatulle mutta tärkeälle kohderyhmälle.",
-      "url": "https://nuorten.hel.fi/tapahtuma/?event_id=helsinki%3Aagpjeq2kgq",
-      "image": "",
-      "source": "Helsingin työllisyyspalvelut / Nuorten yrittäjyyspalvelut",
-      "tags": [
-        "yrittäjyys",
-        "nuoret",
-        "liiketoimintasuunnitelma",
-        "starttiraha"
-      ],
-      "score": 8.2,
-      "featured": true,
-      "access": "Avoin ilmoittautuminen",
-      "price": "Maksuton, alle 30-vuotiaille helsinkiläisille"
-    },
-    {
-      "name": "Claude in Business Helsinki",
-      "date": "2026-08-21",
-      "time": "09:00-12:00",
-      "location": "Epicenter, Mikonkatu 9, Helsinki",
-      "description": "Poikkeuksellisen käytännöllinen AI-liiketoiminnan ohjelma näyttää oikeita asiakastöitä, kaupallisia prosesseja ja tuotantokäyttöä.",
-      "url": "https://claudehelsinki.com/",
-      "image": "",
-      "source": "Arc Studio & Epicenter Helsinki",
-      "tags": [
-        "AI",
-        "Claude",
-        "liiketoiminnan kehitys",
-        "B2B-myynti"
-      ],
-      "score": 9.3,
-      "featured": true,
-      "access": "Avoin ilmoittautuminen",
-      "price": "Ilmainen, paikkoja rajoitetusti"
-    },
-    {
-      "name": "Welcome Back Party",
+      "name": "Welcome Back to A Grid Party!",
       "date": "2026-08-27",
       "time": "14:00-17:00",
-      "location": "A Grid, Mordor, Otakaari 5, Espoo",
-      "description": "A Gridin oma kalenteri vahvistaa ajan ja paikan, ja formaatti tarjoaa matalan kynnyksen pääsyn Otaniemen startup-verkostoihin.",
-      "url": "https://agrid.fi/event/welcome-back-party",
+      "location": "Mordor, A Grid, Otakaari 5, Espoo",
+      "description": "A Gridin avoin tapahtuma kokoaa Otaniemen startup-verkoston samaan tilaan ilman ohjelma- tai jäsenrajausta.",
+      "url": "https://startupcenter.aalto.fi/events/welcome-back-to-a-grid-party",
       "image": "",
-      "source": "A Grid",
+      "source": "A Grid / Aalto Startup Center",
       "tags": [
         "startup",
+        "A Grid",
         "verkostoituminen",
-        "Aalto",
         "yhteisö"
       ],
-      "score": 7.4,
-      "featured": true,
+      "score": 7.8,
+      "featured": false,
       "access": "Avoin ilmoittautuminen",
-      "price": "Ei ilmoitettu"
+      "price": "Ei ilmoitettu; rekisteröityminen"
     },
     {
       "name": "The SPLASH! Forum",
       "date": "2026-08-28",
-      "time": "28.-29.8., kellonaika ilmoitetaan myöhemmin",
-      "location": "Helsinki, tarkka paikka ilmoitetaan myöhemmin",
-      "description": "Tiivis 0–1-vaiheen ohjelma ja koko Suomen yrittäjyysyhteisöjen pitch-kattaus tekevät tapahtumasta vahvan founder- ja sijoittajanoston.",
+      "time": "28.-29.8., alkaen 09:00",
+      "location": "Wanha Satama, Helsinki",
+      "description": "Kokoaa varhaisen vaiheen perustajat, sijoittajat ja 17 yrittäjyysyhteisöä samaan kaksipäiväiseen ohjelmaan juuri ideasta toteutukseen siirtyville.",
       "url": "https://thesplashforum.com/",
       "image": "",
-      "source": "The Splash!",
+      "source": "The SPLASH!",
       "tags": [
         "startup",
         "founderit",
@@ -160,11 +80,94 @@
         "pitchaus",
         "verkostoituminen"
       ],
+      "score": 9.3,
+      "featured": false,
+      "access": "Avoin ilmoittautuminen",
+      "price": "Maksullinen; liput Vengassa, opiskelija-alennus saatavilla"
+    },
+    {
+      "name": "Maria 01 Builders’ Breakfast: From founding unicorns to funding them",
+      "date": "2026-09-02",
+      "time": "08:30-10:30",
+      "location": "Maria 01, Lapinlahdenkatu 16, Helsinki",
+      "description": "Yhdistää kokeneen founder-sijoittajan opit, suoran Q&A:n ja Maria 01:n vahvan verkoston tiiviiseen aamutilaisuuteen.",
+      "url": "https://maria.io/events/maria-01-builders-breakfast-rajul-garg-leo-capital/",
+      "image": "",
+      "source": "Maria 01",
+      "tags": [
+        "startup",
+        "rahoitus",
+        "sijoittajat",
+        "skaalaus",
+        "verkostoituminen"
+      ],
       "score": 9.1,
       "featured": true,
       "access": "Avoin ilmoittautuminen",
-      "price": "Maksullinen, lippuvaihtoehdot Vengassa"
+      "price": "Maksuton; ilmoittautuminen"
+    },
+    {
+      "name": "Product Discovery in B2B",
+      "date": "2026-09-02",
+      "time": "17:30 ovet, 18:00-20:00 ohjelma",
+      "location": "F-Secure, HTC Vega, Tammasaarenkatu 7, Helsinki",
+      "description": "Osuu suoraan founderin ydinkysymykseen: mitä kannattaa rakentaa, kun AI nopeuttaa tekemistä mutta ei asiakasymmärrystä.",
+      "url": "https://www.meetup.com/producttank-helsinki/events/315481906/",
+      "image": "",
+      "source": "ProductTank Helsinki",
+      "tags": [
+        "B2B",
+        "product discovery",
+        "SaaS",
+        "AI",
+        "tuotejohtaminen"
+      ],
+      "score": 8.8,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen",
+      "price": "Ei ilmoitettu; RSVP 31.8. klo 23.59 mennessä"
+    },
+    {
+      "name": "Design Diplomacy",
+      "date": "2026-09-02",
+      "time": "2.-4.9.; sessiot 09:00-11:00, 12:00-14:00 tai 17:00-19:00",
+      "location": "Suurlähettiläiden residenssit, Helsinki",
+      "description": "Ainutlaatuinen formaatti yhdistää kansainvälisen design-keskustelun ja pienryhmäverkostoitumisen tiloissa, joihin ei tavallisesti pääse.",
+      "url": "https://helsinkidesignweek.com/events/design-diplomacy/?lang=en",
+      "image": "",
+      "source": "Helsinki Design Week / Luovi Productions",
+      "tags": [
+        "muotoilu",
+        "luova talous",
+        "kansainvälisyys",
+        "verkostoituminen"
+      ],
+      "score": 8.1,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen",
+      "price": "Maksuton; sitova ennakkoilmoittautuminen, enintään 2 sessiota"
+    },
+    {
+      "name": "Vibe Coding Finland: September meetup with SOK",
+      "date": "2026-09-03",
+      "time": "17:30-20:30; ovet 17:00",
+      "location": "Ässäkeskus, Fleminginkatu 34, Helsinki",
+      "description": "Ohjelma yhdistää teknisen agenttiosaamisen ja ei-teknisen founderin käytännön monen agentin työnkulun poikkeuksellisen suoraan.",
+      "url": "https://www.meetup.com/vibe-coding-finland/events/316164779/",
+      "image": "",
+      "source": "Vibe Coding Finland / SOK",
+      "tags": [
+        "AI",
+        "agentit",
+        "vibe coding",
+        "automaatio",
+        "yksinyrittäjyys"
+      ],
+      "score": 9.0,
+      "featured": true,
+      "access": "Avoin ilmoittautuminen",
+      "price": "Ei ilmoitettu; RSVP 1.9. klo 23.59 mennessä"
     }
   ],
-  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\Agent_Outputs\\Agentti_A_Tapahtumat\\weekly_reports\\2026-W31_events.json"
+  "source_report": "D:\\Claude Co Work\\01_Projects\\Nousuun_fi\\Agent_Outputs\\Agentti_A_Tapahtumat\\weekly_reports\\2026-W35_events.json"
 }

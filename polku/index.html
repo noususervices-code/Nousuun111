@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css?v=rakenne-20260726" />
+  <link rel="stylesheet" href="../css/style.css?v=liftoff-20260824" />
   <style>
     /* Polku-sivun lisätyylit */
     .polku-hero {
@@ -393,15 +393,8 @@
     </section>
 
     <!-- FOOTER CTA -->
-    <section class="polku-cta">
-      <div class="container polku-cta-inner">
-        <h2>Oletko valmis lentoon?</h2>
-        <p>Tilaa viikoittainen yrittäjäopas — tapahtumat, starttiraha-vinkit ja käytännön työkalut suoraan sähköpostiisi.</p>
-        <form onsubmit="handleNewsletterSubmit(event, this)" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-          <input type="email" placeholder="sähköpostiosoitteesi" required class="newsletter-input" style="min-width:240px; padding:14px 20px; border-radius:999px; border:1.5px solid rgba(0,0,0,.15); font-size:16px; font-family:var(--font-ui);"/>
-          <button type="submit" class="btn btn-primary btn-lg">Tilaa ilmaiseksi</button>
-        </form>
-      </div>
+    <section class="newsletter-section">
+      <div class="container" data-newsletter-inline></div>
     </section>
 
   </main>
@@ -425,11 +418,6 @@
   </footer>
 
   <script>
-    function handleNewsletterSubmit(e, form) {
-      e.preventDefault();
-      form.innerHTML = '<p style="color:var(--color-primary);font-weight:600;">✓ Kiitos! Ensimmäinen reittisuunnitelma tulee pian.</p>';
-    }
-
     // Checklist progress
     const boxes = document.querySelectorAll('#checklist input[type=checkbox]');
     const progressText = document.getElementById('progress-text');
@@ -449,5 +437,6 @@
     });
     updateProgress();
   </script>
+  <script src="/js/newsletter.js?v=20260824" defer></script>
 </body>
 </html>
