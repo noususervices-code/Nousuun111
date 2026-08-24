@@ -1,7 +1,7 @@
 {
   "agent": "Agentti B - Omistajanvaihdokset",
-  "updated_at": "2026-08-17T07:48:17.904903+00:00",
-  "week": "2026-W34",
+  "updated_at": "2026-08-24T07:54:04.821926+00:00",
+  "week": "2026-W35",
   "companies": [
     {
       "name": "Myydään pitkäaikainen ja vakaa design-, maahantuonti- ja tukkumyyntialan yritys",
@@ -44,16 +44,6 @@
       "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Turun talousalue. Hintatieto: 195 000 EUR Liiketoimintakauppa."
     },
     {
-      "name": "Pitkään toiminut ravintolisien ja terveystuotteiden verkkokauppa ja neuvontapalvelu, jolla on alallaan tunnettu tuotemerkki",
-      "industry": "Verkkokauppa",
-      "price": "14 000 EUR",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/vahittais-ja-tukkukaupat-tuonti-edustus/viro/pitkaan-toiminut-ravintolisien-ja-terveystuotteiden-verkkokauppa-ja-neuvontapalvelu-jolla-on-alallaan-tunnettu-tuotemerkki/123216/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.9,
-      "insight": "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä. Sijainti: Viro. Hintatieto: 14 000 EUR."
-    },
-    {
       "name": "Menestyvä useita vuosikymmeniä toiminut suomalainen vaatevalmistaja",
       "industry": "Tekstiileiden tai vaatteiden valmistus",
       "price": "900 000 EUR Yhtiön liiketoiminnan harjoittamisen näkökulmasta ylimääräiset varat eivät sisälly kauppaan.",
@@ -62,6 +52,16 @@
       "source": "Suomen Yrityskaupat",
       "score": 6.3,
       "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 900 000 EUR Yhtiön liiketoiminnan harjoittamisen näkökulmasta ylimääräiset varat eivät sisälly kauppaan.."
+    },
+    {
+      "name": "Menestyvä kuljetusliike eteläisessä Suomessa",
+      "industry": "Kuljetusliikkeet, taksit",
+      "price": "550 000 EUR Osakekauppa",
+      "location": "Suomi",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kuljetusliikkeet-taksit/suomi/menestyva-kuljetusliike-etelaisessa-suomessa/117378/",
+      "source": "Suomen Yrityskaupat",
+      "score": 6.3,
+      "insight": "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle. Sijainti: Suomi. Hintatieto: 550 000 EUR Osakekauppa."
     },
     {
       "name": "Menestyvä mainosalan yritys myynnissä Länsi-Suomessa",
