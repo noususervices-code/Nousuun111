@@ -1,27 +1,18 @@
-name: Content Agent
-
+name: Validate curated news
 on:
-  schedule:
-    - cron: "0 6 * * 2"
-    - cron: "0 6 * * 5"
   workflow_dispatch:
-
+  push:
+    paths:
+      - 'data/news.json'
+      - 'scripts/validate_content_quality.py'
 jobs:
-  generate:
+  validate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - run: python scripts/generate_content.py
+          python-version: '3.11'
       - run: python scripts/validate_content_quality.py data/news.json
-      - name: Commit updates
-        run: |
-          git config user.email "bot@nousuun.fi"
-          git config user.name "Nousuun Bot"
-          git add data/news.json blog/
-          git diff --staged --quiet || git commit -m "Content update $(date +%Y-%m-%d)"
-          git push

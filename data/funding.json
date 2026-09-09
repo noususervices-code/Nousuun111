@@ -1,22 +1,41 @@
 {
-  "updated_at": "2026-09-07T13:34:24.940359+00:00",
+  "week": "2026-W37",
+  "updated_at": "2026-09-09T07:37:29.502544+03:00",
   "funding": [
     {
       "name": "Starttiraha",
-      "type": "Alkuvaiheen tuki",
-      "deadline": "Jatkuva haku",
+      "type": "Yrittäjän toimeentulon tuki",
+      "deadline": "Hakemus ennen päätoimisen toiminnan aloittamista",
       "region": "Suomi",
-      "summary": "Aloittavan päätoimisen yrittäjän henkilökohtainen tuki yritystoiminnan ensimmäisiin kuukausiin.",
-      "url": "https://www.suomi.fi/palvelut/starttiraha-tyollisyyspalvelut/55b76e7f-e4f6-4b9f-b2f1-b0ce7791e214",
-      "source": "manual seed"
+      "summary": "Harkinnanvarainen tuki yrittäjän toimeentuloon alussa. Hakemuksen on saavuttava työvoimaviranomaiselle ennen päätoimisen toiminnan alkua tai sivutoimisen toiminnan laajentamista päätoimiseksi. Selvitä ehdot oman alueesi viranomaiselta.",
+      "url": "https://tyomarkkinatori.fi/lisatietoa-palveluista/starttiraha",
+      "source": "Työmarkkinatori"
+    },
+    {
+      "name": "Finnveran alkutakaus",
+      "type": "Pankkilainan takaus",
+      "deadline": "Pankki hakee luottohakemuksen yhteydessä",
+      "region": "Suomi",
+      "summary": "Takaus voi helpottaa enintään kolme vuotta kaupparekisterissä olleen pk-yrityksen pankkilainaa. Pankki hakee takauksen. Takaus on maksullinen ja edellyttää pääosakkaiden takauksia; tarkista yritysmuoto- ja toimialarajaukset.",
+      "url": "https://www.finnvera.fi/rahoitus/takaukset/alkutakaus",
+      "source": "Finnvera"
+    },
+    {
+      "name": "Yritystoiminnan kokeilutuki",
+      "type": "Maaseudun yritysidean kokeilu",
+      "deadline": "Kysy valintajakso omasta Leader-ryhmästä",
+      "region": "Tukikelpoiset maaseutualueet",
+      "summary": "2 500 euron kokeilutuki yrittäjyyttä harkitsevalle, jolla ei ole aktiivista Y-tunnusta haettaessa tai myönnettäessä. Kysy Leader-ryhmältä alueen ja idean sopivuus. Jätä hakemus ennen hankintoja ja sitovia sopimuksia.",
+      "url": "https://www.ruokavirasto.fi/tuet/maaseudun-yrittajyys/maaseudun-yritystuet/kaynnistystuki/yritystoiminnan-kokeilu/",
+      "source": "Ruokavirasto"
     },
     {
       "name": "Business Finland Sprint",
-      "type": "Kansainvälinen kasvu",
+      "type": "Kansainvälinen T&K-avustus",
       "deadline": "Jatkuva haku 1.9.2026 alkaen",
-      "region": "Suomi",
-      "summary": "Rahoitus pienille innovatiivisille yrityksille, jotka kehittävät uutta ratkaisua ja tavoittelevat nopeaa kansainvälistä kasvua.",
-      "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/sprint-rahoitushaku/",
+      "region": "Suomi; tarkista alue-ehdot",
+      "summary": "Innovatiivisen ratkaisun kehittämiseen kansainvälisille markkinoille. Edellyttää osakeyhtiötä, vähintään kahden henkilön sitoutunutta tiimiä ja rahoitusvalmiutta. Aloita My Business Finland -palvelusta ja asiantuntijakeskustelusta.",
+      "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/jatkuva-sprint-rahoitushaku/",
       "source": "Business Finland"
     }
   ]

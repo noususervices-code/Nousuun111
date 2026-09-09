@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rahoitus - Nousuun.fi</title>
-  <link rel="stylesheet" href="../css/style.css?v=liftoff-20260824" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rahoitusvaihtoehtoja yrityksen aloittamiseen sekä tukea yrittäjän toimeentuloon. Tarkista kohderyhmä ja hakuajankohta alkuperäislähteestä." />
+  <title>Rahoitus — Nousuun.fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css?v=20260909" />
+  <link rel="canonical" href="https://nousuun.fi/rahoitus/" />
 </head>
-<body>
+<body data-content-page="funding">
   <header class="site-header">
     <a class="brand" href="/"><span class="brand-symbol">↗</span><span class="brand-text">nousuun<span class="brand-dot">.fi</span></span></a>
-    <nav class="top-nav" aria-label="Päävalikko"><a href="/polku/">Yrittäjän polku</a><a href="/tapahtumat/">Tapahtumat</a><a href="/yritykset/">Omistajanvaihdokset</a><a href="/tyokalut/">Työkalut</a><a href="/blog/">Blogi</a></nav>
-    <a class="btn btn-primary btn-sm" href="/#rahoitus">Avoimet haut</a>
+    <nav class="top-nav"><a href="/polku/">Lähtövalmistelut</a><a href="/tapahtumat/">Tapahtumat</a><a href="/yritykset/">Omistajanvaihdokset</a><a href="/tyokalut/">Työkalut</a><a href="/blog/">Blogi</a></nav>
+    <a class="btn btn-primary btn-sm" href="/lentolupakirja/">Hae Lentolupakirja</a>
     <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
   </header>
-  <main class="color-block block-mint" style="margin-top:40px">
-    <div class="section-heading">
-      <p class="eyebrow">Rahoitus</p>
-      <h2>Tuet, haut ja ohjelmat selkokielella.</h2>
-      <p>Funding-agentti lisataan seuraavaksi, jotta starttiraha, Business Finland ja EU-haut pysyvat mukana.</p>
-    </div>
-    <a class="button button-primary" href="../#rahoitus">Takaisin etusivulle</a>
+  <main>
+    <section class="archive-hero archive-hero-dark">
+      <div class="container">
+        <p class="eyebrow">Rahoitus / yrityksen kassa ja pilotin toimeentulo</p>
+        <h1>Riittääkö polttoaine lähtöön?</h1>
+        <p>Yrityksen rahoitus ja oma toimeentulo ovat eri asioita. Tästä löydät tarkistettuja vaihtoehtoja ja linkit suoraan rahoittajan ohjeisiin.</p>
+        <span class="archive-status" id="content-status">Ladataan ajankohtaista viikkoa…</span>
+      </div>
+    </section>
+    <section class="archive-section"><div class="container archive-grid" id="content-list"><p class="loading-text">Ladataan rahoitusvaihtoehtoja…</p></div></section>
   </main>
-  <script src="/js/newsletter.js?v=20260824" defer></script>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span>↗</span><span>nousuun.fi</span></div><nav class="footer-nav"><a href="/yritykset/">Omistajanvaihdokset</a><a href="/uutiset/">Ajankohtaista</a><a href="/blog/">Blogi</a></nav><p class="footer-copy">© 2026 Nousuun.fi</p></div></footer>
+  <script src="../js/content-page.js"></script>
+  <script src="/js/newsletter.js?v=20260909" defer></script>
 </body>
 </html>

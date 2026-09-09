@@ -1244,3 +1244,28 @@ body > footer .footer-links { display: flex; gap: 18px; list-style: none; margin
   .liftoff-curve path { stroke-dashoffset: 0; }
   .liftoff-curve circle { opacity: 1; }
 }
+
+/* Kiitorata: shared roles and newsletter gift, 2026-09-09 */
+.hero { grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr); gap: clamp(32px, 5vw, 80px); background: radial-gradient(ellipse at 90% 10%, #244660 0, transparent 60%), #10243a; min-height: 700px; }
+.hero-title { font-size: clamp(34px, 4.3vw, 62px); line-height: 1.13; letter-spacing: -.045em; }
+.hero-subtitle { font-size: 18px; max-width: 620px; }
+.flight-card { position: relative; padding: 30px; border: 1px solid #658095; border-radius: 22px; background: #183148; transform: rotate(2deg); box-shadow: 14px 18px 0 #0b1c2b; }
+.flight-card-label { font-size: 11px; letter-spacing: .13em; color: #bfe8ff; font-weight: 700; }
+.flight-card-plane { font-size: 74px; color: #ff9468; text-align: right; padding: 12px 0; }
+.flight-card dl { margin: 0; }
+.flight-card dl div { border-top: 1px dashed #658095; padding: 16px 0; }
+.flight-card dt { color: #ff9468; font-weight: 800; font-size: 19px; }
+.flight-card dd { margin: 5px 0 0; color: #edf4f8; font-size: 15px; line-height: 1.5; }
+.flight-card-note { color: #bfe8ff; font-size: 13px; margin-top: 16px; }
+.gift-hero { background: #10243a; color: #f8f7f2; padding: 72px var(--gutter); }
+.gift-hero h1 { color: inherit; max-width: 800px; font-size: clamp(36px, 6vw, 72px); line-height: 1.08; }
+.gift-hero p { max-width: 650px; line-height: 1.7; margin: 22px 0; }
+.gift-hero .eyebrow { color: #ff9468; }
+.gift-details { padding: 56px 0; }
+.gift-details h2 { margin-bottom: 20px; }
+.gift-details li { margin: 14px 0 14px 22px; line-height: 1.6; }
+.gift-note { font-size: 14px; color: #657080; margin-top: 20px; }
+.nl-download { margin-top: 20px; display: inline-flex; }
+@media (max-width: 850px) { .hero { grid-template-columns: 1fr; text-align: left; min-height: auto; padding-top: 64px; } .hero-content { max-width: 100%; } .hero-actions { justify-content: flex-start; } .flight-card { transform: none; max-width: 540px; width: 100%; box-sizing: border-box; box-shadow: 7px 9px 0 #0b1c2b; } .flight-card-plane { font-size: 48px; padding: 0; } }
+@media (max-width: 480px) { .hero-title { font-size: 34px; } .flight-card { padding: 22px; } .hero-actions .btn { max-width: none; } }
+@media (prefers-reduced-motion: reduce) { .runway-plane { animation: none !important; } }

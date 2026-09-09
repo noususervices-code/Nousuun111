@@ -4,54 +4,56 @@
   const STORAGE_KEY = 'nousuun_nl_modal_v1';
   const DISMISS_DAYS = 30;
   const ENDPOINT = 'https://formsubmit.co/ajax/nousu.services@gmail.com';
-  const BLOCKED_PATHS = ['/uutiskirje', '/newsletter', '/kiitos', '/thank-you'];
+  const BLOCKED_PATHS = ['/lentolupakirja', '/uutiskirje', '/newsletter', '/kiitos', '/thank-you'];
 
   const copy = {
     fi: {
-      kicker: 'Tähtäimessä nousu?',
-      title: 'Oletko aloittava yrittäjä?',
-      body: 'Rakennat yritystä tyhjästä — älä tee sitä yksin. Liity Nousu-Jaakon yhteisöön ja saat joka viikko konkreettiset vinkit yrityksen käynnistämiseen, rahoitukseen ja asiakashankintaan.',
+      kicker: 'Maksuton Lentolupakirja',
+      title: 'Idea mukaan. Lähtövalmistelut tästä.',
+      body: 'Liity Nousuun.fi:n uutiskirjeeseen ja lataa aloittavan yrittäjän Lentolupakirja heti liittymispyynnön jälkeen. Neljä sivua, joilla saat ajatukset paperille ja ensimmäisen viikon liikkeelle.',
       bullets: [
-        'Starttiraha- ja rahoitusvinkit selkokielellä',
-        'Työkalut ja AI-pohjat, joilla säästät tunteja viikossa',
-        'Kutsut Nousuun.fi-tapahtumiin ensimmäisenä'
+        'Tarkistuslista ideasta ensimmäiseen tarjoukseen',
+        'Tilaa omille laskelmille ja lähtövalmisteluille',
+        'Oma seitsemän päivän lähtösuunnitelma'
       ],
       email: 'Sähköpostiosoite',
       placeholder: 'sinun@sahkoposti.fi',
-      cta: 'Lähden nousuun →',
+      cta: 'Liity ja lataa Lentolupakirja →',
       privacy: 'Liittymällä hyväksyt, että Nousuun.fi käsittelee sähköpostiosoitettasi viikkokirjeen lähettämiseksi.',
       privacyLink: 'Lue tietosuojaseloste.',
-      note: 'Ei roskapostia. Voit peruuttaa yhdellä klikkauksella.',
+      note: 'Maksuton PDF. Voit peruuttaa tilauksen ottamalla yhteyttä tai kirjeen peruutusohjeella.',
       dismiss: 'Ei kiitos, en vielä',
       close: 'Sulje',
-      success: 'Hyvä! Liittymispyyntösi on vastaanotettu.',
+      success: 'Kiitos! Liittymispyyntösi on vastaanotettu. Lentolupakirjasi on valmis ladattavaksi.',
       error: 'Jotain meni pieleen. Yritä uudelleen tai laita viestiä nousu.services@gmail.com.',
       submitting: 'Liitytään…',
-      inlineTitle: 'Saat tärkeimmät seuraavat askeleet sähköpostiisi.',
-      inlineBody: 'Yksi käytännöllinen kooste viikossa: rahoitus, tapahtumat ja työkalut aloittavalle yrittäjälle.'
+      download: 'Lataa Lentolupakirja (PDF) ↓',
+      inlineTitle: 'Hae oma Lentolupakirjasi.',
+      inlineBody: 'Liity uutiskirjeeseen ja saat heti ladattavan nelisivuisen tarkistuslistan. Sen jälkeen kokoamme avuksesi rahoitusta, tapahtumia ja käytännön vinkkejä. Sinä ohjaat, me autamme valmisteluissa.'
     },
     en: {
       kicker: 'Ready for take-off?',
-      title: 'Just starting your business?',
-      body: 'Building a business from scratch is hard — do not do it alone. Join the Nousu-Jaakko community for practical weekly tips on launching, funding and finding your first customers.',
+      title: 'Your idea. Your business. Your runway.',
+      body: 'Join the Nousuun.fi newsletter and download the four-page Finnish-language entrepreneur checklist after submitting your request.',
       bullets: [
-        'Plain-language guidance on start-up grants and funding',
-        'Tools and AI templates that save hours every week',
-        'Early invitations to Nousuun.fi events'
+        'A checklist from customer idea to first offer',
+        'Space for your numbers and launch preparations',
+        'Your own seven-day launch plan'
       ],
       email: 'Email address',
       placeholder: 'you@example.com',
-      cta: "Let's take off →",
+      cta: "Join and get the checklist →",
       privacy: 'By joining, you agree that Nousuun.fi may process your email address to send the weekly newsletter.',
       privacyLink: 'Read the privacy notice.',
-      note: 'No spam. Unsubscribe with one click.',
+      note: 'Free PDF in Finnish. Cancel by contacting us or following the instructions in the newsletter.',
       dismiss: 'No thanks, not yet',
       close: 'Close',
-      success: 'Great! Your subscription request has been received.',
+      success: 'Thanks! Your subscription request has been received. Your checklist is ready to download.',
       error: 'Something went wrong. Try again or email nousu.services@gmail.com.',
       submitting: 'Joining…',
-      inlineTitle: 'Get the most useful next steps in your inbox.',
-      inlineBody: 'One practical weekly digest: funding, events and tools for new entrepreneurs.'
+      download: 'Download the Finnish checklist (PDF) ↓',
+      inlineTitle: 'Get your entrepreneur checklist.',
+      inlineBody: 'Join the newsletter for a free four-page PDF in Finnish, plus useful funding, events and practical tips.'
     }
   };
 
@@ -93,7 +95,8 @@
     if (!preference) return false;
     if (preference.state === 'subscribed') return true;
     if (preference.state === 'dismissed') {
-      const elapsed = Date.now() - Number(preference.timestamp || 0);
+      const savedAt = typeof preference.timestamp === 'number' ? preference.timestamp : Date.parse(preference.timestamp || '');
+      const elapsed = Date.now() - savedAt;
       return elapsed < DISMISS_DAYS * 24 * 60 * 60 * 1000;
     }
     return false;
@@ -109,6 +112,7 @@
 
   function formMarkup(source) {
     const id = `newsletter-email-${source}`;
+    if (readPreference()?.state === 'subscribed') return downloadMarkup();
     return `
       <form class="nl-signup-form" data-newsletter-form data-source="${source}" novalidate>
         <label class="nl-label" for="${id}">${escapeHtml(text.email)}</label>
@@ -124,6 +128,10 @@
         <p class="nl-note">${escapeHtml(text.note)}</p>
         <p class="nl-status" role="status" aria-live="polite"></p>
       </form>`;
+  }
+
+  function downloadMarkup() {
+    return `<p class="nl-success" role="status">${escapeHtml(text.success)}</p><a class="btn btn-primary nl-download" href="/assets/downloads/lentolupakirja.pdf" download>${escapeHtml(text.download)}</a>`;
   }
 
   function inlineMarkup() {
@@ -171,6 +179,7 @@
     const button = form.querySelector('.nl-submit');
     const label = form.querySelector('.nl-submit-label');
     const source = form.dataset.source || 'unknown';
+    if (form.querySelector('[name="_honey"]')?.value) return;
 
     if (!input.checkValidity()) {
       input.reportValidity();
@@ -180,6 +189,7 @@
     button.disabled = true;
     form.classList.add('is-loading');
     status.textContent = '';
+    status.classList.remove('is-error');
     label.textContent = text.submitting;
     track('newsletter_submit', { source });
 
@@ -190,6 +200,9 @@
         body: JSON.stringify({
           email: input.value.trim(),
           consent: true,
+          consent_text: text.privacy,
+          consent_version: '2026-09-09',
+          gift: 'lentolupakirja-v1-fi',
           consent_timestamp: new Date().toISOString(),
           source,
           page: window.location.href,
@@ -199,13 +212,15 @@
         })
       });
       if (!response.ok) throw new Error('Newsletter request failed');
+      const result = await response.json();
+      if (result.success !== true && result.success !== 'true') throw new Error('Newsletter not accepted');
 
       remember('subscribed');
       form.classList.remove('is-loading');
       form.classList.add('is-success');
-      form.innerHTML = `<p class="nl-success" role="status">${escapeHtml(text.success)}</p>`;
+      form.innerHTML = downloadMarkup();
       track('newsletter_success', { source });
-      if (source === 'modal') window.setTimeout(closeModal, 2400);
+      // Keep the download visible until the visitor closes the dialog.
     } catch (_) {
       form.classList.remove('is-loading');
       button.disabled = false;
@@ -216,6 +231,7 @@
   }
 
   function bindForm(form) {
+    if (!form) return;
     form.addEventListener('submit', event => {
       event.preventDefault();
       submitNewsletter(form);
@@ -224,7 +240,7 @@
 
   function focusableElements() {
     if (!modal) return [];
-    return Array.from(modal.querySelectorAll('button:not([disabled]), input:not([disabled]), a[href]'));
+    return Array.from(modal.querySelectorAll('button:not([disabled]), input:not([disabled]):not([tabindex="-1"]), a[href]'));
   }
 
   function handleModalKeydown(event) {
@@ -288,7 +304,8 @@
 
   function installTriggers() {
     if (shouldSuppress()) return;
-    timer = window.setTimeout(() => showModal('time_25s'), 25000);
+    // Give the reader time; no immediate exit-intent interruption.
+    timer = window.setTimeout(() => showModal('time_60s'), 60000);
 
     const onScroll = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -299,18 +316,12 @@
     };
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-      const onExitIntent = event => {
-        if (event.clientY <= 0 && !event.relatedTarget) {
-          document.removeEventListener('mouseout', onExitIntent);
-          showModal('exit_intent');
-        }
-      };
-      document.addEventListener('mouseout', onExitIntent);
-    }
   }
 
   function init() {
+    document.addEventListener('click', event => {
+      if (event.target.closest?.('.nl-download')) track('newsletter_gift_download', { gift: 'lentolupakirja-v1-fi' });
+    });
     document.querySelectorAll('[data-newsletter-inline]').forEach(host => {
       host.classList.add('nl-inline');
       host.innerHTML = inlineMarkup();

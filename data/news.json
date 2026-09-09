@@ -1,19 +1,41 @@
 {
-  "updated_at": "2026-09-08T10:21:44.630364+00:00",
+  "week": "2026-W37",
+  "updated_at": "2026-09-09T07:37:29.502544+03:00",
   "articles": [
     {
-      "title": "AI ei ole osasto. Se on työtapa.",
-      "source": "Nousuun.fi",
+      "title": "Sprint-haku avautui syyskuussa kansainvälistä kasvua hakeville",
+      "source": "Business Finland",
       "relevance_score": 9,
-      "summary": "Aloita yhdestä arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi.",
-      "url": "blog/"
+      "summary": "Sprintin jatkuva haku avautui 1.9.2026. Rahoitus kohdistuu innovatiivisen ratkaisun kehittämiseen kansainvälisille markkinoille; hakemista edeltää taustatietojen antaminen ja keskustelu Business Finlandin kanssa.",
+      "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/jatkuva-sprint-rahoitushaku/"
     },
     {
-      "title": "Eurooppa etsii uusia kasvuyrittäjiä",
-      "source": "Nousuun.fi",
-      "relevance_score": 8,
-      "summary": "Uusi markkina voi tarkoittaa kumppaneita, ostettavia yrityksiä, EU-rahoitusta ja pieniä testejä rajojen yli.",
-      "url": "blog/"
+      "title": "Starttiraha: varmista ajoitus ennen päätoimista yrittäjyyttä",
+      "source": "Työmarkkinatori",
+      "relevance_score": 10,
+      "summary": "Starttiraha tukee yrittäjän toimeentuloa päätoimisen toiminnan alussa. Hakemuksen on saavuttava työvoimaviranomaiselle ennen päätoimisen yritystoiminnan alkua tai sivutoimisen toiminnan laajentamista päätoimiseksi.",
+      "url": "https://tyomarkkinatori.fi/lisatietoa-palveluista/starttiraha"
+    },
+    {
+      "title": "Riittääkö polttoaine? Laske myös oma toimeentulosi",
+      "source": "Suomi.fi",
+      "relevance_score": 10,
+      "summary": "Yrityksen tulos voi näyttää hyvältä, vaikka yrittäjä ei saisi työstään asianmukaista korvausta. Kannattavuuslaskelma ja työajan seuranta auttavat näkemään, paljonko myyntiä tarvitaan ja mistä jää katetta.",
+      "url": "https://www.suomi.fi/yritykselle/yrityksen-perustaminen/yritystoiminnan-suunnittelu/opas/yritysideasta-liiketoiminnaksi/kannattavuuden-varmistaminen"
+    },
+    {
+      "title": "Perustamisilmoitus: tarkista oman yritysmuotosi ohje",
+      "source": "Patentti- ja rekisterihallitus",
+      "relevance_score": 9,
+      "summary": "Kaupparekisterin ilmoitukset ja hakemukset tehdään sähköisesti vuoden 2026 alusta. Muutos ei koske toiminimiyrittäjiä, yhdistyksiä eikä säätiöitä, joten oman yritysmuodon ohje on hyvä tarkistaa erikseen.",
+      "url": "https://www.prh.fi/fi/yrityksetjayhteisot/yrityksenperustaminen.html"
+    },
+    {
+      "title": "Digitaalisen ohjaamon perustarkistus",
+      "source": "Traficom / Kyberturvallisuuskeskus",
+      "relevance_score": 9,
+      "summary": "Kyberturvallisuuskeskuksen pienyritysopas käsittelee tietojenkalastelua, haittaohjelmia, päivityksiä ja käyttöoikeuksia. Samat perusasiat kannattaa käydä läpi ennen yrityksen työkalupinon kasvattamista.",
+      "url": "https://www.kyberturvallisuuskeskus.fi/fi/julkaisut/pienyritysten-kyberturvallisuusopas"
     }
   ]
 }

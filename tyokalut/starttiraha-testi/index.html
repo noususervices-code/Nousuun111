@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../css/style.css?v=liftoff-20260824" />
+  <link rel="stylesheet" href="../../css/style.css?v=20260909" />
 
   <script type="application/ld+json">
   {
@@ -158,13 +158,13 @@
       <span class="brand-text">nousuun<span class="brand-dot">.fi</span></span>
     </a>
     <nav class="top-nav" aria-label="Päävalikko">
-      <a href="/polku/">Yrittäjän polku</a>
+      <a href="/polku/">Lähtövalmistelut</a>
       <a href="/tapahtumat/">Tapahtumat</a>
       <a href="/yritykset/">Omistajanvaihdokset</a>
       <a href="/tyokalut/" style="color: var(--color-primary);">Työkalut</a>
       <a href="/blog/">Blogi</a>
     </nav>
-    <a class="btn btn-primary btn-sm" href="/polku/">Yrittäjän polku →</a>
+    <a class="btn btn-primary btn-sm" href="/polku/">Lähtövalmistelut →</a>
     <button class="nav-toggle" aria-label="Avaa valikko" onclick="document.querySelector('.top-nav').classList.toggle('open')">☰</button>
   </header>
 
@@ -264,7 +264,7 @@
       </div>
       <nav class="footer-nav">
         <a href="/">Etusivu</a>
-        <a href="/polku/">Yrittäjän polku</a>
+        <a href="/polku/">Lähtövalmistelut</a>
         <a href="/tyokalut/">Työkalut</a>
         <a href="mailto:nousu.services@gmail.com">Ota yhteyttä</a>
       </nav>
@@ -466,17 +466,17 @@
       const desc = document.getElementById("result-desc");
 
       if (tier === "green") {
-        badge.className = "result-badge green"; badge.textContent = "● Hyvät edellytykset";
-        title.textContent = "Tilanteesi näyttää lupaavalta!";
-        desc.textContent = "Vastaustesi perusteella täytät todennäköisesti keskeiset starttirahan myöntämisedellytykset. Muista: starttiraha on aina harkinnanvarainen, ja lopullisen arvion tekee työvoimaviranomainen. Näin etenet:";
+        badge.className = "result-badge green"; badge.textContent = "● Valmisteluja tehty";
+        title.textContent = "Olet valmistellut monta tärkeää asiaa.";
+        desc.textContent = "Olet koonnut hakemiseen liittyviä tietoja. Testi ei arvioi myöntämisen todennäköisyyttä. Tarkista edellytykset ja ajoitus oman alueesi työvoimaviranomaiselta. Näin jatkat valmistelua:";
       } else if (tier === "yellow") {
-        badge.className = "result-badge yellow"; badge.textContent = "● Mahdollinen — vaatii valmistelua";
-        title.textContent = "Starttiraha voi olla mahdollinen, mutta muutama asia kannattaa hoitaa ensin.";
-        desc.textContent = "Perusedellytykset näyttävät olevan kohdallaan, mutta hakemuksesi vahvistuu selvästi, kun hoidat alla olevat asiat kuntoon ennen hakemista:";
+        badge.className = "result-badge yellow"; badge.textContent = "● Täydennä valmisteluja";
+        title.textContent = "Muutama valmistelu kannattaa vielä tehdä.";
+        desc.textContent = "Vastauksistasi nousi seuraavia selvitettäviä asioita. Viranomainen arvioi tukiedellytykset omassa tilanteessasi:";
       } else {
-        badge.className = "result-badge red"; badge.textContent = "● Ei todennäköisesti juuri nyt";
-        title.textContent = "Starttiraha ei näytä mahdolliselta tässä tilanteessa.";
-        desc.textContent = "Jokin vastauksistasi viittaa esteeseen. Tilanne voi kuitenkin muuttua — katso alta, mikä on esteenä ja mitä voit tehdä:";
+        badge.className = "result-badge red"; badge.textContent = "● Selvitä oma tilanne";
+        title.textContent = "Keskustele näistä asioista työvoimaviranomaisen kanssa.";
+        desc.textContent = "Vastauksissasi on asioita, joiden vaikutus pitää selvittää ennen hakemista. Testi ei ratkaise oikeuttasi tukeen. Käytä tätä listaa keskustelun pohjana:";
       }
 
       document.getElementById("result-steps").innerHTML = tips.map(t => `<li>${t}</li>`).join("");
@@ -502,7 +502,7 @@
       if (a.laskelma && a.laskelma.v !== "valmis")
         t.push("<strong>Laadi kannattavuuslaskelma.</strong> Sen tehtävä on osoittaa, että toiminta voi kannattaa. Realistiset luvut ovat uskottavampia kuin optimistiset.");
       if (a.experience && a.experience.v === "ei" && a.yrittajyys && a.yrittajyys.v === "ei")
-        t.push("<strong>Vahvista valmiuksiasi.</strong> Ilman alan kokemusta tai koulutusta yrittäjyyskurssi on vahva näyttö riittävistä valmiuksista — ja usein käytännössä edellytys.");
+        t.push("<strong>Vahvista valmiuksiasi.</strong> Kysy neuvojalta, millä tavoin voit osoittaa riittävät yrittäjävalmiudet. Tarvittava koulutus riippuu tilanteestasi.");
       else if (a.yrittajyys && a.yrittajyys.v === "ei")
         t.push("<strong>Harkitse yrittäjyyskoulutusta.</strong> Se vahvistaa hakemustasi, vaikka sinulla on jo alan osaamista.");
       if (a.credit && a.credit.v === "hoitamatta")
@@ -510,7 +510,7 @@
       else if (a.credit && a.credit.v === "suunnitelma")
         t.push("<strong>Liitä selvitys maksusuunnitelmasta hakemukseen.</strong> Osoita, että talous on hallinnassa ja suunnitelma pitää.");
       if (a.otherincome && a.otherincome.v === "opinnot")
-        t.push("<strong>Selvitä opintojesi vaikutus.</strong> Päätoimiset opinnot ovat yleensä este. Jos opinnot ovat loppusuoralla tai muutettavissa sivutoimisiksi, tilanne voi olla toinen.");
+        t.push("<strong>Selvitä opintojesi vaikutus.</strong> Kerro opintojesi tilanteesta ja suunnitellusta päätoimisesta yrittäjyydestä työvoimaviranomaiselle.");
       if (a.otherincome && a.otherincome.v === "muutuki")
         t.push("<strong>Selvitä tukien päällekkäisyys.</strong> Samalle ajalle myönnetyt muut tuet voivat estää starttirahan — kysy tilanteestasi työvoimaviranomaiselta etukäteen.");
       if (a.need && a.need.v === "ei")
@@ -523,13 +523,13 @@
         t.push("<strong>Sivutoimisesta päätoimiseksi:</strong> starttiraha voi olla mahdollinen, kun laajennat sivutoimisen toiminnan päätoimiseksi. Hae ennen päätoimiseksi siirtymistä.");
 
       // Aina lopuksi
-      t.push("<strong>Hae ennen aloittamista.</strong> Jätä hakemus oman työllisyysalueesi työvoimaviranomaiselle (yleensä Työmarkkinatorin kautta) ennen päätoimisen toiminnan aloittamista — älä perusta kiireessä.");
+      t.push("<strong>Hae ennen aloittamista.</strong> Jätä hakemus oman työllisyysalueesi työvoimaviranomaiselle (yleensä Työmarkkinatorin kautta) ennen päätoimisen toiminnan aloittamista.");
       return t;
     }
 
     renderQuestion();
   </script>
 
-  <script src="/js/newsletter.js?v=20260824" defer></script>
+  <script src="/js/newsletter.js?v=20260909" defer></script>
 </body>
 </html>

@@ -32,7 +32,7 @@ const renderEvent = item => `
     <dl class="archive-facts">
       <div><dt>Aika</dt><dd>${escapeText(item.time || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Paikka</dt><dd>${escapeText(item.location || "Tarkista järjestäjältä")}</dd></div>
-      <div><dt>Osallistuminen</dt><dd>${escapeText(item.access || "Avoin ilmoittautuminen")}</dd></div>
+      <div><dt>Osallistuminen</dt><dd>${escapeText(item.access || "Tarkista osallistumisehdot järjestäjältä")}</dd></div>
       <div><dt>Hinta</dt><dd>${escapeText(item.price || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Järjestäjä</dt><dd>${escapeText(item.source || "–")}</dd></div>
     </dl>
@@ -66,7 +66,16 @@ const renderArticle = item => `
     <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Lue alkuperäinen lähde →</a>
   </article>`;
 
+const renderFunding = item => `
+  <article class="archive-card">
+    <div class="archive-card-top"><span>${escapeText(item.type || 'Rahoitus')}</span></div>
+    <h2>${escapeText(item.name)}</h2><p>${escapeText(item.summary)}</p>
+    <dl class="archive-facts"><div><dt>Milloin</dt><dd>${escapeText(item.deadline)}</dd></div><div><dt>Alue</dt><dd>${escapeText(item.region || 'Tarkista rahoittajalta')}</dd></div><div><dt>Lähde</dt><dd>${escapeText(item.source)}</dd></div></dl>
+    <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Tarkista ehdot rahoittajalta →</a>
+  </article>`;
+
 const configs = {
+  funding: { file: "../data/funding.json", key: "funding", render: renderFunding },
   events: { file: "../data/events.json", key: "events", render: renderEvent },
   companies: { file: "../data/companies.json", key: "companies", render: renderCompany },
   news: { file: "../data/news.json", key: "articles", render: renderArticle }
@@ -85,7 +94,7 @@ async function loadContent() {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
       items = items
-        .filter(item => !item.date || new Date(`${item.date}T23:59:59`) >= today)
+        .filter(item => (!item.date || new Date(`${item.date}T23:59:59`) >= today) && (!item.registration_deadline || new Date(`${item.registration_deadline}T23:59:59+03:00`) >= new Date()))
         .sort((a, b) => String(a.date).localeCompare(String(b.date)));
     }
     if (!items.length) {
