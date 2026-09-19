@@ -1,41 +1,48 @@
 {
-  "week": "2026-W37",
-  "updated_at": "2026-09-09T07:37:29.502544+03:00",
+  "updated_at": "2026-09-19T05:15:05.664117+00:00",
   "articles": [
     {
-      "title": "Sprint-haku avautui syyskuussa kansainvälistä kasvua hakeville",
+      "title": "Pk-yritysten odotukset vahvistuivat syksyn barometrissa",
+      "source": "Suomen Yrittäjät, Finnvera ja työ- ja elinkeinoministeriö",
+      "summary": "16.9. julkaistu barometri kokoaa pk-yritysten odotuksia ja kehitystarpeita. Käytä sitä oman kysynnän tarkastelun taustana: yleinen kasvuodotus ei vielä kerro oman palvelusi menekistä.",
+      "url": "https://www.yrittajat.fi/ajankohtaista/tutkimukset/pk-yritysbarometri-2-2026/",
+      "checked_at": "2026-09-19",
+      "published_at": "2026-09-16"
+    },
+    {
+      "title": "Sprintin jatkuva haku on avoinna",
       "source": "Business Finland",
-      "relevance_score": 9,
-      "summary": "Sprintin jatkuva haku avautui 1.9.2026. Rahoitus kohdistuu innovatiivisen ratkaisun kehittämiseen kansainvälisille markkinoille; hakemista edeltää taustatietojen antaminen ja keskustelu Business Finlandin kanssa.",
-      "url": "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/jatkuva-sprint-rahoitushaku/"
+      "summary": "Rahoitus tukee innovatiivisen ratkaisun kehitystä kansainvälistä kasvua tavoittelevassa pienessä osakeyhtiössä. Tarkista tiimiä, omaa rahoitusta ja projektia koskevat ehdot ennen hakemista.",
+      "url": "https://www.businessfinland.fi/en/services/funding/calls/2026/ongoing-sprint-grant-funding/",
+      "checked_at": "2026-09-19",
+      "published_at": "2026-08-21"
     },
     {
-      "title": "Starttiraha: varmista ajoitus ennen päätoimista yrittäjyyttä",
-      "source": "Työmarkkinatori",
-      "relevance_score": 10,
-      "summary": "Starttiraha tukee yrittäjän toimeentuloa päätoimisen toiminnan alussa. Hakemuksen on saavuttava työvoimaviranomaiselle ennen päätoimisen yritystoiminnan alkua tai sivutoimisen toiminnan laajentamista päätoimiseksi.",
-      "url": "https://tyomarkkinatori.fi/lisatietoa-palveluista/starttiraha"
+      "title": "Helsinki valitsi kymmenen tekoälykokeilua syksyyn",
+      "source": "Helsingin kaupungin Kokeilukiihdyttämö",
+      "summary": "Valinnassa painottuivat ongelman laajuus, odotettavat hyödyt ja kokeiltavuus. Valintasivu tarjoaa esimerkkejä rajatuista kehittämiskohteista. Kokeilujen tuloksia ei ole vielä esitetty.",
+      "url": "https://kokeilukiihdyttamo.hel.fi/processes/tyon-uudet-ratkaisut-2026/f/39/posts/55",
+      "checked_at": "2026-09-19"
     },
     {
-      "title": "Riittääkö polttoaine? Laske myös oma toimeentulosi",
-      "source": "Suomi.fi",
-      "relevance_score": 10,
-      "summary": "Yrityksen tulos voi näyttää hyvältä, vaikka yrittäjä ei saisi työstään asianmukaista korvausta. Kannattavuuslaskelma ja työajan seuranta auttavat näkemään, paljonko myyntiä tarvitaan ja mistä jää katetta.",
-      "url": "https://www.suomi.fi/yritykselle/yrityksen-perustaminen/yritystoiminnan-suunnittelu/opas/yritysideasta-liiketoiminnaksi/kannattavuuden-varmistaminen"
+      "title": "Laske palvelusi tuntihinnan lähtötaso",
+      "source": "Nousuun.fi",
+      "summary": "Huomioi kulut, oma tulotavoite ja laskutettavat tunnit. Kokeile, miten työmäärä vaikuttaa tarvittavaan hintaan.",
+      "url": "/blog/yksinyrittajan-minimihinta.html"
     },
     {
-      "title": "Perustamisilmoitus: tarkista oman yritysmuotosi ohje",
-      "source": "Patentti- ja rekisterihallitus",
-      "relevance_score": 9,
-      "summary": "Kaupparekisterin ilmoitukset ja hakemukset tehdään sähköisesti vuoden 2026 alusta. Muutos ei koske toiminimiyrittäjiä, yhdistyksiä eikä säätiöitä, joten oman yritysmuodon ohje on hyvä tarkistaa erikseen.",
-      "url": "https://www.prh.fi/fi/yrityksetjayhteisot/yrityksenperustaminen.html"
+      "title": "Kokeile tekoälyä yhdessä toistuvassa tehtävässä",
+      "source": "Nousuun.fi",
+      "summary": "Rajaa aineisto ja ihmisen tarkistus. Vertaa kokonaisaikaa ja korjausten määrää nykyiseen työtapaan.",
+      "url": "/blog/ensimmainen-ai-automaatio.html"
     },
     {
-      "title": "Digitaalisen ohjaamon perustarkistus",
-      "source": "Traficom / Kyberturvallisuuskeskus",
-      "relevance_score": 9,
-      "summary": "Kyberturvallisuuskeskuksen pienyritysopas käsittelee tietojenkalastelua, haittaohjelmia, päivityksiä ja käyttöoikeuksia. Samat perusasiat kannattaa käydä läpi ennen yrityksen työkalupinon kasvattamista.",
-      "url": "https://www.kyberturvallisuuskeskus.fi/fi/julkaisut/pienyritysten-kyberturvallisuusopas"
+      "title": "Selvitä yrityksen riippuvuus omistajasta",
+      "source": "Nousuun.fi",
+      "summary": "Mitä tapahtuu, jos omistaja ei ole töissä? Yritysoston opas auttaa arvioimaan asiakassuhteiden ja osaamisen siirtymistä.",
+      "url": "/blog/yrityksen-ostaminen-omistajanvaihdos.html"
     }
-  ]
+  ],
+  "checked_at": "2026-09-19",
+  "week": "2026-W38"
 }

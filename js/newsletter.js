@@ -8,52 +8,52 @@
 
   const copy = {
     fi: {
-      kicker: 'Maksuton Lentolupakirja',
-      title: 'Idea mukaan. Lähtövalmistelut tästä.',
-      body: 'Liity Nousuun.fi:n uutiskirjeeseen ja lataa aloittavan yrittäjän Lentolupakirja heti liittymispyynnön jälkeen. Neljä sivua, joilla saat ajatukset paperille ja ensimmäisen viikon liikkeelle.',
+      kicker: 'Nousuun.fi sähköpostissa',
+      title: 'Haluatko kuulla uusista sisällöistä?',
+      body: 'Voit jättää tilauspyynnön Nousuun.fi:n uutiskirjeeseen. Aiheina ovat yrittäjän talous, asiakashankinta ja työn kehittäminen. Lähetyksille ei ole vahvistettua aikataulua.',
       bullets: [
-        'Tarkistuslista ideasta ensimmäiseen tarjoukseen',
-        'Tilaa omille laskelmille ja lähtövalmisteluille',
-        'Oma seitsemän päivän lähtösuunnitelma'
+        'Starttiraha- ja rahoitusvinkit selkokielellä',
+        'Ohjeita hinnoitteluun ja työn organisointiin',
+        'Poimintoja muiden järjestämistä yrittäjätapahtumista'
       ],
       email: 'Sähköpostiosoite',
       placeholder: 'sinun@sahkoposti.fi',
-      cta: 'Liity ja lataa Lentolupakirja →',
-      privacy: 'Liittymällä hyväksyt, että Nousuun.fi käsittelee sähköpostiosoitettasi viikkokirjeen lähettämiseksi.',
+      cta: 'Jätä tilauspyyntö →',
+      privacy: 'Liittymällä hyväksyt, että Nousuun.fi käsittelee sähköpostiosoitettasi uutiskirjeen lähettämiseksi.',
       privacyLink: 'Lue tietosuojaseloste.',
-      note: 'Maksuton PDF. Voit peruuttaa tilauksen ottamalla yhteyttä tai kirjeen peruutusohjeella.',
+      note: 'Voit peruuttaa tilauksen ottamalla yhteyttä: nousu.services@gmail.com.',
       dismiss: 'Ei kiitos, en vielä',
       close: 'Sulje',
-      success: 'Kiitos! Liittymispyyntösi on vastaanotettu. Lentolupakirjasi on valmis ladattavaksi.',
+      success: 'Tilauspyyntö vastaanotettu. Voit nyt ladata yrittäjän muistilistan.',
       error: 'Jotain meni pieleen. Yritä uudelleen tai laita viestiä nousu.services@gmail.com.',
       submitting: 'Liitytään…',
-      download: 'Lataa Lentolupakirja (PDF) ↓',
-      inlineTitle: 'Hae oma Lentolupakirjasi.',
-      inlineBody: 'Liity uutiskirjeeseen ja saat heti ladattavan nelisivuisen tarkistuslistan. Sen jälkeen kokoamme avuksesi rahoitusta, tapahtumia ja käytännön vinkkejä. Sinä ohjaat, me autamme valmisteluissa.'
+      download: 'Lataa yrittäjän muistilista (PDF) ↓',
+      inlineTitle: 'Uutiskirje ja yrittäjän muistilista.',
+      inlineBody: 'Jätä tilauspyyntö. Kirjeessä käsitellään rahoitusta, tapahtumia ja yrittäjän työkaluja. Lähetyksille ei ole vahvistettua aikataulua.'
     },
     en: {
-      kicker: 'Ready for take-off?',
-      title: 'Your idea. Your business. Your runway.',
-      body: 'Join the Nousuun.fi newsletter and download the four-page Finnish-language entrepreneur checklist after submitting your request.',
+      kicker: 'Nousuun.fi by email',
+      title: 'Just starting your business?',
+      body: 'Request the Nousuun.fi newsletter for material on pricing, customers and running a business. There is no confirmed sending schedule.',
       bullets: [
-        'A checklist from customer idea to first offer',
-        'Space for your numbers and launch preparations',
-        'Your own seven-day launch plan'
+        'Plain-language guidance on start-up grants and funding',
+        'Guides to pricing and organising your work',
+        'Selected entrepreneurship events from other organisers'
       ],
       email: 'Email address',
       placeholder: 'you@example.com',
-      cta: "Join and get the checklist →",
-      privacy: 'By joining, you agree that Nousuun.fi may process your email address to send the weekly newsletter.',
+      cta: "Request a subscription →",
+      privacy: 'By joining, you agree that Nousuun.fi may process your email address to send the newsletter.',
       privacyLink: 'Read the privacy notice.',
-      note: 'Free PDF in Finnish. Cancel by contacting us or following the instructions in the newsletter.',
+      note: 'To cancel, contact nousu.services@gmail.com.',
       dismiss: 'No thanks, not yet',
       close: 'Close',
-      success: 'Thanks! Your subscription request has been received. Your checklist is ready to download.',
+      success: 'Your request has been received. You can now download the Finnish checklist.',
       error: 'Something went wrong. Try again or email nousu.services@gmail.com.',
       submitting: 'Joining…',
       download: 'Download the Finnish checklist (PDF) ↓',
-      inlineTitle: 'Get your entrepreneur checklist.',
-      inlineBody: 'Join the newsletter for a free four-page PDF in Finnish, plus useful funding, events and practical tips.'
+      inlineTitle: 'Newsletter and entrepreneur checklist.',
+      inlineBody: 'Funding, events and tools for entrepreneurs. There is no confirmed sending schedule.'
     }
   };
 
@@ -201,8 +201,8 @@
           email: input.value.trim(),
           consent: true,
           consent_text: text.privacy,
-          consent_version: '2026-09-09',
-          gift: 'lentolupakirja-v1-fi',
+          consent_version: '2026-09-19',
+          gift: 'yrittajan-muistilista-v2-fi',
           consent_timestamp: new Date().toISOString(),
           source,
           page: window.location.href,
@@ -320,7 +320,7 @@
 
   function init() {
     document.addEventListener('click', event => {
-      if (event.target.closest?.('.nl-download')) track('newsletter_gift_download', { gift: 'lentolupakirja-v1-fi' });
+      if (event.target.closest?.('.nl-download')) track('newsletter_gift_download', { gift: 'yrittajan-muistilista-v2-fi' });
     });
     document.querySelectorAll('[data-newsletter-inline]').forEach(host => {
       host.classList.add('nl-inline');

@@ -45,6 +45,9 @@ def validate_report(data):
             if not isinstance(event.get(key), str) or not event[key].strip():
                 raise ValueError(f"Missing event field: {key}")
         date.fromisoformat(event["pvm"])
+        if event.get("pvm_loppu"):
+            if date.fromisoformat(event["pvm_loppu"]) < date.fromisoformat(event["pvm"]):
+                raise ValueError("Event ends before it starts")
         if event.get("ilmoittautuminen_paattyy"):
             date.fromisoformat(event["ilmoittautuminen_paattyy"])
         link = urlparse(event["linkki"])
@@ -66,6 +69,8 @@ def normalize_event(event):
     return {
         "name": event.get("nimi", "").strip(),
         "date": event.get("pvm", "").strip(),
+        "end_date": event.get("pvm_loppu") if event.get("pvm_loppu") != event.get("pvm") else None,
+        "checked_at": event.get("tarkistettu") or event.get("checked_at"),
         "time": normalize_time(event.get("aika")),
         "location": event.get("paikka", "").strip(),
         "description": (event.get("kuvaus") or event.get("miksi_suositeltu") or "").strip(),
@@ -120,7 +125,7 @@ def main():
         "updated_at": timestamp,
         "week": data.get("viikko"),
         "events": events[: args.limit],
-        "source_report": str(source),
+        "source_report": source.name,
     }
 
     OUT.parent.mkdir(exist_ok=True)

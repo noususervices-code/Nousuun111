@@ -110,8 +110,7 @@ def generate_post(tag, headlines):
         for h in headlines[:8]
     )
 
-    prompt = f"""Olet Jaakko Kalke — suomalainen yrittäjä, startup-rahoituksen asiantuntija ja fasilitaattori. 
-Kirjoitat blogikirjoituksia sivustolle nousuun.fi, jonka teema on "Autetaan toinen toisiamme nousuun".
+    prompt = f"""Kirjoitat Nousuun.fi:n toimituksellista luonnosta yrittäjälle. Älä kirjoita omistajan nimissä tai väitä hänellä olevan kokemusta, asiakkaita tai tuloksia.
 
 Tänään kirjoitat aiheesta: **{tag}**
 
@@ -119,7 +118,10 @@ Tässä tämän päivän tuoreimmat uutisotsikot inspiraatioksi (älä kopioi su
 {headlines_text}
 
 Kirjoita yksi laadukas, käytännönläheinen blogikirjoitus suomeksi. Muista:
-- Sävy: lämmin, suora, fasilitaattori — ei guru
+- Sävy: selkeä ja käytännöllinen suomi. Ei mainospuhetta tai lentämisvertauksia.
+- Erota lähteistetyt faktat, kuvitteelliset esimerkit ja suunnitelmat. Älä lupaa päivitystahtia.
+- Otsikot ovat vain aihe-ehdotuksia. Älä esitä muuttuvia väitteitä varmistettuina pelkkien RSS-katkelmien perusteella.
+- Käsittele yhtä rajattua yrittäjän tarvetta: osaamisen myynti, hinnoittelu, kysynnän testaus, työn organisointi tai toiminnan jatkuvuus.
 - Et anna valmiita vastauksia, autat lukijaa ajattelemaan
 - Käytännön esimerkit ja konkreettiset vinkit
 - Suomalainen konteksti (startup-ekosysteemi, pk-yritykset, Helsinki)
@@ -164,8 +166,8 @@ def build_post_html(slug, title, tag, excerpt, body_html, date_label, date_iso, 
 <body>
 <nav>
   <a href="/" class="logo"><div class="logo-mark"><svg viewBox="0 0 20 20"><path d="M3 14 L10 5 L17 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="5" r="2" fill="white"/></svg></div><span class="logo-text">nousuun<span>.fi</span></span></a>
-  <ul class="nav-links"><li><a href="/#about">Minusta</a></li><li><a href="/blog/">Blogi</a></li></ul>
-  <a href="/#contact" class="nav-btn">Ota yhteyttä</a>
+  <ul class="nav-links"><li><a href="/polku/">Yrittäjän polku</a></li><li><a href="/blog/">Blogi</a></li></ul>
+  <a href="mailto:nousu.services@gmail.com" class="nav-btn">Ota yhteyttä</a>
 </nav>
 
 <article class="post-page">
@@ -187,7 +189,7 @@ def build_post_html(slug, title, tag, excerpt, body_html, date_label, date_iso, 
 
 <section class="contact" id="contact" style="padding:4rem 5vw;">
   <div class="contact-inner">
-    <h2 style="font-size:1.8rem;">Noustaan yhdessä.</h2>
+    <h2 style="font-size:1.8rem;">Kerro, mikä jäi mietityttämään.</h2>
     <p>Haluatko sparrata? Kirjoita minulle.</p>
     <a href="mailto:nousu.services@gmail.com" class="btn-white">nousu.services@gmail.com →</a>
   </div>

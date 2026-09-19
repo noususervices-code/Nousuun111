@@ -1,135 +1,3 @@
-const FALLBACKS = {
-  "events.json": {
-    updated_at: "2026-05-17T09:00:00+03:00",
-    events: [
-      {
-        name: "Yritystä Stadiin",
-        date: "2026-05-26",
-        time: "16:00",
-        location: "Helsinki",
-        description: "Tapahtuma aloittaville ja kasvua hakeville yrittäjille. Hyvä paikka tavata muita tekijöitä ja kerätä konkreettisia neuvoja.",
-        url: "https://www.hel.fi/",
-        source: "manual seed",
-        tags: ["verkosto", "startup"]
-      },
-      {
-        name: "AI ja arjen automaatio yrittäjälle",
-        date: "2026-05-28",
-        time: "09:00",
-        location: "Online",
-        description: "Käytännön sessio siitä, miten yksinyrittäjä voi vapauttaa aikaa tekoälyn, no-code-työkalujen ja selkeiden prosessien avulla.",
-        url: "#",
-        source: "manual seed",
-        tags: ["AI", "automaatio"]
-      },
-      {
-        name: "Kasvuyrittäjän aamukahvit",
-        date: "2026-06-02",
-        time: "08:30",
-        location: "Uusimaa",
-        description: "Matala kynnys, korkea hyöty. Keskustelua rahoituksesta, asiakkaista ja yrittäjän seuraavasta askeleesta.",
-        url: "#",
-        source: "manual seed",
-        tags: ["kasvu", "yhteiso"]
-      }
-    ]
-  },
-  "companies.json": {
-    updated_at: "2026-05-17T09:00:00+03:00",
-    week: "2026-W20",
-    companies: [
-      {
-        name: "Paikallinen palveluyritys",
-        industry: "Palvelut",
-        price: "Alle 150 000 euroa",
-        location: "Etelä-Suomi",
-        score: 8.2,
-        insight: "Kassavirtaa tuottava palveluyritys, jossa AI voi auttaa myynnissä, asiakaspalvelussa ja raportoinnissa. Sopii tekijälle, joka haluaa ostaa valmiin pohjan eikä aloittaa tyhjästä.",
-        url: "#",
-        source: "manual seed"
-      },
-      {
-        name: "Verkkokauppa niche-markkinassa",
-        industry: "Kauppa",
-        price: "Neuvoteltavissa",
-        location: "Suomi",
-        score: 7.7,
-        insight: "Pieni mutta selkeä kohderyhmä. Kasvua voisi hakea sisältömarkkinoinnilla, automaatiolla ja eurooppalaisella jakelulla.",
-        url: "#",
-        source: "manual seed"
-      },
-      {
-        name: "B2B-koulutuskonsepti",
-        industry: "Koulutus",
-        price: "Ei julkinen",
-        location: "Helsinki",
-        score: 7.4,
-        insight: "Asiantuntijapalvelu, jonka voi tuotteistaa kurssiksi, yhteisöksi tai lisensoitavaksi malliksi. Hyvä esimerkki osaamisen skaalaamisesta.",
-        url: "#",
-        source: "manual seed"
-      }
-    ]
-  },
-  "funding.json": {
-    updated_at: "2026-05-17T09:00:00+03:00",
-    funding: [
-      {
-        name: "Starttiraha",
-        type: "Alkuvaiheen tuki",
-        deadline: "Jatkuva haku",
-        region: "Suomi",
-        summary: "Aloittavan päätoimisen yrittäjän henkilökohtainen tuki yritystoiminnan ensimmäisiin kuukausiin. Tarkista ehdot oman alueesi työllisyyspalveluista.",
-        url: "https://www.suomi.fi/palvelut/starttiraha-tyollisyyspalvelut/55b76e7f-e4f6-4b9f-b2f1-b0ce7791e214",
-        source: "manual seed"
-      },
-      {
-        name: "Business Finland Sprint",
-        type: "Kansainvälinen kasvu",
-        deadline: "Jatkuva haku 1.9.2026 alkaen",
-        region: "Suomi",
-        summary: "Rahoitus pienille innovatiivisille yrityksille, jotka kehittävät uutta ratkaisua ja tavoittelevat nopeaa kansainvälistä kasvua.",
-        url: "https://www.businessfinland.fi/palvelut/rahoitus/haut/2026/sprint-rahoitushaku/",
-        source: "manual seed"
-      },
-      {
-        name: "EU-ohjelmat pk-yrityksille",
-        type: "Eurooppa",
-        deadline: "Vaihtelee",
-        region: "EU",
-        summary: "EU-hakuja kannattaa seurata erityisesti digitalisaation, vastuullisuuden ja kasvun teemoissa. Nousuun voi tiivistää haun yrittäjän kielelle.",
-        url: "https://commission.europa.eu/funding-tenders_en",
-        source: "manual seed"
-      }
-    ]
-  },
-  "news.json": {
-    updated_at: "2026-05-17T09:00:00+03:00",
-    articles: [
-      {
-        title: "AI ei ole osasto. Se on työtapa.",
-        source: "Nousuun.fi",
-        relevance_score: 9,
-        summary: "Pienyrittäjän kannattaa aloittaa yhdestä arjen prosessista: myyntiviestit, tarjoukset, asiakaspalvelu tai raportointi. Vasta sen jälkeen rakennetaan automaatio.",
-        url: "blog/"
-      },
-      {
-        title: "Eurooppa etsii uusia kasvuyrittäjiä",
-        source: "Nousuun.fi",
-        relevance_score: 8,
-        summary: "Uusi markkina ei tarkoita vain vientiä. Se voi tarkoittaa kumppaneita, ostettavia yrityksiä, EU-rahoitusta ja pieniä testejä rajojen yli.",
-        url: "blog/"
-      },
-      {
-        title: "Yrityksen ostaminen voi olla nopeampi alku kuin perustaminen",
-        source: "Nousuun.fi",
-        relevance_score: 8,
-        summary: "Omistajanvaihdokset ovat usein alihyödynnetty polku yrittäjyyteen. AI voi parantaa due diligencea, markkinointia ja operointia.",
-        url: "blog/"
-      }
-    ]
-  }
-};
-
 const sectionConfig = [
   ["events.json", "events-section", renderEvents],
   ["companies.json", "companies-section", renderCompanies],
@@ -143,11 +11,12 @@ async function loadSection(dataFile, containerId, renderFn) {
 
   try {
     const response = await fetch(`data/${dataFile}`, { cache: "no-store" });
-    const data = response.ok ? await response.json() : FALLBACKS[dataFile];
-    container.innerHTML = renderFn(data || FALLBACKS[dataFile]);
+    if (!response.ok) throw new Error("Sisällön lataaminen epäonnistui");
+    const data = await response.json();
+    container.innerHTML = renderFn(data);
     container.dataset.state = "loaded";
   } catch (error) {
-    container.innerHTML = renderFn(FALLBACKS[dataFile]);
+    container.innerHTML = '<p class="empty-state">Sisältöä ei saatu ladattua. Kokeile uudelleen.</p>';
     container.dataset.state = "fallback";
   }
 }
@@ -159,7 +28,7 @@ function renderEvents(data) {
       <p class="eyebrow">${escapeHtml(formatEventEyebrow(event))}</p>
       <h3>${escapeHtml(event.name)}</h3>
       <p>${escapeHtml(event.description || "")}</p>
-      <a class="card-link" href="${safeUrl(event.url)}" target="_blank" rel="noopener">Lisatiedot</a>
+      <a class="card-link" href="${safeUrl(event.url)}" target="_blank" rel="noopener">Lisätiedot</a>
       <div class="meta-line">${escapeHtml([event.date, event.time, event.location].filter(Boolean).join(" / "))}</div>
     </article>
   `);
@@ -192,7 +61,7 @@ function renderFunding(data) {
       <p class="eyebrow">${escapeHtml([item.type, item.region].filter(Boolean).join(" / "))}</p>
       <h3>${escapeHtml(item.name)}</h3>
       <p>${escapeHtml(item.summary || "")}</p>
-      <a class="card-link" href="${safeUrl(item.url)}" target="_blank" rel="noopener">Avaa lahde</a>
+      <a class="card-link" href="${safeUrl(item.url)}" target="_blank" rel="noopener">Avaa lähde</a>
       <div class="meta-line">${escapeHtml(item.deadline || "Seurannassa")}</div>
     </article>
   `);
@@ -205,15 +74,15 @@ function renderNews(data) {
       <p class="eyebrow">${escapeHtml(article.source || "Nousuun.fi")} / ${escapeHtml(article.relevance_score || "-")}/10</p>
       <h3>${escapeHtml(article.title)}</h3>
       <p>${escapeHtml(article.summary || "")}</p>
-      <a class="card-link" href="${safeUrl(article.url)}" target="_blank" rel="noopener">Lue lisaa</a>
-      <div class="meta-line">Paivitetty ${formatDate(data.updated_at)}</div>
+      <a class="card-link" href="${safeUrl(article.url)}" target="_blank" rel="noopener">Lue lisää</a>
+      <div class="meta-line">Päivitetty ${formatDate(data.updated_at)}</div>
     </article>
   `);
 }
 
 function renderCollection(items, template) {
   if (!items.length) {
-    return '<p class="empty-state">Ei nostoja viela. Agentti paivittaa taman osion seuraavassa ajossa.</p>';
+    return '<p class="empty-state">Tässä osiossa ei ole tällä hetkellä nostoja.</p>';
   }
   return items.slice(0, 6).map(template).join("");
 }

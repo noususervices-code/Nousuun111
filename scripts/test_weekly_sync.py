@@ -45,6 +45,16 @@ class WeeklySyncTests(unittest.TestCase):
         self.event["ilmoittautuminen_paattyy"] = "2026-09-09"
         self.assertEqual(normalize_event(self.event)["registration_deadline"], "2026-09-09")
 
+    def test_multi_day_event_survives(self):
+        self.event.update(pvm_loppu="2026-09-17", tarkistettu="2026-09-10")
+        validate_report(self.report)
+        result = normalize_event(self.event)
+        self.assertEqual(result["end_date"], "2026-09-17")
+        self.assertEqual(result["checked_at"], "2026-09-10")
+        self.event["pvm_loppu"] = "2026-09-15"
+        with self.assertRaises(ValueError):
+            validate_report(self.report)
+
 
 if __name__ == "__main__":
     unittest.main()

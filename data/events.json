@@ -1,109 +1,118 @@
 {
   "agent": "Agentti A - Tapahtumat",
   "quality": "curated_weekly_report",
-  "updated_at": "2026-09-09T04:47:37.930430+00:00",
-  "week": "2026-W37",
+  "updated_at": "2026-09-19T05:15:39.118482+00:00",
+  "week": "2026-W38",
   "events": [
     {
-      "name": "Business Model Canvas Workshop",
-      "date": "2026-09-16",
-      "time": "17:00-19:00",
-      "location": "Helsinki Think Company Kumpula, Pietari Kalmin katu 5, Helsinki",
-      "description": "Työpaja sopii yritysideaa hahmottelevalle: jäsennät ideasi Business Model Canvasilla ja saat palautetta muilta osallistujilta. Tilaisuus on avoin kaikille.",
-      "url": "https://www.thinkcompany.fi/what-we-do/events",
+      "name": "Control.dev Founder Story",
+      "date": "2026-09-22",
+      "end_date": null,
+      "checked_at": "2026-09-19",
+      "time": "18:00 alkaen",
+      "location": "Startup Sauna, Puumiehenkuja 5, Espoo",
+      "description": "AI- ja B2B-yrittäjyydestä kiinnostuneille suunnattu perustajatarina käsittelee taloushallinnon automatisointia ja startupin alkuvaiheita. Osallistuja voi kysyä Control.devin perustajalta tuotekehityksestä ja yrityksen rakentamisesta.",
+      "url": "https://luma.com/aaltoes-g1hs",
       "image": "",
-      "source": "Helsinki Think Company",
-      "tags": [
-        "liikeidea",
-        "liiketoimintamalli",
-        "vertaispalaute"
-      ],
-      "score": 8.8,
-      "featured": true,
-      "access": "Järjestäjän tapahtumakuvaus: maksuton ja kaikille avoin. Ilmoittautumislinkki https://luma.com/w8lainug; lomakkeen paikkatilannetta ei saatu luettua.",
-      "price": "Maksuton",
-      "registration_deadline": null
-    },
-    {
-      "name": "Aloittavan yrittäjän valmennus nuorille",
-      "date": "2026-09-16",
-      "time": "13:00-16:00; jatkokerrat 17.9., 23.9. ja 24.9.",
-      "location": "Helsingin työllisyyspalvelut, Malminkatu 34, Helsinki",
-      "description": "Alle 30-vuotias helsinkiläinen saa neljän iltapäivän valmennuksessa apua liikeidean, liiketoimintasuunnitelman ja laskelmien tekemiseen. Mukaan voi tulla opiskelijana, työssä käyvänä tai työttömänä.",
-      "url": "https://nuorten.hel.fi/tapahtuma/?event_id=helsinki:agqcgocl64",
-      "image": "",
-      "source": "Helsingin työllisyyspalvelut / Nuorten yrittäjyyspalvelut",
-      "tags": [
-        "liikeidea",
-        "nuoret yrittäjät",
-        "liiketoimintasuunnitelma"
-      ],
-      "score": 8.6,
-      "featured": true,
-      "access": "Alle 30-vuotiaille helsinkiläisille elämäntilanteesta riippumatta. Järjestäjän sivulla avoin ilmoittautumislinkki; ei ilmoitettua valintamenettelyä.",
-      "price": "Maksuton",
-      "registration_deadline": null
-    },
-    {
-      "name": "Yrittäjien verkostoitumisaamiainen",
-      "date": "2026-09-16",
-      "time": "09:00-11:00",
-      "location": "Malminkartanon kappeli, Vellikellonpolku 8, Helsinki",
-      "description": "Rauhallinen aamiainen tarjoaa yrittäjälle tilaisuuden pysähtyä ja tavata muita yrittäjiä. Jäsenyyttä ei tarvita; ilmoittaudu viimeistään 9.9.",
-      "url": "https://www.yrittajat.fi/tapahtumat/yrittajien-verkostoitumisaamiainen-16-9-klo-9-11/",
-      "image": "",
-      "source": "Länsi-Helsingin Yrittäjät ja Kannelmäen seurakunta",
-      "tags": [
-        "verkostoituminen",
-        "hyvinvointi",
-        "yksinyrittäjyys"
-      ],
-      "score": 7.8,
-      "featured": true,
-      "access": "Nimenomaisesti avoin kaikille yrittäjille ilman jäsenyyttä. Ilmoittautuminen 9.9. mennessä; Lyyti-lomakkeen paikkatilanne ei ollut luettavissa.",
-      "price": "Maksuton",
-      "registration_deadline": "2026-09-09"
-    },
-    {
-      "name": "Epicenter AI Campfire 18th September | Helsinki",
-      "date": "2026-09-18",
-      "time": "13:00-17:00 (alustava ohjelma)",
-      "location": "Epicenter Helsinki, Mikonkatu 9, Revelation Space, 2. kerros",
-      "description": "Freelancerit ja yrittäjät näkevät tekoälysovellusten demoja ja kuulevat startupien esittelyjä. Ohjelmassa on myös aikaa tutustua mahdollisiin yhteistyökumppaneihin.",
-      "url": "https://luma.com/g9nsazve",
-      "image": "",
-      "source": "Epicenter / Reidar Wasenius",
-      "tags": [
-        "AI",
-        "yrittäjyys",
-        "verkostoituminen"
-      ],
-      "score": 8.7,
-      "featured": true,
-      "access": "Luma näyttää Register-painikkeen ja järjestäjä ilmoittaa tapahtuman maksuttomaksi ja kaikille avoimeksi.",
-      "price": "Maksuton",
-      "registration_deadline": null
-    },
-    {
-      "name": "Maria 01 NEXT Startup Festival & Afterparty",
-      "date": "2026-09-23",
-      "time": "23.-24.9.; sessiokohtaiset kellonajat järjestäjän sivulla",
-      "location": "Maria 01, Helsinki",
-      "description": "Kaksipäiväinen startup-tapahtuma kokoaa yrittäjiä, sijoittajia ja yritysten kumppaneita Maria 01:een. Sopii yrittäjälle, joka haluaa tutustua paikalliseen startup-yhteisöön ja sen toimintaan.",
-      "url": "https://maria.io/events/maria-01-next-startup-festival-afterparty-2/",
-      "image": "",
-      "source": "Maria 01",
+      "source": "Aaltoes",
       "tags": [
         "startup",
-        "verkostoituminen",
-        "kumppanit"
+        "AI",
+        "B2B"
       ],
       "score": 8.5,
       "featured": true,
-      "access": "Järjestäjä listaa tapahtuman Public events -osiossa ja kutsuu ilmoittautumaan sessioihin. Sessiokohtainen hinta ja paikkatilanne tarkistettava.",
-      "price": "Ei ilmoitettu luettavassa tapahtumakuvauksessa; tarkista session ilmoittautumisesta",
+      "access": "Ilmoittaudu järjestäjän sivulla. Tarkista paikkatilanne ennen osallistumista.",
+      "price": "Maksuton",
       "registration_deadline": null
+    },
+    {
+      "name": "Marketing Morning September 2026",
+      "date": "2026-09-29",
+      "end_date": null,
+      "checked_at": "2026-09-19",
+      "time": "08:30-12:00",
+      "location": "Finnkino Kinopalatsi, Mikonkatu 17, Helsinki",
+      "description": "Markkinointia tekeville yrittäjille ja kasvutiimeille suunnattu aamupäivä käsittelee tekoälyn käyttöä, hakunäkyvyyttä ja markkinoinnin päätöksiä. Viisi puheenvuoroa tarjoaa näkökulmia oman markkinoinnin kehittämiseen.",
+      "url": "https://www.marketingmorning.fi/",
+      "image": "",
+      "source": "Obsidian Digital",
+      "tags": [
+        "markkinointi",
+        "kasvu"
+      ],
+      "score": 8.1,
+      "featured": true,
+      "access": "Osta lippu järjestäjän sivulta. Tarkista saatavuus ennen ostamista.",
+      "price": "29 € + alv",
+      "registration_deadline": null
+    },
+    {
+      "name": "Älykäs organisaatio: ihminen, teknologia ja liiketoiminta",
+      "date": "2026-09-29",
+      "end_date": null,
+      "checked_at": "2026-09-19",
+      "time": "17:00-19:30",
+      "location": "Maistraatinportti 1, Helsinki",
+      "description": "Kasvuyritysten johtajille ja liiketoiminnan kehittäjille sopiva ilta käsittelee datan käyttöä päätöksissä sekä organisaation uudistumista. Puheenvuoroissa tarkastellaan myös uuden liikevaihdon rakentamista tekoälyn avulla.",
+      "url": "https://www.ilf.fi/2026/06/18/alykas-organisaatio-ihminen-teknologia-ja-liiketoiminta-29-9-2026/",
+      "image": "",
+      "source": "ICT Leaders Finland / TIVIA / Hallituspartnerit Helsinki",
+      "tags": [
+        "johtaminen",
+        "AI",
+        "kasvu"
+      ],
+      "score": 8,
+      "featured": true,
+      "access": "Avoin myös yhdistysten toiminnasta kiinnostuneille. Ilmoittaudu järjestäjän sivulla.",
+      "price": "Maksuton",
+      "registration_deadline": null
+    },
+    {
+      "name": "AI Connect by AIStart Incubator",
+      "date": "2026-10-06",
+      "end_date": null,
+      "checked_at": "2026-09-19",
+      "time": "15:00-18:00",
+      "location": "Maria 01, Lapinlahdenkatu 16, Helsinki",
+      "description": "AI-yrittäjille ja yrityskehittäjille suunnattu tilaisuus esittelee Helsingin tukipalveluja ja yhteistyömahdollisuuksia. Paneeli ja avoin verkostoituminen yhdistävät yrityksiä, tutkijoita ja sijoittajia.",
+      "url": "https://testbed.hel.fi/en/new-technologies/aistart-community-event-on-6-october-ai-connect-building-connections-for-innovation-and-growth/",
+      "image": "",
+      "source": "Business Helsinki / AIStart",
+      "tags": [
+        "startup",
+        "verkostoituminen",
+        "AI"
+      ],
+      "score": 8.4,
+      "featured": true,
+      "access": "Ilmoittaudu järjestäjän sivulla. Tarkista paikkatilanne ennen osallistumista.",
+      "price": "Hinta ei ilmoitettu tarkistetulla sivulla",
+      "registration_deadline": null
+    },
+    {
+      "name": "Ulysseus R&I Conference 2026: Applied AI in Business and Education: Research, Innovation, and Responsibility",
+      "date": "2026-10-06",
+      "end_date": null,
+      "checked_at": "2026-09-19",
+      "time": "Päivätilaisuus; tarkista ohjelma",
+      "location": "Haaga-Helia, Pasilan kampus, Ratapihantie 13, Helsinki",
+      "description": "Startupien ja kehittäjien konferenssi kokoaa soveltavan tekoälyn tutkimusta ja käytännön kokeiluja. Osallistuja voi tutustua yritysten ja korkeakoulujen yhteistyöhön sekä vastuullisen käyttöönoton kysymyksiin.",
+      "url": "https://events.ulysseus.eu/event/55/",
+      "image": "",
+      "source": "Haaga-Helia / Ulysseus European University",
+      "tags": [
+        "TKI",
+        "AI",
+        "yhteistyö"
+      ],
+      "score": 8.3,
+      "featured": true,
+      "access": "Ilmoittaudu viimeistään 25.9. järjestäjän lomakkeella.",
+      "price": "Hinta ei ilmoitettu tarkistetulla sivulla",
+      "registration_deadline": "2026-09-25"
     }
   ],
-  "source_report": "/home/jay/ONS_AI/01_Projects/Nousuun_fi/Agent_Outputs/Agentti_A_Tapahtumat/weekly_reports/2026-W37_events.json"
+  "source_report": "2026-W38_events.json"
 }

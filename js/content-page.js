@@ -24,15 +24,15 @@ const fiDate = value => {
 const renderEvent = item => `
   <article class="archive-card">
     <div class="archive-card-top">
-      <span class="archive-score">${escapeText(item.score || "–")}/10</span>
-      <span>${fiDate(item.date)}</span>
+      <span>${escapeText(item.tags?.[0] || item.industry || "")}</span>
+      <span>${fiDate(item.date)}${item.end_date ? "–" + fiDate(item.end_date) : ""}</span>
     </div>
     <h2>${escapeText(item.name)}</h2>
     <p>${escapeText(item.description || "")}</p>
     <dl class="archive-facts">
       <div><dt>Aika</dt><dd>${escapeText(item.time || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Paikka</dt><dd>${escapeText(item.location || "Tarkista järjestäjältä")}</dd></div>
-      <div><dt>Osallistuminen</dt><dd>${escapeText(item.access || "Tarkista osallistumisehdot järjestäjältä")}</dd></div>
+      <div><dt>Osallistuminen</dt><dd>${escapeText(item.access || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Hinta</dt><dd>${escapeText(item.price || "Tarkista järjestäjältä")}</dd></div>
       <div><dt>Järjestäjä</dt><dd>${escapeText(item.source || "–")}</dd></div>
     </dl>
@@ -42,7 +42,7 @@ const renderEvent = item => `
 const renderCompany = item => `
   <article class="archive-card">
     <div class="archive-card-top">
-      <span class="archive-score">${escapeText(item.score || "–")}/10</span>
+      <span>${escapeText(item.tags?.[0] || item.industry || "")}</span>
       <span>${escapeText(item.location || "Suomi")}</span>
     </div>
     <h2>${escapeText(item.name)}</h2>
@@ -58,21 +58,16 @@ const renderCompany = item => `
 const renderArticle = item => `
   <article class="archive-card">
     <div class="archive-card-top">
-      <span class="archive-score">${escapeText(item.relevance_score || "–")}/10</span>
+      <span>Luettavaa</span>
       <span>${escapeText(item.source || "")}</span>
     </div>
     <h2>${escapeText(item.title)}</h2>
     <p>${escapeText(item.summary || "")}</p>
-    <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Lue alkuperäinen lähde →</a>
+    <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Lue artikkeli →</a>
   </article>`;
 
 const renderFunding = item => `
-  <article class="archive-card">
-    <div class="archive-card-top"><span>${escapeText(item.type || 'Rahoitus')}</span></div>
-    <h2>${escapeText(item.name)}</h2><p>${escapeText(item.summary)}</p>
-    <dl class="archive-facts"><div><dt>Milloin</dt><dd>${escapeText(item.deadline)}</dd></div><div><dt>Alue</dt><dd>${escapeText(item.region || 'Tarkista rahoittajalta')}</dd></div><div><dt>Lähde</dt><dd>${escapeText(item.source)}</dd></div></dl>
-    <a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Tarkista ehdot rahoittajalta →</a>
-  </article>`;
+  <article class="archive-card"><h2>${escapeText(item.name)}</h2><p>${escapeText(item.summary)}</p><p>${escapeText(item.deadline)}</p><a class="text-link" href="${safeLink(item.url)}" target="_blank" rel="noopener">Tarkista ehdot ja hakeminen →</a></article>`;
 
 const configs = {
   funding: { file: "../data/funding.json", key: "funding", render: renderFunding },
@@ -91,20 +86,21 @@ async function loadContent() {
     const data = await response.json();
     let items = Array.isArray(data[config.key]) ? data[config.key] : [];
     if (type === "events") {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
+      const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Helsinki" });
       items = items
-        .filter(item => (!item.date || new Date(`${item.date}T23:59:59`) >= today) && (!item.registration_deadline || new Date(`${item.registration_deadline}T23:59:59+03:00`) >= new Date()))
+        .filter(item => item.date && (item.end_date || item.date) >= today && (!item.registration_deadline || item.registration_deadline >= today))
         .sort((a, b) => String(a.date).localeCompare(String(b.date)));
     }
+    if (statusLine) statusLine.textContent = data.checked_at ? `Tiedot tarkistettu ${fiDate(data.checked_at)}` : (data.updated_at ? `Aineisto päivitetty ${new Date(data.updated_at).toLocaleDateString("fi-FI")}` : "Tarkistuspäivää ei ole ilmoitettu");
     if (!items.length) {
-      target.innerHTML = '<p class="empty-state">Uusia nostoja valmistellaan parhaillaan.</p>';
+      target.innerHTML = '<p class="empty-state">Listalla ei ole tällä hetkellä näytettäviä nostoja.</p>';
       return;
     }
     target.innerHTML = items.map(config.render).join("");
     const updated = data.updated_at ? new Date(data.updated_at).toLocaleDateString("fi-FI") : "";
-    if (statusLine) statusLine.textContent = [data.week, updated && `päivitetty ${updated}`].filter(Boolean).join(" · ");
+
   } catch (error) {
+    if (statusLine) statusLine.textContent = "Tarkistuspäivää ei saatu ladattua.";
     target.innerHTML = '<p class="empty-state">Sisällön lataaminen ei juuri nyt onnistunut. Kokeile hetken kuluttua uudelleen.</p>';
   }
 }

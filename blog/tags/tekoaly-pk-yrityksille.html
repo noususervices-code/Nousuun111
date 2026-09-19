@@ -7,19 +7,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../../css/style.css"/>
+<meta name="description" content="Tekoäly pk-yrityksille: ohjeita, kysymyksiä ja käytännön esimerkkejä yrityksen kehittämiseen.">
+<meta property="og:title" content="Tekoäly pk-yrityksille — Nousuun.fi">
+<meta property="og:description" content="Tekoäly pk-yrityksille: ohjeita, kysymyksiä ja käytännön esimerkkejä yrityksen kehittämiseen.">
+<meta property="og:image" content="https://nousuun.fi/assets/img/nousuun-preview-20260919.png">
+<meta property="og:image:alt" content="Nousuun.fi: Tee osaamisestasi kannattavaa työtä. Rajaa palvelu, laske hinta ja testaa käytännössä.">
 </head>
 <body>
 <nav>
   <a href="/" class="logo"><div class="logo-mark"><svg viewBox="0 0 20 20"><path d="M3 14 L10 5 L17 14" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="5" r="2" fill="white"/></svg></div><span class="logo-text">nousuun<span>.fi</span></span></a>
-  <ul class="nav-links"><li><a href="/#about">Minusta</a></li><li><a href="/#services">Palvelut</a></li><li><a href="/blog/">Blogi</a></li></ul>
-  <a href="/#contact" class="nav-btn">Ota yhteyttä</a>
+  <ul class="nav-links"><li><a href="/polku/">Yrittäjän polku</a></li><li><a href="/tyokalut/">Työkalut</a></li><li><a href="/blog/">Blogi</a></li></ul>
+  <a href="mailto:nousu.services@gmail.com" class="nav-btn">Ota yhteyttä</a>
 </nav>
 
 <main class="tag-page">
   <a href="/blog/" class="back-link">← Kaikki kirjoitukset</a>
   <div class="tag-hero">
     <h1>#Tekoäly pk-yrityksille</h1>
-    <p>Käytännönläheisiä kirjoituksia tekoälyn hyödyntämisestä suomalaisissa pk-yrityksissä. Ei hypeä — vain toimivia ratkaisuja.</p>
+    <p>Käytännönläheisiä kirjoituksia tekoälyn hyödyntämisestä suomalaisissa pk-yrityksissä. Rajaa tehtävä ja tarkista lopputulos.</p>
   </div>
 
   <!-- Other tags -->
@@ -48,9 +53,10 @@ async function loadTagPosts() {
   const list = document.getElementById('post-list');
   const res = await fetch('/blog/posts.json');
   const posts = await res.json();
-  const filtered = posts.filter(p => p.tags && p.tags.includes(TAG));
+  const aliases = {"Startup-rahoitus":["Rahoitus","Starttiraha"],"Tekoäly pk-yrityksille":["Tekoäly","Automaatio"],"Yrittäjyyskasvatus":["Hinnoittelu","Kannattavuus","Omistajanvaihdos","Osakassopimus"]};
+  const filtered = posts.filter(p => p.tags && p.tags.some(t => [TAG, ...(aliases[TAG] || [])].includes(t)));
   if (filtered.length === 0) {
-    list.innerHTML = '<p style="color:var(--muted);padding:2rem 0;">Kirjoituksia tulossa pian...</p>';
+    list.innerHTML = '<p style="color:var(--muted);padding:2rem 0;">Tästä aiheesta ei ole vielä kirjoituksia. Katso muut aiheet blogista.</p>';
     return;
   }
   list.innerHTML = filtered.map(p => `
@@ -60,11 +66,11 @@ async function loadTagPosts() {
         <span class="post-cat-badge">${p.category}</span>
         <h2>${p.title}</h2>
         <p>${p.excerpt}</p>
-        ${p.source !== 'Alkuperäinen' ? `<span class="ai-badge">🤖 AI-generoitu</span>` : ''}
+        ${p.auto_generated ? `<span class="ai-badge">AI-avusteinen luonnos</span>` : ''}
       </div>
     </a>`).join('');
 }
-loadTagPosts();
+loadTagPosts().catch(() => { document.getElementById('post-list').textContent = 'Kirjoituksia ei saatu ladattua. Kokeile uudelleen tai avaa blogin etusivu.'; });
 </script>
 </body>
 </html>
