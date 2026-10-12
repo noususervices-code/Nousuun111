@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
-"""Agentti B - Viikon yritykset.
+"""Agentti B - Luovien alojen yritysostokohteet.
 
-Fetches public for-sale company listings and ranks them for a modern solo or
-small-business entrepreneur. The output schema is consumed directly by
+Fetches public for-sale creative-sector listings, excluding beauty services
+even when combined with a creative business. The output schema is consumed by
 assets/js/main.js on the Nousuun.fi front page.
 """
 
 from __future__ import annotations
 
+import argparse
 import html
 import json
 import re
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import urlencode, unquote, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,19 +37,53 @@ FILTERS = {
     "page": "1",
 }
 
-DIGITAL_KEYWORDS = [
-    "verkkokauppa",
-    "ohjelm",
-    "ict",
-    "tekn",
-    "maahantuonti",
-    "b2b",
-    "markkinointi",
-    "koulutus",
-    "konsult",
-    "palvelu",
-    "huolto",
-]
+CREATIVE_SECTORS = {
+    "Valokuvaus": r"\bvalokuva\w*|\bphotograph\w*",
+    "Viestintä": r"\bviestint\w*|\bviestinn\w*|\bcommunications?\b",
+    "Mainostoimisto": r"\bmainostoimist\w*|\bmainosalan yrity\w*|\badvertising agency\b",
+    "Musiikki": r"\bmusiik\w*|\bmusic\w*|\bäänitysstudio\w*",
+    "Audiovisuaalinen tuotanto": r"\baudiovisuaal\w*|\bav-tuot\w*|\bvideo(?:tuotanto|tuotann)\w*|\belokuv\w*",
+    "Muotoilu": r"\bmuotoil\w*|\bdesign(?:-?studio|toimisto| agency)\w*",
+    "Pelit": r"\bpelistudio\w*|\bpelikehit\w*|\bpelinkehit\w*|\bgame (?:studio|development)\b",
+    "Taide": r"\btaide(?:galleria|tuotanto|ala)\w*|\btaiteen\b",
+    "Kustantaminen": r"\bkustanta\w*|\bkustannustoimin\w*|\bpublishing\b",
+    "Media": r"\bmediatuotan\w*|\bmediayhti\w*|\bmediatoimist\w*|\bmedia-al\w*",
+}
+# Hard exclusion always takes precedence, including a mixed creative/beauty business.
+EXCLUDED_SECTORS = re.compile(
+    r"kaune|kosmet|cosmet|beauty|esteti|esteett|aesthetic|esthetic|"
+    r"plastiikk|plastic surgery|botox|botuliini|täyteaine|filler|"
+    r"meikk|make-?up|kynsi|nail salon|ripsi|lash salon|parturi|kampaamo",
+    re.IGNORECASE,
+)
+
+
+def creative_sector(item, detail_text=""):
+    """Fail closed unless a named creative business is clear in source metadata.
+
+    Details are checked for excluded activities too; general IT, trade, retail,
+    maintenance or marketing keywords alone never establish a creative sector.
+    """
+    all_text = unquote(" ".join(str(value) for value in item.values()) + " " + detail_text)
+    if EXCLUDED_SECTORS.search(all_text):
+        return None
+    identity = item.get("name", "").casefold()
+    for sector, pattern in CREATIVE_SECTORS.items():
+        if re.search(pattern, identity):
+            return sector
+    # Broad mixed categories can hide a generic manufacturer, retailer or IT site.
+    # A creative category alone qualifies only when it describes the whole industry.
+    industry = item.get("industry", "").casefold().strip()
+    exact_industries = {
+        "mainostoimisto, markkinointi": "Mainostoimisto",
+        "kustannustoiminta": "Kustantaminen",
+        "valokuvaus": "Valokuvaus",
+        "musiikki": "Musiikki",
+        "muotoilu": "Muotoilu",
+    }
+    if industry in exact_industries:
+        return exact_industries[industry]
+    return None
 
 SOLO_FRIENDLY_KEYWORDS = [
     "kevyt",
@@ -108,8 +143,9 @@ def normalize_title(value):
     return title
 
 
-def fetch_source_rows():
-    body = urlencode({"action": "ms_selling", "filters": urlencode(FILTERS)})
+def fetch_source_rows(page=1):
+    filters = dict(FILTERS, page=str(page), perpage="50")
+    body = urlencode({"action": "ms_selling", "filters": urlencode(filters)})
     request = Request(
         SOURCE_URL,
         data=body.encode("utf-8"),
@@ -127,6 +163,22 @@ def fetch_source_rows():
     parser = ListingTableParser()
     parser.feed(payload.get("data", {}).get("results", ""))
     return parser.rows
+
+
+def fetch_listing_details(url):
+    # Only follow the source's actual detail pages, never a generic list fallback.
+    parsed = urlparse(url)
+    if parsed.hostname != "www.yrityskaupat.net" or not parsed.path.startswith("/fi/myytava-yritys/"):
+        raise ValueError("Listing has no valid source detail URL")
+    request = Request(url, headers={"User-Agent": "Nousuun.fi Agentti B/0.2"})
+    with urlopen(request, timeout=30) as response:
+        markup = response.read().decode("utf-8")
+    markup = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", markup, flags=re.S | re.I)
+    text = clean_text(re.sub(r"<[^>]+>", " ", markup))
+    if "Myynnin aihe" not in text or "Toimiala" not in text or "Pyydä lisätietoja kohteesta" not in text:
+        raise ValueError("Source detail page does not confirm an active listing")
+    # Stop before inquiry forms and related listings; those describe other companies.
+    return text.split("Myynnin aihe", 1)[1].split("Pyydä lisätietoja kohteesta", 1)[0]
 
 
 def normalize_listing(row):
@@ -147,7 +199,7 @@ def normalize_listing(row):
 def score_listing(item):
     text = f"{item['name']} {item['industry']}".lower()
     score = 5.0
-    score += min(2.0, sum(0.35 for keyword in DIGITAL_KEYWORDS if keyword in text))
+    score += 1.0 if creative_sector(item) else 0.0
     score += min(1.5, sum(0.30 for keyword in SOLO_FRIENDLY_KEYWORDS if keyword in text))
     if any(word in text for word in ["kannattava", "vakaa", "menestyv"]):
         score += 1.0
@@ -166,17 +218,12 @@ def score_listing(item):
 
 
 def build_insight(item, score):
-    text = f"{item['name']} {item['industry']}".lower()
-    if any(keyword in text for keyword in ["verkkokauppa", "ict", "ohjelm"]):
-        angle = "Valmis digitaalinen myyntikanava sopii ostajalle, joka haluaa kehittää verkkokauppaa, asiakaspitoa ja toistuvaa myyntiä."
-    elif any(keyword in text for keyword in ["maahantuonti", "tekn", "kauppa"]):
-        angle = "Vakiintuneet toimittaja- ja asiakassuhteet voivat tarjota valmiin pohjan B2B-myynnin ja verkkokaupan kehittämiselle."
-    elif any(keyword in text for keyword in ["palvelu", "huolto", "konsult", "koulutus"]):
-        angle = "Valmis asiakaskunta ja palveluprosessi sopivat ostajalle, joka haluaa kasvattaa kapasiteettia ilman nollasta aloittamista."
-    else:
-        angle = "Kohteen arvo riippuu valmiista asiakaskunnasta, toistuvasta kassavirrasta ja siitä, kuinka hyvin toiminta siirtyy uudelle omistajalle."
-    detail = f"Sijainti: {item['location']}. Hintatieto: {item['price']}."
-    return f"{angle} {detail}"
+    return (
+        f"Luova ala: {item['creative_sector']}. "
+        f"Ilmoittajan toimialaluokitus: {item['industry']}. "
+        f"Lähde tarkistettu {datetime.now(timezone.utc).date().isoformat()}; "
+        "tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
+    )
 
 
 def update_meta(timestamp):
@@ -190,14 +237,34 @@ def update_meta(timestamp):
     META.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def main():
+def main(update_metadata=True):
     OUT.parent.mkdir(exist_ok=True)
     timestamp = datetime.now(timezone.utc).isoformat()
     listings = []
-    for row in fetch_source_rows():
+    rows = []
+    seen_urls = set()
+    for page in range(1, 9):
+        page_rows = fetch_source_rows(page)
+        fresh = [row for row in page_rows if row[0].get("href") not in seen_urls]
+        rows.extend(fresh)
+        seen_urls.update(row[0].get("href") for row in fresh)
+        if len(page_rows) < 50 or not fresh:
+            break
+    print(f"Checked {len(rows)} public source rows")
+    for row in rows:
         item = normalize_listing(row)
-        if not item["name"]:
+        if not item["name"] or not creative_sector(item):
             continue
+        try:
+            details = fetch_listing_details(item["url"])
+        except (OSError, ValueError) as error:
+            print(f"Skipped unverified listing {item['url']}: {error}")
+            continue
+        sector = creative_sector(item, details)
+        if not sector:
+            continue
+        item["creative_sector"] = sector
+        item["creative_sector_verified"] = True
         score = score_listing(item)
         item["score"] = score
         item["insight"] = build_insight(item, score)
@@ -216,11 +283,16 @@ def main():
         "updated_at": timestamp,
         "week": datetime.now(timezone.utc).strftime("%G-W%V"),
         "companies": listings[:10],
+        "note": "Vain lähteestä tarkistetut luovien alojen yritysostokohteet. Kauneus-, kosmetologi- ja kauneuskirurgiapalvelut rajataan pois myös yhdistelmäyrityksistä."
+        if listings else "Tällä tarkistuskerralla ei löytynyt rajaukseen sopivia, lähteestä vahvistettuja luovien alojen yritysostokohteita.",
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    update_meta(timestamp)
+    if update_metadata:
+        update_meta(timestamp)
     print(f"Wrote {OUT} with {len(payload['companies'])} companies")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--no-meta", action="store_true", help="Write companies only; leave shared metadata to publisher")
+    main(update_metadata=not parser.parse_args().no_meta)

@@ -1,107 +1,32 @@
 {
   "agent": "Agentti B - Omistajanvaihdokset",
-  "updated_at": "2026-09-07T13:14:09.756077+00:00",
-  "week": "2026-W37",
+  "updated_at": "2026-10-12T06:48:15.372065+00:00",
+  "week": "2026-W42",
   "companies": [
     {
-      "name": "Voimakkaasti skaalautuva yritys myytävänä – valmis, testattu ja kasvupotentiaalinen sovellus",
-      "industry": "Muu palvelualan yritys, Muu toimiala, Palveluyritykset, Ravintolat, kahvilat, Verkkokauppa, Ympäristönhuolto",
-      "price": "38 500 EUR + earnout",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/muu-palvelualan-yritys/suomi/voimakkaasti-skaalautuva-yritys-myytavana-valmis-testattu-ja-kasvupotentiaalinen-sovellus/122192/",
-      "source": "Suomen Yrityskaupat",
-      "score": 7.2,
-      "insight": "Ilmoittajan toimialaluokitus: Muu palvelualan yritys, Muu toimiala, Palveluyritykset, Ravintolat, kahvilat, Verkkokauppa, Ympäristönhuolto. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Laadukkaiden lelujen ja kehittävien oppimateriaalien maahantuoja ja myyjä",
-      "industry": "Maahantuonti, Muut vähittäiskaupat, Verkkokauppa",
-      "price": "460 000 EUR",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/maahantuonti/viro/laadukkaiden-lelujen-ja-kehittavien-oppimateriaalien-maahantuoja-ja-myyja/127402/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Ilmoittajan toimialaluokitus: Maahantuonti, Muut vähittäiskaupat, Verkkokauppa. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Traktorien ja muiden raskaan koneiden huolto ja korjaamopalveluita tuottava yritys",
-      "industry": "Koneiden ja laitteiden huolto, Maa-, metsä- ja riistatalous, Raskaan ajoneuvokaluston korjaus- ja huolto",
-      "price": "180 000 EUR",
-      "location": "Keski-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/koneiden-ja-laitteiden-huolto/keski-suomi/traktorien-ja-muiden-raskaan-koneiden-huolto-ja-korjaamopalveluita-tuottava-yritys/123625/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Ilmoittajan toimialaluokitus: Koneiden ja laitteiden huolto, Maa-, metsä- ja riistatalous, Raskaan ajoneuvokaluston korjaus- ja huolto. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Suuri potentiaali omaava kauneus- ja terveydenhuoltopalvelujen klinikka Pärnussa",
-      "industry": "Kauneudenhoito, Terveydenhoito, sosiaaliala",
-      "price": "65 000 EUR",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kauneudenhoito/viro/suuri-potentiaali-omaava-kauneus-ja-terveydenhuoltopalvelujen-klinikka-parnussa/124692/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Ilmoittajan toimialaluokitus: Kauneudenhoito, Terveydenhoito, sosiaaliala. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Painepesumenetelmiä käyttävien siivouspalvelujen tarjoaja",
-      "industry": "Ympäristönhuolto",
-      "price": "70 000 EUR",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/palveluyritykset/viro/painepesumenetelmia-kayttavien-siivouspalvelujen-tarjoaja/125173/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.6,
-      "insight": "Ilmoittajan toimialaluokitus: Ympäristönhuolto. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Mikroskooppien maahantuontiin, järjestelmien suunnitteluun ja huoltoon erikoistunut yritys",
-      "industry": "Sähköisten ja optisten laitteiden valmistus",
-      "price": "297 000 EUR",
-      "location": "Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/sahkoisten-ja-optisten-laitteiden-valmistus/suomi/mikroskooppien-maahantuontiin-jarjestelmien-suunnitteluun-ja-huoltoon-erikoistunut-yritys/123593/",
-      "source": "Suomen Yrityskaupat",
-      "score": 6.3,
-      "insight": "Ilmoittajan toimialaluokitus: Sähköisten ja optisten laitteiden valmistus. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Kätevä, helposti hallinnoitava autokaupan alan yhtiö, jolla valmiit sopimukset ja järjestelmät aloittaa kaupanteko heti",
-      "industry": "Ajoneuvojen myynti, huolto, varaosat",
-      "price": "10 000 EUR Liiketoimintakaupalla valmis toiminta ilman varastoa",
+      "name": "Menestyvä mainosalan yritys myynnissä Länsi-Suomessa",
+      "industry": "Mainostoimisto, markkinointi",
+      "price": "125 000 EUR Liiketoimintakauppa, voidaan myydä myös osakekauppana, hinta 159 000 €",
       "location": "Länsi-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/ajoneuvojen-myynti-huolto-varaosat/lansi-suomi/kateva-helposti-hallinnoitava-autokaupan-alan-yhtio-jolla-valmiit-sopimukset-ja-jarjestelmat-aloittaa-kaupanteko-heti/123495/",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/mainostoimisto-markkinointi/lansi-suomi/menestyva-mainosalan-yritys-myynnissa-lansi-suomessa/122672/",
       "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Ilmoittajan toimialaluokitus: Ajoneuvojen myynti, huolto, varaosat. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
+      "creative_sector": "Mainostoimisto",
+      "creative_sector_verified": true,
+      "score": 6.6,
+      "insight": "Luova ala: Mainostoimisto. Ilmoittajan toimialaluokitus: Mainostoimisto, markkinointi. Lähde tarkistettu 2026-10-12; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
     },
     {
-      "name": "Geomar vuokra – siivouspalvelut Oy",
-      "industry": "Kiinteistöalan palvelut, Kiinteistöjen ja rakennusten omistaminen",
-      "price": "859 000 EUR Liiketoimintakauppa",
-      "location": "Turun talousalue",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/kiinteistoalan-palvelut/turun-talousalue/geomar-vuokra-siivouspalvelut-oy/124165/",
+      "name": "Verkkokauppojen tuotekuvaukseen erikoistunut valokuvausstudio",
+      "industry": "Mainostoimisto, markkinointi",
+      "price": "490 000 EUR Yhtiön liiketoiminnan harjoittamisen näkökulmasta mahdollinen ylimääräinen varallisuus ei sisälly pyyntihintaan ja tullaan suunnitellusti siirtämään pois yhtiöstä.",
+      "location": "Uusimaa",
+      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/mainostoimisto-markkinointi/uusimaa/menestyva-valokuvausstudio/125572/",
       "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Ilmoittajan toimialaluokitus: Kiinteistöalan palvelut, Kiinteistöjen ja rakennusten omistaminen. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Myydään Outokummun Kukka ja Hautauspalvelut – pitkään toiminut ja tunnettu kukka- ja hautauspalveluyritys",
-      "industry": "Hautaustoimisto, Kukkakaupat, kukkakioskit",
-      "price": "90 000 EUR Yrityksen pyyntihinta muodostuu kassavirtapohjaisesta 5 vuoden tuottoarvosta.",
-      "location": "Itä-Suomi",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/hautaustoimisto/ita-suomi/outokummun-kukka-ja-hautauspalvelut-pitkaan-toiminut-ja-tunnettu-kukka-ja-hautauspalveluyritys/127374/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.9,
-      "insight": "Ilmoittajan toimialaluokitus: Hautaustoimisto, Kukkakaupat, kukkakioskit. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
-    },
-    {
-      "name": "Sahateollisuuslaitteiden valmistus ja huolto",
-      "industry": "Konepaja, Metallituotteiden valmistus",
-      "price": "380 000 EUR ei sisällä kiinteistöä",
-      "location": "Viro",
-      "url": "https://www.yrityskaupat.net/fi/myytava-yritys/konepaja/viro/sahateollisuuslaitteiden-valmistus-ja-huolto/120939/",
-      "source": "Suomen Yrityskaupat",
-      "score": 5.6,
-      "insight": "Ilmoittajan toimialaluokitus: Konepaja, Metallituotteiden valmistus. Tiedot koottu 7.9.2026; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
+      "creative_sector": "Valokuvaus",
+      "creative_sector_verified": true,
+      "score": 6.3,
+      "insight": "Luova ala: Valokuvaus. Ilmoittajan toimialaluokitus: Mainostoimisto, markkinointi. Lähde tarkistettu 2026-10-12; tarkista hinta, saatavuus ja kaupan sisältö ilmoittajalta."
     }
-  ]
+  ],
+  "note": "Vain lähteestä tarkistetut luovien alojen yritysostokohteet. Kauneus-, kosmetologi- ja kauneuskirurgiapalvelut rajataan pois myös yhdistelmäyrityksistä."
 }

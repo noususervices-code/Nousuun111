@@ -85,7 +85,9 @@ async function loadContent() {
     if (!response.ok) throw new Error("Sisältöä ei voitu ladata");
     const data = await response.json();
     let items = Array.isArray(data[config.key]) ? data[config.key] : [];
+    if (type === "companies") items = items.filter(window.NousuunScope.company);
     if (type === "events") {
+      items = items.filter(window.NousuunScope.upcoming);
       const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Helsinki" });
       items = items
         .filter(item => item.date && (item.end_date || item.date) >= today && (!item.registration_deadline || item.registration_deadline >= today))
@@ -93,7 +95,9 @@ async function loadContent() {
     }
     if (statusLine) statusLine.textContent = data.checked_at ? `Tiedot tarkistettu ${fiDate(data.checked_at)}` : (data.updated_at ? `Aineisto päivitetty ${new Date(data.updated_at).toLocaleDateString("fi-FI")}` : "Tarkistuspäivää ei ole ilmoitettu");
     if (!items.length) {
-      target.innerHTML = '<p class="empty-state">Listalla ei ole tällä hetkellä näytettäviä nostoja.</p>';
+      target.innerHTML = type === "companies"
+        ? '<p class="empty-state">Tällä hetkellä ei ole varmennettuja luovien alojen yritysostokohteita.</p>'
+        : '<p class="empty-state">Listalla ei ole tällä hetkellä tulevia tapahtumia.</p>';
       return;
     }
     target.innerHTML = items.map(config.render).join("");

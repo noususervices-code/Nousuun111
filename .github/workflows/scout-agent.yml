@@ -15,6 +15,7 @@ jobs:
           python-version: "3.11"
       - run: python scripts/scout_companies.py
       - run: python scripts/validate_content_quality.py data/companies.json
+      - run: python scripts/validate_platform_scope.py
       - name: Commit Agentti B updates
         run: |
           git config user.email "bot@nousuun.fi"
