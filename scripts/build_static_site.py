@@ -11,7 +11,7 @@ for page in ROOT.rglob('*.html'):
     target = OUT / page.relative_to(ROOT)
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(page, target)
-for name in ['CNAME', 'css/style.css', 'js/platform.js', 'js/platform-scope.js', 'js/content-page.js', 'data/events.json', 'data/companies.json', 'data/meta.json']:
+for name in ['CNAME', 'css/style.css', 'css/interests.css', 'js/interests.js', 'js/platform.js', 'js/platform-scope.js', 'js/content-page.js', 'data/events.json', 'data/companies.json', 'data/meta.json']:
     target = OUT / name
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / name, target)

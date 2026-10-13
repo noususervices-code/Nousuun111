@@ -15,13 +15,21 @@
       target.dataset.state = 'error';
     }
   }
-  load('events', 'events-container', data => {
+  let eventData;
+  const renderEvents = data => {
     const status = document.getElementById('events-updated');
     if (data.updated_at) status.textContent = `Aineisto päivitetty ${new Date(data.updated_at).toLocaleDateString('fi-FI', {timeZone:'Europe/Helsinki'})}. Varmista vapaat paikat järjestäjän sivulta.`;
-    return (data.events || []).filter(NousuunScope.upcoming).sort((a,b) => a.date.localeCompare(b.date)).slice(0,6).map(item => `
+    return NousuunInterests.render((data.events || []).filter(NousuunScope.upcoming), (item, reason) => `
       <article class="event-card"><div class="event-card-top"><span class="event-badge">${esc(item.tags?.[0] || 'Tapahtuma')}</span><span class="event-date">${date(item.date)}${item.end_date ? '–' + date(item.end_date) : ''}</span></div>
-      <h3 class="event-title">${esc(item.name)}</h3><p class="event-location">${esc([item.time,item.location].filter(Boolean).join(' · '))}</p><p class="event-desc">${esc(item.description)}</p><p class="event-access">${esc([item.access,item.price].filter(Boolean).join(' · '))}</p><a class="btn btn-sm btn-outline event-link" href="${link(item.url)}" target="_blank" rel="noopener">Avaa tapahtumasivu →</a></article>`).join('');
+      <h3 class="event-title">${esc(item.name)}</h3>${reason}<p class="event-location">${esc([item.time,item.location].filter(Boolean).join(' · '))}</p><p class="event-desc">${esc(item.description)}</p><p class="event-access">${esc([item.access,item.price].filter(Boolean).join(' · '))}</p><a class="btn btn-sm btn-outline event-link" href="${link(item.url)}" target="_blank" rel="noopener">Avaa tapahtumasivu →</a></article>`, 'events-grid');
+  };
+  load('events', 'events-container', data => {
+    eventData = data;
+    return renderEvents(data);
   }, 'Listalla ei ole tällä hetkellä tulevia tapahtumia.');
+  window.addEventListener('nousuun:interests-change', () => {
+    if (eventData) document.getElementById('events-container').innerHTML = renderEvents(eventData);
+  });
   load('companies', 'companies-container', data => (data.companies || []).filter(NousuunScope.company).slice(0,3).map(item => `
     <a class="list-item" href="${link(item.url)}" target="_blank" rel="noopener"><h3>${esc(item.name)}</h3><p>${esc(item.insight)}</p><span class="list-meta">${esc([item.creative_sector,item.location,item.source].filter(Boolean).join(' · '))}</span></a>`).join(''), 'Tällä hetkellä ei ole varmennettuja luovien alojen yritysostokohteita.');
 })();

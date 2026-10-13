@@ -6,6 +6,10 @@ Public routes: `/`, `/tapahtumat/`, `/yritykset/`, `/tietosuoja/`. Former media 
 
 Canonical policy: `../MISSION_STATEMENT.md` and `../Agentit/RAJAUS_2026-10-12.md`.
 
+Visitors may optionally choose up to three of nine interests on the homepage or event archive. `js/interests.js` ranks matching events first in chronological order and retains all other upcoming events. Matches use the curated name, description and tags; venue names do not establish a topic. Preferences stay in browser localStorage (`nousuun_interests_v1`), can be cleared, and work in memory when storage is unavailable. No account, analytics event or preference submission is used. Company acquisitions retain the creative-sector boundary regardless of interest choices.
+
+Run `node --test scripts/test_interests.cjs` to check selection limits, persistence, unavailable storage, recommendations and no-match behavior.
+
 Curated event input: `../Agent_Outputs/Agentti_A_Tapahtumat/weekly_reports/YYYY-Www_events.json`.
 
 Run `python scripts/sync_weekly_events.py --source <report>` to prepare event data. `scout_companies.py` accepts only verified creative-sector listings. Frontend and deployment enforce the same exclusions.

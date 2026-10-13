@@ -21,13 +21,14 @@ const fiDate = value => {
     : date.toLocaleDateString("fi-FI", { day: "numeric", month: "long", year: "numeric" });
 };
 
-const renderEvent = item => `
+const renderEvent = (item, reason = '') => `
   <article class="archive-card">
     <div class="archive-card-top">
       <span>${escapeText(item.tags?.[0] || item.industry || "")}</span>
       <span>${fiDate(item.date)}${item.end_date ? "–" + fiDate(item.end_date) : ""}</span>
     </div>
     <h2>${escapeText(item.name)}</h2>
+    ${reason}
     <p>${escapeText(item.description || "")}</p>
     <dl class="archive-facts">
       <div><dt>Aika</dt><dd>${escapeText(item.time || "Tarkista järjestäjältä")}</dd></div>
@@ -76,6 +77,13 @@ const configs = {
   news: { file: "../data/news.json", key: "articles", render: renderArticle }
 };
 
+let loadedItems;
+function showItems(type, config, items) {
+  target.innerHTML = type === "events"
+    ? window.NousuunInterests.render(items, renderEvent, 'archive-grid')
+    : items.map(config.render).join("");
+}
+
 async function loadContent() {
   const type = page?.dataset.contentPage;
   const config = configs[type];
@@ -100,7 +108,8 @@ async function loadContent() {
         : '<p class="empty-state">Listalla ei ole tällä hetkellä tulevia tapahtumia.</p>';
       return;
     }
-    target.innerHTML = items.map(config.render).join("");
+    loadedItems = items;
+    showItems(type, config, items);
     const updated = data.updated_at ? new Date(data.updated_at).toLocaleDateString("fi-FI") : "";
 
   } catch (error) {
@@ -110,3 +119,6 @@ async function loadContent() {
 }
 
 loadContent();
+window.addEventListener('nousuun:interests-change', () => {
+  if (page?.dataset.contentPage === 'events' && loadedItems) showItems('events', configs.events, loadedItems);
+});
